@@ -1,5 +1,5 @@
 # AMP
-This GitHub repository is to track any issues and bugs within the CubeCoders AMP platform. This can include the ADS instance and the modules made by CubeCoders. 
+This GitHub repository is to track any issues and bugs within the AMP platform. This can include the ADS instance and the modules made by CubeCoders. 
 
 
 To track issues effectively, please follow the guide below
