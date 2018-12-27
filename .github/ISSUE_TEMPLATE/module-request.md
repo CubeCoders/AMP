@@ -13,6 +13,6 @@ about: To request support for new game server application modules
 
 ## I confirm:
 - [ ] that I have searched for an existing module request for this application.
-- [ ] that the server is an official server distributed by the games publishers.
+- [ ] that the server is an official server distributed by the games publishers/developers.
 - [ ] that the server is available to the general public.
 - [ ] that the server can be run headless (without a GUI).
