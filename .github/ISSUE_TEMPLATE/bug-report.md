@@ -12,6 +12,7 @@ about: Bugs in AMP, the instance manager, or official AMP modules.
 ## AMP Release Stream:
 - [ ] Mainline Release
 - [ ] Nightly (Todays build)
+<!-- Insert an X between the brackets to mark as ticked -->
 
 ## I confirm:
 - [ ] that I have searched for an existing bug report for this issue.
@@ -20,10 +21,14 @@ about: Bugs in AMP, the instance manager, or official AMP modules.
 
 ## Symptoms 
 
+<!--
  * What are you trying to do?
  * What are you expecting to happen?
  * What is actually happening? (Nothing is not an acceptable answer!)
+-->
 
 ## Reproduction
 
+<!--
  * Starting from a clean install, how do you reproduce the issue that causes the symptoms described above?
+-->
