@@ -1,6 +1,6 @@
 ---
 name: Feature Request
-about: To request support for new game server application modules
+about: To request new features for either AMP or one of its application modules.
 ---
 
 # Feature Request
