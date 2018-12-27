@@ -6,10 +6,12 @@ about: To request support for new game server application modules
 # Module Request
 
 ## Game Information:
+<!--
  - Game Title
  - Where it can be obtained (Steam, Epic Store, Direct download, etc)
  - Supported OSs and platforms.
  - Does the server support either RCON or console input to administer it?
+-->
 
 ## I confirm:
 - [ ] that I have searched for an existing module request for this application.
