@@ -8,15 +8,11 @@ about: Bugs in AMP, the instance manager, or official AMP modules.
 ## System Information
 - Operating System (Including distribution name and version number)
 - AMP version and build date (Always use the version number, 'latest' is not valid!)
-
-## AMP Release Stream:
-- [ ] Mainline Release
-- [ ] Nightly (Todays build)
-<!-- Insert an X between the brackets to mark as ticked -->
+- Which AMP release stream you're using (Mainline, Nightly or FastTrack)
 
 ## I confirm:
 - [ ] that I have searched for an existing bug report for this issue.
-- [ ] that I am using the latest version of AMP for my release stream.
+- [ ] that I am using the latest available version of AMP.
 - [ ] that my operating system is up-to-date.
 
 ## Symptoms 
