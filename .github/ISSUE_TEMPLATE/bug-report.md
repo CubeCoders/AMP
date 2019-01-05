@@ -14,6 +14,9 @@ about: Bugs in AMP, the instance manager, or official AMP modules.
 - [ ] that I have searched for an existing bug report for this issue.
 - [ ] that I am using the latest available version of AMP.
 - [ ] that my operating system is up-to-date.
+<!--
+  If all 3 boxes above are not confirmed, the issue with be closed as invalid.
+-->
 
 ## Symptoms 
 
