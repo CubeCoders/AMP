@@ -14,6 +14,7 @@ about: Bugs in AMP, the instance manager, or official AMP modules.
 - [ ] that I have searched for an existing bug report for this issue.
 - [ ] that I am using the latest available version of AMP.
 - [ ] that my operating system is up-to-date.
+- [x] that my checkboxes above look like the one on the left (remove this line when done)
 <!--
   If all 3 boxes above are not confirmed, the issue with be closed as invalid.
   Please only fill the boxes above with an 'x' character, and not anything else or it won't be marked correctly.
@@ -28,8 +29,12 @@ about: Bugs in AMP, the instance manager, or official AMP modules.
  * What is actually happening? ('Nothing' is not an acceptable answer!)
 -->
 
+Enter Symptoms on this line.
+
 ## Reproduction
 
 <!--
  * Starting from a clean install, how do you reproduce the issue that causes the symptoms described above?
 -->
+
+Enter reproductions steps here.
