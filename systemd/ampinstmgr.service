@@ -1,0 +1,20 @@
+[Unit]
+Description=AMP Instance Manager
+Documentation=https://github.com/CubeCoders/AMP/wiki/AMP-systemd-script-(Linux)
+After=syslog.target
+After=network-online.target
+Wants=network-online.target
+PartOf=ampinstmgr.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+User=amp
+Group=amp
+ExecStart=/opt/cubecoders/amp/ampinstmgr startboot
+TimeoutSec=60
+ExecStop=/opt/cubecoders/amp/ampinstmgr stopall
+TimeoutStopSec=180
+
+[Install]
+WantedBy=multi-user.target
