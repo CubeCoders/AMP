@@ -1,0 +1,17 @@
+[Unit]
+Description=AMP Instance Manager Firewall
+Documentation=https://github.com/CubeCoders/AMP/wiki/AMP-systemd-script-(Linux)
+After=syslog.target
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=no
+User=root
+Group=root
+ExecStart=/opt/cubecoders/amp/ampinstmgr --silent updatefirewall amp
+TimeoutSec=60
+
+[Install]
+WantedBy=multi-user.target
