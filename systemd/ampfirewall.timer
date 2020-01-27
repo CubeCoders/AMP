@@ -1,0 +1,15 @@
+[Unit]
+Description=AMP Instance Manager Firewall
+Documentation=https://github.com/CubeCoders/AMP/wiki/AMP-systemd-script-(Linux)
+After=syslog.target
+After=network-online.target
+Wants=network-online.target
+PartOf=ampfirewall.target
+
+[Timer]
+OnActiveSec=1
+OnBootSec=1m
+OnUnitActiveSec=5m
+
+[Install]
+WantedBy=multi-user.target
