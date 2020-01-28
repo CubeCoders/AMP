@@ -24,3 +24,7 @@ Console.AppReadyRegex=^Listening on port (\d+)$
 Console.UserJoinRegex=^(?<username>.+?) has joined\.$
 Console.UserLeaveRegex=^(?<username>.+?) has left\.$
 Console.UserChatRegex=^<(?<username>.+?)> (?<message>.+)$
+Meta.DisplayName=Terraria
+Meta.OS=3
+Meta.Author=CubeCoders Limited
+Meta.URL=https://github.com/CubeCoders/AMP/blob/master/GenericModuleTemplates/Terraria
