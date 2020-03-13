@@ -8,7 +8,7 @@ Follow these steps to install and set up the server. Most of the steps are requi
 
 Step 1 - After creating a generic instance and updating the contents of `GenericModule.kvp` with the contents of this module template, change the ports, servername, RCON password and maximum players to those desired.
 
-Unturned's default ports are 27015-27017. If you want to use a different set of (consecutive) ports, change `App.ApplicatonPort1`, `App.ApplicatonPort2` and `App.RemoteAdminPort` accordingly. Also specify a password for `App.RemoteAdminPassword`.
+Unturned's default ports are 27015-27017. If you want to use a different set of (consecutive) ports, change `App.ApplicationPort1`, `App.ApplicationPort2` and `App.RemoteAdminPort` accordingly. Also specify a password for `App.RemoteAdminPassword`.
 
 Change the ServerName data field in `App.CommandLineVars`, and the number of players in `App.MaxUsers`, as desired.
 
