@@ -1,7 +1,7 @@
 Meta.DisplayName=Conan Exiles
 Meta.OS=Windows
 Meta.Author=Greelan
-Meta.URL=https://github.com/Greelan/AMP/GenericModuleTemplates/ConanExiles
+Meta.URL=https://github.com/Greelan/AMP/blob/master/GenericModuleTemplates/ConanExiles
 App.DisplayName=Conan Exiles
 App.RootDir=./Conan Exiles Dedicated Server/
 App.ExecutableWin=443030/ConanSandboxServer.exe
