@@ -18,3 +18,4 @@ Supports RCON/Console input?
 - [ ] that the server is an official server distributed by the games publishers/developers.
 - [ ] that the server is available to the general public.
 - [ ] that the server can be run headless (without a GUI).
+- [x] that my checkboxes above look like the one on the left (remove this line when done)

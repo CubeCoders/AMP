@@ -14,3 +14,4 @@ about: To request new features for either AMP or one of its application modules.
 
 ## I confirm:
 - [ ] that I have searched for an existing feature request matching the description.
+- [x] that my checkboxes above look like the one on the left (remove this line when done)
