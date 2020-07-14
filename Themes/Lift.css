@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+#barTop, #barBottom {
+    background-color: rgb(28, 1, 56);
+}
+
+#sideMenuContainer, .subMenuWell {
+    background-color: rgb(13, 0, 26);
+    background-image: none;
+}
+
+#userInfo {
+    background-color: rgb(13, 0, 26) !important;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(to right, rgba(2,0,36,1) 0%, rgba(53,49,74,1) 100%);
+	background-position: top left;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6, th, #sideMenu a {
+	font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+
+#sideMenu{
+	font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+
+.ServerGroup {
+    margin: 2px !important;
+}
+
+.ServerEntry .ServerEntryHeader {
+    min-height: 0 !important;
+}
+
+.ServerEntry {
+    width: 150px
+}
+
+.ServerGroup.Platform-2, .ServerGroup.Platform-1 {
+    background-image: none !important;
+}
+
+.ServerEntry.NewServerEntry {
+    background-color: rgb(13, 0, 26) !important;
+}
+
+.bgGreen {
+    background-color: #15992261;
+}
+
+.ServerGroup.Online .ServerGroupHeader {
+    background: linear-gradient(to right, #15992261 0%, rgba(0, 0, 0, 0.3) 85%) !important;
+}
+
+.ServerGroupContainer {
+    display: block !important;
+}
+
+#bgtext {
+	font-family: 'Open Sans', sans-serif;
+}
