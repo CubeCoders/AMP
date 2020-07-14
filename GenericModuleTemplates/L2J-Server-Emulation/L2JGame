@@ -1,8 +1,8 @@
 Meta.DisplayName=Lineage2 Game Server
 Meta.OS=Windows, Linux
 Meta.Author=PacWhite
-Meta.URL=https://github.com/CubeCoders/AMP/blob/master/GenericModuleTemplates/
-App.DisplayName=Lineage2 Login Server
+Meta.URL=https://www.pacwhite.de
+App.DisplayName=Lineage2 Game Server
 App.RootDir=./L2JGame/
 App.ExecutableWin=C:\Program Files\OpenJava\jdk-11\bin\java.exe
 App.ExecutableLinux=java
