@@ -5,7 +5,7 @@ This is a rudimentary template but it should work.
 
 ## Step to Work
 
-1. Setup 2. Generic Instances (but dont start it!)
+1. Setup 2 Generic Instances (but dont start it!)
 2. Copy L2JLogin and L2JGame in GenericModule.kvp from each instance.
 3. Start both instances
 4. Check if the working dir (L2JGame / L2JLogin) created.
