@@ -14,7 +14,7 @@ Change the ServerName data field in `App.CommandLineVars`, and the number of pla
 
 Step 2 - Update the application from the Status menu in the instance. This will install SteamCMD and the Unturned server files. Don't start the application yet.
 
-Step 3 - Then use the File Manager, FTP or another appropriate method to create a copy of or a symlink to the `GenericXX/U3DS/1110390/Extras/Rocket.Unturned` directory, in the `GenericXX/U3DS/1110390/Modules` directory (replace XX with your instance number).
+Step 3 - Then use the File Manager, SFTP or another appropriate method to create a copy of or a symlink to the `GenericXX/U3DS/1110390/Extras/Rocket.Unturned` directory, in the `GenericXX/U3DS/1110390/Modules` directory (replace XX with your instance number).
 
 For example, on Linux, either:
 ```
@@ -30,7 +30,7 @@ Step 5 - Start the instance again. Then start the Unturned server from the Statu
 
 Step 6 - Stop the instance once again, from the ADS panel (this will stop the Unturned server too).
 
-Step 7 - Using the File Manager, FTP or another appropriate method, edit `GenericXX/U3DS/1110390/Servers/<YourServerName>/Rocket/Rocket.config.xml` so that in the RCON line:
+Step 7 - Using the File Manager, SFTP or another appropriate method, edit `GenericXX/U3DS/1110390/Servers/<YourServerName>/Rocket/Rocket.config.xml` so that in the RCON line:
 
 - `Enabled` is set to "true"
 - `Port` is set to the port number that you specified for `App.RemoteAdminPort` in step 1
