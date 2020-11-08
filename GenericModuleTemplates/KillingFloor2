@@ -29,8 +29,7 @@ App.UpdateSourceData=232130
 App.UnzipUpdateSource=False
 App.OverwriteExistingFiles=False
 App.ApplicationReadyMode=RegexMatch
-#BETA!
 Console.AppReadyRegex=^[\d*.\d*] DevOnline: Server data: Ver: (.*)$
-Console.UserJoinRegex=^DevNet: Join succeeded: (?.+?) playerid=(?.+?)$
-Console.UserLeaveRegex=^[\d\d:\d\d:\d\d] [INFO] "(?.+?)" ((?.+?)) disconnected (Reason: (?.+?))$
-Console.UserChatRegex=^[\d\d:\d\d:\d\d] [CHAT] <(?.+?)> (?.+)$
+Console.UserJoinRegex=^DevNet: Join succeeded: \"(?<username>.+?)\" playerid=\((?<userid>.+?)\)$
+Console.UserLeaveRegex=^\[\d\d:\d\d:\d\d\] \[INFO\] \"(?<username>.+?)\" \((?<userid>.+?)\) disconnected \(Reason: (?<reason>.+?)\)$
+Console.UserChatRegex=^\[\d\d:\d\d:\d\d\] \[CHAT\] <(?<username>.+?)> (?<message>.+)$
