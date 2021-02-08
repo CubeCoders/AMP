@@ -8,7 +8,7 @@
 
 1. Create a new instance from the Generic template.
 2. Delete the file named `GenericModule.kvp` in your instance's root directory.
-3. Copy `configmanifest.json` and `GeyserModule.kvp` file to the earlier mentioned directory then rename the module to `GenericModule.kvp`.
+3. Copy the `configmanifest.json` and `GeyserModule.kvp` files to the earlier mentioned directory then rename the module to `GenericModule.kvp`.
 4. Go to your instance and click manage, then click the update button to download the latest version of Geyser.
 5. Optionally you can edit the `GenericModule.kvp` file to change the IP binding, port binding, and max users to your liking.
 6. Run your server once, a configuration file will be created called `config.yml`, update it to your liking and restart.
