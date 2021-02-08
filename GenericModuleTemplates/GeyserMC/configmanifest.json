@@ -1,0 +1,18 @@
+[
+    {
+        "DisplayName": "Minimum Memory (MB)",
+        "Description": "The minimum memory allocated to Geyser, in MB",
+        "FieldName": "MinMemory",
+        "Keywords": "memory",
+        "InputType": "number",
+        "Category": "Geyser Configuration"
+    },
+    {
+        "DisplayName": "JAR File",
+        "Description": "The JAR file to execute",
+        "FieldName": "JarFile",
+        "Keywords": "jar",
+        "InputType": "text",
+        "Category": "Geyser Configuration"
+    }
+]
