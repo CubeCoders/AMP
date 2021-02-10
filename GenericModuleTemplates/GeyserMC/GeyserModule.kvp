@@ -33,7 +33,6 @@ Console.ThrowawayMessageRegex=
 Console.UserActions={}
 
 Meta.DisplayName=Geyser
-Meta.Description=
 Meta.OS=Windows, Linux
 Meta.Author=https://github.com/Galaxyzd
 Meta.URL=https://github.com/CubeCoders/AMP/tree/master/GenericModuleTemplates/Geyser
