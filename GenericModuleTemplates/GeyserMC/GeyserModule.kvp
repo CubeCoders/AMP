@@ -27,9 +27,8 @@ App.ApplicationReadyMode=RegexMatch
 Console.FilterMatchRegex=\[\d?\d?;?\d?m
 Console.FilterMatchReplacement=
 Console.AppReadyRegex=^\[\d{2}:\d{2}:\d{2} INFO\] Done \(\d+.\d+s\)! Run \/geyser help for help!$
-Console.UserJoinRegex=^\[\d{2}:\d{2}:\d{2} INFO\] (?<username>.+) \(logged in as: (?<nickname>.+)\) has connected to remote java server on address (?<server>.+)$
-Console.UserLeaveRegex=^\[\d{2}:\d{2}:\d{2} INFO\] (?<username>.+) has disconnected from remote Java server on address (?<server>.+) because of (?<reason>.+)$
-Console.UserChatRegex=^\[\d\d:\d\d:\d\d\] \[CHAT\] <(?<username>.+?)> (?<message>.+)$
+Console.UserJoinRegex=^\[\d{2}:\d{2}:\d{2} INFO\] (?<username>.+) \(logged in as: (?<uuid>.+)\) has connected to remote java server on address (?<ip>.+)$
+Console.UserLeaveRegex=^\[\d{2}:\d{2}:\d{2} INFO\] (?<username>.+) has disconnected from remote Java server on address (?<ip>.+) because of (?<reason>.+)$
 Console.ThrowawayMessageRegex=
 Console.UserActions={}
 
