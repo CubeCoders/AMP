@@ -24,7 +24,7 @@ App.OverwriteExistingFiles=True
 App.UseRandomAdminPassword=True
 App.ApplicationReadyMode=RegexMatch
 
-Console.FilterMatchRegex=\[\d?\d?;?\d?m
+Console.FilterMatchRegex=\[\d?\d?;?\d?m
 Console.FilterMatchReplacement=
 Console.AppReadyRegex=^\[\d{2}:\d{2}:\d{2} INFO\] Done \(\d+.\d+s\)! Run \/geyser help for help!$
 Console.UserJoinRegex=^\[\d{2}:\d{2}:\d{2} INFO\] (?<username>.+) \(logged in as: (?<nickname>.+)\) has connected to remote java server on address (?<server>.+)$
