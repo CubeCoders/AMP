@@ -18,6 +18,7 @@ App.AdminMethod=STDIO
 App.UpdateSource=None
 App.Compatibility=None
 App.ApplicationReadyMode=RegexMatch
+App.EnvironmentVariables={}
 Console.FilterMatchRegex=
 Console.FilterMatchReplacement=
 Console.ThrowawayMessageRegex=
