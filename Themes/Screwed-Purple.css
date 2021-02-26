@@ -1,4 +1,4 @@
-/*Screwed Purple theme by Jaiden W*/
+/*This file will be overwritten any time AMP is updated. To make your own themes, create a new file in this directory.*/
 
 html{
     background-image:url("Images/oriental-tiles.png");
@@ -321,4 +321,7 @@ border:1px solid #8000ff;
 }
 .fileManagerEntry:hover {
     background: #8000ff;
+}
+.bodyTab .splitViewInfo {
+    z-index:999;
 }
