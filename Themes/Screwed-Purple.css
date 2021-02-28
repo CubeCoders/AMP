@@ -316,9 +316,6 @@ border:1px solid #8000ff;
     border-radius: 3px;
 }
 
-.ServerGroup{
-    z-index:10;
-}
 .fileManagerEntry:hover {
     background: #8000ff;
 }
