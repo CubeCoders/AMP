@@ -32,13 +32,9 @@ about: Bugs in AMP, the instance manager, or official AMP modules.
 
 ## Symptoms 
 
-<!--
  * What are you trying to do?
  * What are you expecting to happen?
  * What is actually happening? ('Nothing' is not an acceptable answer!)
--->
-
-Enter Symptoms on this line.
 
 ## Reproduction
 
