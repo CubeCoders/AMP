@@ -1,0 +1,25 @@
+[{
+	"ConfigFile": "serverconfig.txt",
+	"ConfigType": "kvp",
+	"ConfigSeparator": "=",
+	"Subsections": [{
+		"Heading": "$root",
+		"SettingMappings": {
+			"world": "world",
+			"autocreate": "autocreate",
+			"seed": "seed",
+			"worldname": "worldname",
+			"difficulty": "difficulty",
+			"maxplayers": "maxplayers",
+			"password": "password",
+			"motd": "motd",
+			"worldpath": "worldpath",
+			"banlist": "banlist",
+			"secure": "secure",
+			"language": "language",
+			"upnp": "upnp",
+			"npcstream": "npcstream",
+			"priority": "priority"
+		}
+	}]
+}]
