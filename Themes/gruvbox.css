@@ -1,0 +1,104 @@
+/*Theme created by NebulaBC*/
+
+body,
+.bodyTab {
+  background-color: #1d2021;
+}
+#loginContainer,
+.sideItemList {
+  background-color: #282828;
+}
+#barTop,
+#userInfo {
+  background-color: #282828;
+}
+#sideMenuContainer,
+.subMenuWell,
+#mainBody {
+  background: #282828;
+  color: #f8f8f2;
+}
+#sideMenu a {
+  font-size: 100%;
+  color: #f8f8f2;
+}
+#sideMenu a:active {
+  background-color: #928374;
+}
+#sideMenu a.selected {
+  background-color: #928374;
+  color: #f8f8f2;
+}
+.button {
+  background-color: transparent;
+  color: white;
+  font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
+  font-weight: lighter;
+  font-size: larger;
+  border: 1px solid #928374;
+  min-width: 96px;
+  cursor: pointer;
+  outline: none;
+  height: 48px;
+  margin-right: 8px;
+  transition: background-color 0.3s;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+button:hover,
+input[type=button]:hover,
+input[type=submit]:hover,
+.button:hover {
+  background-color: #928374;
+}
+button:active,
+input[type=button]:active,
+input[type=submit]:active,
+.button:active {
+  background-color: #a89984;
+}
+button span,
+input[type=button] span,
+input[type=submit] span,
+.button span {
+  line-height: 100%;
+}
+button {
+ border: transparent;
+}
+
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=number],
+input[type=email],
+input[type=search],
+select,
+.modalpanel {
+ background-color: #1d2021;
+}
+.modalpanel #modaltitle {
+  background-color: #282828;
+  padding: 8px 16px;
+  margin: 0;
+}
+textarea {
+  background-color: #282828;
+}
+input.searchBox {
+  background-color: transparent;
+}
+.wizardTab .wizardContents {
+  background-color: #1d2021;
+  border-bottom: 8px solid #282828;
+}
+.wizardTab .wizardContents h2 {
+  background-color: #282828;
+}
+.scheduleTriggerInfo {
+  border: 1px solid #282828;
+  background-color: #1d2021;
+}
+.settingsGroup .groupBody .settingContainer {
+  background-color: #1d2021;
+}
