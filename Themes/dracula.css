@@ -26,7 +26,7 @@ body,
   background-color: #bd93f9;
 }
 #sideMenu a.selected {
-  background-color: #bd93f9;
+  background-color: #7440bf;
   color: #f8f8f2;
 }
 .button {
@@ -35,7 +35,7 @@ body,
   font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
   font-weight: lighter;
   font-size: larger;
-  border: 1px solid #bd93f9;
+  border: 1px solid #7440bf;
   min-width: 96px;
   cursor: pointer;
   outline: none;
@@ -49,13 +49,13 @@ button:hover,
 input[type=button]:hover,
 input[type=submit]:hover,
 .button:hover {
-  background-color: #bd93f9;
+  background-color: #7440bf;
 }
 button:active,
 input[type=button]:active,
 input[type=submit]:active,
 .button:active {
-  background-color: #ff79c6;
+  background-color: #7440bf;
 }
 button span,
 input[type=button] span,
