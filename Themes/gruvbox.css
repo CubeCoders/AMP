@@ -67,6 +67,33 @@ button {
  border: transparent;
 }
 
+.ServerGroup.Online .ServerGroupHeader {
+  background: #928374 !important;
+}
+.ServerGroup.Offline .ServerGroupHeader,
+.ServerGroup.Unavailable .ServerGroupHeader {
+  background: #fb4934 !important;
+}
+.ServerGroup.Pending .ServerGroupHeader {
+  background: #fabd2f !important;
+}
+
+.bgGreen {
+    background-color: #928374 !important;
+    border: 1px solid #928374 !important;
+}
+
+.bgRed {
+    background-color: #fb4934 !important;
+    border: 1px solid #fb4934 !important;
+}
+
+.ServerEntry.NewServerEntry {
+    background-color: #928374!important;
+    text-align: center;
+}
+
+
 input[type=text],
 input[type=password],
 input[type=url],
