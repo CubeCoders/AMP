@@ -39,7 +39,12 @@ a:hover { color: #ffffff; }
     box-shadow: 0 4px 4px rgb(0 0 0 / 50%);
     min-height: 690px;
 }
+
 /*Side Menu*/
+.itemList .item:hover { background-color: #423369; }
+.itemList .item.selected { border-right: 4px solid #8000ff; }
+.itemList .item:active { background-color: #470a83; }
+.sideItemList { background-color: ##25065775; }
 #sideMenuContainer, .subMenuWell { background: linear-gradient(180deg,#333333 50%, #222222); }
 #barTop #tabInfo { margin-left: 16px; color: #a041ff; }
 #barTop, #barBottom, #userInfo, #userInfo:hover { background-color: #333333; }
@@ -77,6 +82,7 @@ a:hover { color: #ffffff; }
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     transition: background-color 0.25s, width 0.25s;
 }
+
 
 /*Scheduled tasks*/
 .scheduleTriggerInfo {
