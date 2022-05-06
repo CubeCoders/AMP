@@ -1,0 +1,206 @@
+:root {
+    --gecko: #39FF14;
+    --halfgecko: #1D800A;
+    --quartergecko: #0F4005;
+}
+
+body,
+.bodyTab {
+  background-color: black;
+}
+
+/*Button Things*/
+button, input[type=button], input[type=submit], .button {
+    border: 1px solid var(--halfgecko);
+/*    color: var(--gecko);*/
+}
+button:active, input[type=button]:active, input[type=submit]:active, .button:active {
+  background-color: var(--halfgecko);
+}
+button:hover, input[type=button]:hover, input[type=submit]:hover, .button:hover {
+    background-color: var(--halfgecko);
+}
+
+/*Text Formatting*/
+h1, h2, h3, h4, h5, h6, th, .lf {
+    color: var(--gecko);
+}
+/*.bodyTab {
+    color: var(--gecko);
+}*/
+
+#loginContainer,
+.sideItemList {
+  background-color: black;
+}
+
+/*User Info*/
+#barTop,
+#userInfo {
+  background-color: var(--halfgecko);
+  color: var(--gecko);
+}
+#userInfo:active {
+    background-color: var(--quartergecko);
+}
+#userInfo:hover {
+    background-color: var(--quartergecko);
+}
+
+
+#sideMenuContainer,
+.subMenuWell,
+#mainBody {
+  background: var(--quartergecko);
+}
+#sideMenu a {
+  font-size: 100%;
+  color: var(--gecko);
+}
+#sideMenu a:active {
+  background-color: black;
+}
+#sideMenu a.selected {
+  background-color: var(--halfgecko);
+  color: var(--gecko);
+}
+
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=email],
+input[type=search],
+input[type=url],
+select,
+textarea {
+  background-color: black;
+}
+
+
+/*Console Formatting*/
+#consoleLineEntry {
+  color: var(--gecko);
+}
+.consoleContents, .consoleContents pre {
+  color: var(--gecko);
+}
+.consoleEntry, .consoleContents {
+  color: var(--gecko);
+}
+.consoleTimestamp {
+  color: var(--halfgecko);
+}
+
+input.searchBox {
+  background-color: transparent;
+}
+.wizardTab .wizardContents {
+  background-color: #222;
+  border-bottom: 8px solid #444;
+}
+.wizardTab .wizardContents h2 {
+  background-color: #444;
+}
+
+/*Instance Page*/
+#tab_ADSModule_Instances
+.ServerEntry.NewServerEntry {
+    background-color: var(--halfgecko);
+}
+
+/*Scheduler*/
+#tab_schedule.bodyTab
+.scheduleTriggerDescription {
+    background-color: var(--halfgecko);
+}
+#tab_schedule.bodyTab
+.scheduleTriggerInfo {
+  border: 1px solid var(--quartergecko);
+  background-color: var(--quartergecko);
+}
+#tab_schedule.bodyTab
+.scheduleTriggerTask {
+    border-bottom: 1px solid var(--halfgecko);
+}
+#tab_schedule.bodyTab
+.scheduleTriggerTaskDropper {
+    background-color: var(--quartergecko);
+    border: 1px solid var(--quartergecko);
+}
+#tab_schedule.bodyTab
+.scheduleTriggerHeaderItem .scheduleHeader {
+  color: var(--quartergecko);
+}
+#tab_schedule.bodyTab
+.scheduleTriggerHeaderItem {
+  color: var(--quartergecko);
+}
+
+
+/*Tab Menus*/
+.settingsGroup .groupBody .settingContainer {
+  background-color: var(--quartergecko);
+}
+
+/*File Manager*/
+#tab_FileManagerPlugin_FileManager
+.fmPathSegment:active {
+    background-color: var(--quartergecko);
+}
+#tab_FileManagerPlugin_FileManager
+.fmPathSegment:hover {
+    background-color: var(--halfgecko);
+}
+#tab_FileManagerPlugin_FileManager
+.fmPathSegment:nth-child(even) {
+    background-color: var(--quartergecko);
+}
+#tab_FileManagerPlugin_FileManager
+.fmPathSegment::after {
+    border-left: 10px solid var(--halfgecko);
+}
+#tab_FileManagerPlugin_FileManager
+.fmPathSegment:nth-child(even)::after {
+    border-left-color: var(--quartergecko);
+}
+#tab_FileManagerPlugin_FileManager
+.fmPathSegment {
+    background-color: var(--halfgecko);
+}
+
+/*Notifications*/
+#notificationContainer {
+  background-color: var(--halfgecko);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  color: var(--gecko);
+}
+#notificationContainer .notificationBanner {
+  background-color: var(--quartergecko);
+}
+#notificationContainer .notification {
+  border-bottom: 1px solid var(--quartergecko);
+}
+#notificationContainer .notification.failed {
+  background-color: #833;
+}
+#notificationContainer .notification:hover {
+  background-color: var(--quartergecko);
+}
+#notificationContainer .notification:hover.failed {
+  background-color: #A55;
+}
+#notificationContainer .notification .notificationTitle {
+  color: var(--gecko);
+}
+#notificationContainer .notification .notificationTitle button {
+  background-color: #633;
+  border: 1px solid #900;
+  color: #fff;
+}
+.notificationProgessContainer {
+  border: 1px solid var(--quartergecko);
+}
+.notificationProgressBar {
+  background-color: black;
+}
