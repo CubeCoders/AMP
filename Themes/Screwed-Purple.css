@@ -1,179 +1,55 @@
-/*Screwed Purple theme by Jaiden W*/
+/*
+Screwed Purple theme by Jaiden W
+Updated 2022/05/05
+Obey The Fist!
+*/
 
-html{
-    background-image:url("Images/oriental-tiles.png");
-}
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-body
-{
+
+/*Background image/color*/
+@keyframes gradient { 0% { background-position: 0% 50%; } 50% {background-position: 100% 50%; }	100% {background-position: 0% 50%; } }
+#tab_ADSModule_Instances, #mainBody, .bodyTab { background:none!important; }
+html { background-image:url("Images/oriental-tiles.png")!important; }
+body {
     background: linear-gradient(-45deg, #2f005fAA, #37006fBB, #430088AA, #2f005fAA)!important;
 	background-size: 400% 400%!important;
 	animation: gradient 15s ease infinite;
 }
 
-#sideMenuContainer, .subMenuWell {
-    background: linear-gradient(180deg,#333333 50%, #222222);
-}
-#barTop, #barBottom {
-    background-color: #333333;
-}
-#userInfo {
-    background-color: #333333
-}
-#userInfo:hover {
-    background-color: #333333;
-}
-#sideMenu a.selected {
-    border-right: 4px solid #8000ff;
-}
-.scheduleTriggerInfo {
-    width: 100%;
-    border-radius: 4px;
-    border: 1px solid #8000ff;
-    margin-top: 8px;
-    background-color: #31075c;
-    overflow: hidden;
-}
-.scheduleTriggerDescription {
-    background-color: #8000ff;
-    padding: 8px;
-    color: ;
-}
-.scheduleTriggerHeaderItem .scheduleHeader {
-    color: #FFF;
-    font-weight: 800;
-}
-.ThirdPartyNotice {
-    float: left;
-    padding: 64px;
-    z-index: 1;
+  /*Scroll Bar*/
+div ::-webkit-scrollbar { width: 5px; background-color: #20023e;}
+div ::-webkit-scrollbar-thumb { width: 5px; background-color: #8000ff; }
+div ::-webkit-scrollbar-thumb:hover { background-color: #952efb; }
+
+  /*Buttons/links*/
+a { color: #fbff00; }
+a:hover { color: #ffffff; }
+.bgGreen { background-color: #8000ff; border: 1px solid #8000ff; }
+.bgGreen:hover { background-color: #bc78ff; }
+
+/*login box*/
+#loginContainer {
     position: absolute;
-    background-color: rgb(27, 16, 34);
-    height: 100%;
+    right: 64px;
+    width: 400px;
     box-sizing: border-box;
-}
-.notificationProgessContainer {
-    width: 100%;
-    height: 16px;
-    border: 1px solid #8000ff;
-    margin-top: 4px;
-    overflow: hidden;
-    position: relative;
-}
-.notificationProgressBar {
-    height: 100%;
-    width: 0;
-    background-color: #8000ff;
-    transition: width 0.5s ease-in-out;
-    margin-left: 0;
-    overflow: visible;
-    position: absolute;
-}
-.ServerEntry.NewServerEntry {
-    background-color: #8000ff!important;
-    text-align: center;
-}
-.ServerGroup.Online .ServerGroupHeader {
-    background: linear-gradient(to right, #8000ff 0%, rgba(0, 0, 0, 0.3) 85%);
-}
-.ServerEntry .ServerEntryImage {
-    width: 100%;
-    height: calc(100% - 25px);
-    position: absolute;
-    z-index: -1;
-    background-size: cover;
-    filter: brightness(0.55);
-    background-color: #8000ffEE;
+    background-color: #8000ff69;
+    padding: 32px 32px 32px 32px;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 50%);
+    min-height: 690px;
 }
 
-.ServerEntry .ServerEntryInfo tr {
-background:#00000088;
-}
-.ServerEntry .ServerEntryInfo tr:nth-child(2n) {
-    background: #00000038;
-}
-
-input[type=checkbox]:checked + span {
-    background-color: white;
-    color: black;
-    border-right: 2px solid #8000ff;
-    border-left: 40px solid #8000ff;
-}
-input[type=checkbox] + span {
-    display: block;
-    content: ' ';
-    width: 38px;
-    height: 24px;
-    transition: all 0.3s ease;
-    border: 2px solid #8000ff;
-    border-right: 40px solid #8000ff;
-    cursor: pointer;
-    background-color: #8000ff;
-    color: white;
-    border-radius: 16px;
-}
-
-button, input[type=button], input[type=submit], .button {
-    background-color: #01010247;
-    color: white;
-    font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
-    font-weight: lighter;
-    font-size: larger;
-    border: 1px solid #8000ff;
-    min-width: 96px;
-    cursor: pointer;
-    outline: none;
-    height: 48px;
-    margin-right: 8px;
-    transition: background-color 0.3s;
-    border-radius: 2px;
-}
-button:hover, input[type=button]:hover, input[type=submit]:hover, .button:hover {
-    background-color: #8000ff;
-}
-input[type=checkbox]:hover + span {
-    border-color: #a957fb;
-}
-.wizardTab .wizardContents {
-    background-color: #36006be3;
-    border-bottom: 8px solid #8000ff;
-    box-shadow: 2px 2px 12px rgb(0 0 0 / 50%);
-}
-.wizardTab .wizardContents h2 {
-    margin: -16px;
-    padding: 8px 16px 8px 16px;
-    width: 100%;
-    background-color: #8000ff;
-    margin-bottom: 16px;
-}
-.provisionSetting img {
-    width: 98%;
-    border: 1px solid #8000ff;
-    box-shadow: 0px 0px 5px black;
-}
-.desktopContextMenu {
-    background: #290e44!important;
-    border: 2px solid #8000ff;
-}
-
-.desktopContextMenu.desktopContextMenu .buttonListSeparator {
-    border-bottom: 1px solid #8000ff!important;
-
-}
-#sideMenu a.selected {
-    border-right: 4px solid #8000ff;
-}
+/*Side Menu*/
+.itemList .item:hover { background-color: #423369; }
+.itemList .item.selected { border-right: 4px solid #8000ff; }
+.itemList .item:active { background-color: #470a83; }
+.sideItemList { background-color: #25065775!important; }
+#sideMenuContainer, .subMenuWell { background: linear-gradient(180deg,#333333 50%, #222222); }
+#barTop #tabInfo { margin-left: 16px; color: #a041ff; }
+#barTop, #barBottom, #userInfo, #userInfo:hover { background-color: #333333; }
+#sideMenu a:active { background-color: #8000ff33; }
+#sideMenu a.selected { border-right: 4px solid #8000ff; }
 .menuTitle {
     font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
     font-weight: bolder;
@@ -207,33 +83,200 @@ input[type=checkbox]:hover + span {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     transition: background-color 0.25s, width 0.25s;
 }
-#barTop #tabInfo {
-    margin-left: 16px;
-    color: #a041ff;
+
+
+/*Scheduled tasks*/
+.scheduleTriggerInfo {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #8000ff;
+    margin-top: 8px;
+    background-color: #31075c;
+    overflow: hidden;
+}
+.scheduleTriggerDescription {
+    background-color: #8000ff;
+    padding: 8px;
+    color: ;
+}
+.scheduleTriggerHeaderItem .scheduleHeader {
+    color: #FFF;
+    font-weight: 800;
+}
+.scheduleTriggerTaskDropper {
+    float: right;
+    background-color: #00000045;
+    height: 40px;
+    margin: -8px -8px 0 0;
+    border-radius: 0 0 0 4px;
+    border: 1px solid #b571f9;
+    border-top: none;
+    border-right: none;
+    overflow: hidden;
+}
+
+/*Toast*/
+.ThirdPartyNotice {
+    float: left;
+    padding: 64px;
+    z-index: 1;
+    position: absolute;
+    background-color: rgb(27, 16, 34);
+    height: 100%;
+    box-sizing: border-box;
+}
+.notificationProgessContainer {
+    width: 100%;
+    height: 16px;
+    border: 1px solid #8000ff;
+    margin-top: 4px;
+    overflow: hidden;
+    position: relative;
+}
+.notificationProgressBar {
+    height: 100%;
+    width: 0;
+    background-color: #8000ff;
+    transition: width 0.5s ease-in-out;
+    margin-left: 0;
+    overflow: visible;
+    position: absolute;
+}
+
+/* Server Entry*/
+.ServerGroup.Online .ServerGroupHeader { background: linear-gradient(to right, #8000ff 0%, rgba(0, 0, 0, 0.3) 85%); }
+.desktopContextMenu.desktopContextMenu .buttonListSeparator { border-bottom: 1px solid #8000ff!important; }
+.desktopContextMenu { background: #290e44!important; border: 2px solid #8000ff; }
+.ServerEntry .ServerEntryInfo tr { background:#00000088; }
+.ServerEntry .ServerEntryInfo tr:nth-child(2n) { background: #00000038; }
+.ServerEntry.NewServerEntry { background-color: #8000ff!important; text-align: center; }
+.ServerEntry:hover { border: 1px solid #8000ff!important; }
+.ServerEntryStatus.bgGreen { background-color: #6600cc; border: 1px solid #6d00da; }
+.ServerEntryStatus.bgGreen:hover { background-color: #8000ff; }
+.ServerGroup{ background: #00000061; }
+.ServerEntry .ServerEntryImage {
+    width: 100%;
+    height: calc(100% - 25px);
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    filter: brightness(0.55);
+    background-color: #8000ffEE;
+}
+.wizardTab .wizardContents {
+    background-color: #36006be3;
+    border-bottom: 8px solid #8000ff;
+    box-shadow: 2px 2px 12px rgb(0 0 0 / 50%);
+}
+.wizardTab .wizardContents h2 {
+    margin: -16px;
+    padding: 8px 16px 8px 16px;
+    width: 100%;
+    background-color: #8000ff;
+    margin-bottom: 16px;
+}
+.provisionSetting img {
+    width: 98%;
+    border: 1px solid #8000ff;
+    box-shadow: 0px 0px 5px black;
 }
 .ServerGroup.Online .ServerGroupHeader {
     background: linear-gradient(to right, #8000ff 0%, #4b1a7b 85%)!important;
     border: 1px solid #8000ff;
-    /* background: purple; */
     border-radius: 4px;
     box-shadow: 0px 0px 10px black;
 }
-a {
-    color: #fbff00;
+.Platform-2, .Platform-1 {
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 170px;
+    filter: brightness(0.90);
 }
-a:hover {
-    color: #ffffff;
+.ServerEntry .ServerEntryHeader {
+    background-color: #8000ffba!important;
+    padding: 4px!important;
+    margin: 4px!important;
+    min-height: 0px!important;
+    margin-bottom: 2px;
+    position: relative;
+    text-align: center;
+    border-radius: 4px;
+    border: 3px solid #8000ff99;
 }
-.ServerEntry:hover {
-    border: 1px solid #8000ff!important;
+.ServerEntry .ServerEntryHeader h4 {
+    margin: 0;
+    font-weight: 1000;
 }
-.ServerEntryStatus.bgGreen {
-    background-color: #6600cc;
-    border: 1px solid #6d00da;
+
+/*Graphs server display page*/
+.DisplayMetric .DisplayMetricGraph { background: #00000047; }
+
+/* dropdown menu*/
+option{background:#202020;}
+/* Input boxes*/
+input[type="text"], input[type="password"], input[type="url"], input[type="number"], input[type="email"], input[type="search"], select, textarea {background: #0000001c;}
+
+/* Input checkbox slider*/
+input[type=checkbox]:checked + span { background-color: #8000ff; }
+input[type=checkbox]:checked + span::after { background-color: #333333; }
+input[type=checkbox]:hover + span { border-color: #00000000; }
+button:hover, input[type=button]:hover, input[type=submit]:hover, .button:hover, button:active, input[type="button"]:active, input[type="submit"]:active, .button:active  { background-color: #8000ff; }
+button, input[type=button], input[type=submit], .button {
+    background-color: #01010247;
+    color: white;
+    font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
+    font-weight: lighter;
+    font-size: larger;
+    border: 1px solid #8000ff;
+    min-width: 96px;
+    cursor: pointer;
+    outline: none;
+    height: 48px;
+    margin-right: 8px;
+    transition: background-color 0.3s;
+    border-radius: 2px;
 }
-.ServerEntryStatus.bgGreen:hover {
-    background-color: #8000ff;
+
+
+ /*loading*/
+.loader {
+    margin: 6em auto;
+    font-size: 10px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 1.1em solid rgba(128, 0, 255, 0.2)!important;
+    border-right: 1.1em solid #8000ff;
+    border-bottom: 1.1em solid rgba(128, 0, 255, 0.2)!important;
+    border-left: 1.1em solid #8000ff;
+    -webkit-animation: load8 1s infinite linear;
+    animation: load8 1s infinite linear;
 }
+
+/*event time*/
+.scheduleTriggerTask { padding: 8px; border-bottom: 1px solid #8000ff; }
+.iconButton:hover { background-color: #0000004d; }
+.iconButton:active { background-color: #8000ff; }
+.timeSegment.selected { background-color: #8000ff; }
+.timeSegment:hover { padding:10px; border:1px solid #8000ff; }
+.timeSegment {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+    box-sizing: border-box;
+    padding: 4px;
+    cursor: pointer;
+    float: left;
+    user-select: none;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+  /*file manager*/
+.fmPathSegment:hover { background-color: #a858f7!important; }
+.fmPathSegment:hover::after { border-left-color: #a858f7!important; }
+.fileManagerEntry:hover { background: #8000ff61!important; }
 .fmPathSegment::after {
     width: 0;
     height: 0;
@@ -255,67 +298,30 @@ a:hover {
     line-height: 32px;
     margin-left: -4px;
 }
-.fmPathSegment:hover {
-    background-color: #a858f7!important;
-}
-.fmPathSegment:hover::after {
-    border-left-color: #a858f7!important;
-}
-.scheduleTriggerTask {
-    padding: 8px;
-    border-bottom: 1px solid #8000ff;
-}
-.scheduleTriggerTaskDropper {
-    float: right;
-    background-color: #00000045;
-    height: 40px;
-    margin: -8px -8px 0 0;
-    border-radius: 0 0 0 4px;
-    border: 1px solid #b571f9;
-    border-top: none;
-    border-right: none;
-    overflow: hidden;
-}
-.iconButton:hover {
-    background-color: #0000004d;
-}
-.iconButton:active {
-    background-color: #8000ff;
-}
-.timeSegment.selected {
-    background-color: #8000ff;
-}
-.loader {
-    margin: 6em auto;
-    font-size: 10px;
-    position: relative;
-    text-indent: -9999em;
-    border-top: 1.1em solid rgba(128, 0, 255, 0.2)!important;
-    border-right: 1.1em solid #8000ff;
-    border-bottom: 1.1em solid rgba(128, 0, 255, 0.2)!important;
-    border-left: 1.1em solid #8000ff;
-    -webkit-animation: load8 1s infinite linear;
-    animation: load8 1s infinite linear;
-}
-.timeSegment:hover {
-padding:10px;
-border:1px solid #8000ff;
-    
-}
-.timeSegment {
-    background-color: rgba(255, 255, 255, 0.25);
-    color: white;
-    box-sizing: border-box;
-    padding: 4px;
-    cursor: pointer;
-    float: left;
-    user-select: none;
-    text-align: center;
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 3px;
-}
 
-.fileManagerEntry:hover {
+/*settings box*/
+.settingDescription { min-height:0px!important; color:white!important; }
+.settingsGroup .groupBody .settingContainer {
+    padding: 16px;
+    border-radius: 5px;
+    background-color: #00000061;
+    box-shadow: inset 0 2px 4px rgb(255 255 255 / 5%), inset 0 -2px 4px rgb(0 0 0 / 20%), 0 4px 4px rgb(0 0 0 / 30%);
+    border: 2px solid #8000ff99;
+}
+.settingsGroup .groupBody .settingContainer .settingWarning {
+    font-size: 8pt;
+    color: red;
+    padding: 0px;
+    margin-top: 25px;
+}
+.settingLabel  > label:first-of-type{
+    margin-top:9px;
+    margin-left:-20px!important;
+}
+.settingLabel  > div:first-of-type{
+    margin: -10px -10px 0px -10px;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
     background: #8000ff;
 }
