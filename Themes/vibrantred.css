@@ -1,0 +1,206 @@
+:root {
+    --vibrant: #f70027;
+    --halfvibrant: #7C0014;
+    --quartervibrant: #3E000A;
+}
+
+body,
+.bodyTab {
+  background-color: black;
+}
+
+/*Button Things*/
+button, input[type=button], input[type=submit], .button {
+    border: 1px solid var(--halfvibrant);
+/*    color: var(--vibrant);*/
+}
+button:active, input[type=button]:active, input[type=submit]:active, .button:active {
+  background-color: var(--halfvibrant);
+}
+button:hover, input[type=button]:hover, input[type=submit]:hover, .button:hover {
+    background-color: var(--halfvibrant);
+}
+
+/*Text Formatting*/
+h1, h2, h3, h4, h5, h6, th, .lf {
+    color: var(--vibrant);
+}
+/*.bodyTab {
+    color: var(--vibrant);
+}*/
+
+#loginContainer,
+.sideItemList {
+  background-color: black;
+}
+
+/*User Info*/
+#barTop,
+#userInfo {
+  background-color: var(--halfvibrant);
+  color: var(--vibrant);
+}
+#userInfo:active {
+    background-color: var(--quartervibrant);
+}
+#userInfo:hover {
+    background-color: var(--quartervibrant);
+}
+
+
+#sideMenuContainer,
+.subMenuWell,
+#mainBody {
+  background: var(--quartervibrant);
+}
+#sideMenu a {
+  font-size: 100%;
+  color: var(--vibrant);
+}
+#sideMenu a:active {
+  background-color: black;
+}
+#sideMenu a.selected {
+  background-color: var(--halfvibrant);
+  color: var(--vibrant);
+}
+
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=email],
+input[type=search],
+input[type=url],
+select,
+textarea {
+  background-color: black;
+}
+
+
+/*Console Formatting*/
+#consoleLineEntry {
+  color: var(--vibrant);
+}
+.consoleContents, .consoleContents pre {
+  color: var(--vibrant);
+}
+.consoleEntry, .consoleContents {
+  color: var(--vibrant);
+}
+.consoleTimestamp {
+  color: var(--halfvibrant);
+}
+
+input.searchBox {
+  background-color: transparent;
+}
+.wizardTab .wizardContents {
+  background-color: #222;
+  border-bottom: 8px solid #444;
+}
+.wizardTab .wizardContents h2 {
+  background-color: #444;
+}
+
+/*Instance Page*/
+#tab_ADSModule_Instances
+.ServerEntry.NewServerEntry {
+    background-color: var(--halfvibrant);
+}
+
+/*Scheduler*/
+#tab_schedule.bodyTab
+.scheduleTriggerDescription {
+    background-color: var(--halfvibrant);
+}
+#tab_schedule.bodyTab
+.scheduleTriggerInfo {
+  border: 1px solid var(--quartervibrant);
+  background-color: var(--quartervibrant);
+}
+#tab_schedule.bodyTab
+.scheduleTriggerTask {
+    border-bottom: 1px solid var(--halfvibrant);
+}
+#tab_schedule.bodyTab
+.scheduleTriggerTaskDropper {
+    background-color: var(--quartervibrant);
+    border: 1px solid var(--quartervibrant);
+}
+#tab_schedule.bodyTab
+.scheduleTriggerHeaderItem .scheduleHeader {
+  color: var(--quartervibrant);
+}
+#tab_schedule.bodyTab
+.scheduleTriggerHeaderItem {
+  color: var(--quartervibrant);
+}
+
+
+/*Tab Menus*/
+.settingsGroup .groupBody .settingContainer {
+  background-color: var(--quartervibrant);
+}
+
+/*File Manager*/
+#tab_FileManagerPlugin_FileManager
+.fmPathSegment:active {
+    background-color: var(--quartervibrant);
+}
+#tab_FileManagerPlugin_FileManager
+.fmPathSegment:hover {
+    background-color: var(--halfvibrant);
+}
+#tab_FileManagerPlugin_FileManager
+.fmPathSegment:nth-child(even) {
+    background-color: var(--quartervibrant);
+}
+#tab_FileManagerPlugin_FileManager
+.fmPathSegment::after {
+    border-left: 10px solid var(--halfvibrant);
+}
+#tab_FileManagerPlugin_FileManager
+.fmPathSegment:nth-child(even)::after {
+    border-left-color: var(--quartervibrant);
+}
+#tab_FileManagerPlugin_FileManager
+.fmPathSegment {
+    background-color: var(--halfvibrant);
+}
+
+/*Notifications*/
+#notificationContainer {
+  background-color: var(--halfvibrant);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  color: var(--vibrant);
+}
+#notificationContainer .notificationBanner {
+  background-color: var(--quartervibrant);
+}
+#notificationContainer .notification {
+  border-bottom: 1px solid var(--quartervibrant);
+}
+#notificationContainer .notification.failed {
+  background-color: #833;
+}
+#notificationContainer .notification:hover {
+  background-color: var(--quartervibrant);
+}
+#notificationContainer .notification:hover.failed {
+  background-color: #A55;
+}
+#notificationContainer .notification .notificationTitle {
+  color: var(--vibrant);
+}
+#notificationContainer .notification .notificationTitle button {
+  background-color: #633;
+  border: 1px solid #900;
+  color: #fff;
+}
+.notificationProgessContainer {
+  border: 1px solid var(--quartervibrant);
+}
+.notificationProgressBar {
+  background-color: black;
+}
