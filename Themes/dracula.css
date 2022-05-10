@@ -1,0 +1,130 @@
+/*Theme created by NebulaBC*/
+
+body,
+.bodyTab {
+  background-color: #44475a;
+}
+#loginContainer,
+.sideItemList {
+  background-color: #282a36;
+}
+#barTop,
+#userInfo {
+  background-color: #282a36;
+}
+#sideMenuContainer,
+.subMenuWell,
+#mainBody {
+  background: #282a36;
+  color: #f8f8f2;
+}
+#sideMenu a {
+  font-size: 100%;
+  color: #f8f8f2;
+}
+#sideMenu a:active {
+  background-color: #bd93f9;
+}
+#sideMenu a.selected {
+  background-color: #7440bf;
+  color: #f8f8f2;
+}
+.button {
+  background-color: transparent;
+  color: white;
+  font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
+  font-weight: lighter;
+  font-size: larger;
+  border: 1px solid #7440bf;
+  min-width: 96px;
+  cursor: pointer;
+  outline: none;
+  height: 48px;
+  margin-right: 8px;
+  transition: background-color 0.3s;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+button:hover,
+input[type=button]:hover,
+input[type=submit]:hover,
+.button:hover {
+  background-color: #7440bf;
+}
+button:active,
+input[type=button]:active,
+input[type=submit]:active,
+.button:active {
+  background-color: #7440bf;
+}
+button span,
+input[type=button] span,
+input[type=submit] span,
+.button span {
+  line-height: 100%;
+}
+button {
+ border: transparent;
+}
+
+.ServerGroup.Online .ServerGroupHeader {
+  background: #7440bf !important;
+}
+.ServerGroup.Offline .ServerGroupHeader,
+.ServerGroup.Unavailable .ServerGroupHeader {
+  background: #ff5555 !important;
+}
+.ServerGroup.Pending .ServerGroupHeader {
+  background: #ffb86c !important;
+}
+
+.bgGreen {
+    background-color: #7440bf !important;
+    border: 1px solid #7440bf !important;
+}
+
+.bgRed {
+    background-color: #ff5555 !important;
+    border: 1px solid #ff5555 !important;
+}
+
+.ServerEntry.NewServerEntry {
+    background-color: #7440bf !important;
+    text-align: center;
+}
+
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=number],
+input[type=email],
+input[type=search],
+select,
+.modalpanel {
+ background-color: #44475a;
+}
+.modalpanel #modaltitle {
+  background-color: #282a36;
+  padding: 8px 16px;
+  margin: 0;
+}
+textarea {
+  background-color: #282a36;
+}
+input.searchBox {
+  background-color: transparent;
+}
+.wizardTab .wizardContents {
+  background-color: #282a36;
+  border-bottom: 8px solid #282a36;
+}
+.wizardTab .wizardContents h2 {
+  background-color: #282a36;
+}
+.scheduleTriggerInfo {
+  border: 1px solid #282a36;
+  background-color: #282a36;
+}
+.settingsGroup .groupBody .settingContainer {
+  background-color: #282a36;
+}

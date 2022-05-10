@@ -44,10 +44,11 @@ a:hover { color: #ffffff; }
 .itemList .item:hover { background-color: #423369; }
 .itemList .item.selected { border-right: 4px solid #8000ff; }
 .itemList .item:active { background-color: #470a83; }
-.sideItemList { background-color: ##25065775; }
+.sideItemList { background-color: #25065775; }
 #sideMenuContainer, .subMenuWell { background: linear-gradient(180deg,#333333 50%, #222222); }
 #barTop #tabInfo { margin-left: 16px; color: #a041ff; }
 #barTop, #barBottom, #userInfo, #userInfo:hover { background-color: #333333; }
+
 #sideMenu a.selected { border-right: 4px solid #8000ff; }
 .menuTitle {
     font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
@@ -211,11 +212,17 @@ a:hover { color: #ffffff; }
 /*Graphs server display page*/
 .DisplayMetric .DisplayMetricGraph { background: #00000047; }
 
+
+/* dropdown menu*/
+option{ background:#202020; }
+/* Input boxes*/
+input[type="text"], input[type="password"], input[type="url"], input[type="number"], input[type="email"], input[type="search"], select, textarea { background: #0000001c; }
+
 /* Input checkbox slider*/
 input[type=checkbox]:checked + span { background-color: #8000ff; }
 input[type=checkbox]:checked + span::after { background-color: #333333; }
 input[type=checkbox]:hover + span { border-color: #00000000; }
-button:hover, input[type=button]:hover, input[type=submit]:hover, .button:hover { background-color: #8000ff; }
+button:hover, input[type=button]:hover, input[type=submit]:hover, .button:hover, button:active, input[type="button"]:active, input[type="submit"]:active, .button:active  { background-color: #8000ff; }
 button, input[type=button], input[type=submit], .button {
     background-color: #01010247;
     color: white;

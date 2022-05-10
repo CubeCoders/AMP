@@ -3,6 +3,10 @@ name: Feature Request
 about: To request new features for either AMP or one of its application modules.
 ---
 
+# This is not for requesting support for new games/applications
+
+To do this you should go to https://github.com/CubeCoders/AMPTemplates and first attempt to build a configuration yourself - otherwise you can request a template from this repo.
+
 # Feature Request
 
 ## Feature Information:
