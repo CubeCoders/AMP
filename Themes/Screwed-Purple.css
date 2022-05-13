@@ -7,13 +7,14 @@ Obey The Fist!
 
 
 /*Background image/color*/
-@keyframes gradient { 0% { background-position: 0% 50%; } 50% {background-position: 100% 50%; }	100% {background-position: 0% 50%; } }
-#tab_ADSModule_Instances, #mainBody, .bodyTab { background:none!important; }
-html { background-image:url("Images/oriental-tiles.png")!important; }
+@keyframes gradient { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% {background-position: 0% 50%; } }
+#tab_ADSModule_Instances, #mainBody, .bodyTab { background:none; }
+html { background-image:url("Images/oriental-tiles.png"); }
 body {
-    background: linear-gradient(-45deg, #2f005fAA, #37006fBB, #430088AA, #2f005fAA)!important;
-	background-size: 400% 400%!important;
+    background: linear-gradient(-45deg, #2f005fAA, #37006fBB, #430088AA, #2f005fAA);
+	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
+    height:100vh;
 }
 
   /*Scroll Bar*/
@@ -44,12 +45,16 @@ a:hover { color: #ffffff; }
 .itemList .item:hover { background-color: #423369; }
 .itemList .item.selected { border-right: 4px solid #8000ff; }
 .itemList .item:active { background-color: #470a83; }
-.sideItemList { background-color: #25065775!important; }
-#sideMenuContainer, .subMenuWell { background: linear-gradient(180deg,#333333 50%, #222222); }
+.sideItemList { background-color: #25065775; }
+#sideMenuContainer, .subMenuWell { top:48px; }
+#sideMenuContainer { background: linear-gradient(180deg,#333333dd 50%, #222222dd); }
+.subMenuWell { background: linear-gradient(180deg,#333333 50%, #222222); }
 #barTop #tabInfo { margin-left: 16px; color: #a041ff; }
-#barTop, #barBottom, #userInfo, #userInfo:hover { background-color: #333333; }
-#sideMenu a:active { background-color: #8000ff33; }
+#barTop, #barBottom, #userInfo:hover { background-color: #333333dd; }
+#userInfo { background:none; }
+#sideMenu a:active { background-color: #352644; }
 #sideMenu a.selected { border-right: 4px solid #8000ff; }
+#sideMenu { top: 0px; }
 .menuTitle {
     font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
     font-weight: bolder;
@@ -82,6 +87,7 @@ a:hover { color: #ffffff; }
     text-decoration: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     transition: background-color 0.25s, width 0.25s;
+    border-radius: 0px 0px 5px 5px;
 }
 
 
@@ -164,7 +170,7 @@ a:hover { color: #ffffff; }
     background-color: #8000ffEE;
 }
 .wizardTab .wizardContents {
-    background-color: #36006be3;
+    background-color: #36006b;
     border-bottom: 8px solid #8000ff;
     box-shadow: 2px 2px 12px rgb(0 0 0 / 50%);
 }
@@ -212,16 +218,17 @@ a:hover { color: #ffffff; }
 /*Graphs server display page*/
 .DisplayMetric .DisplayMetricGraph { background: #00000047; }
 
+
 /* dropdown menu*/
-option{background:#202020;}
+option{ background:#202020; color:#fff;}
 /* Input boxes*/
-input[type="text"], input[type="password"], input[type="url"], input[type="number"], input[type="email"], input[type="search"], select, textarea {background: #0000001c;}
+input[type="text"], input[type="password"], input[type="url"], input[type="number"], input[type="email"], input[type="search"], select, textarea { background: #0000001c; }
 
 /* Input checkbox slider*/
 input[type=checkbox]:checked + span { background-color: #8000ff; }
 input[type=checkbox]:checked + span::after { background-color: #333333; }
 input[type=checkbox]:hover + span { border-color: #00000000; }
-button:hover, input[type=button]:hover, input[type=submit]:hover, .button:hover, button:active, input[type="button"]:active, input[type="submit"]:active, .button:active  { background-color: #8000ff; }
+button:hover, input[type=button]:hover, input[type=submit]:hover, .button:hover, button:active, input[type="button"]:active, input[type="submit"]:active, .button:active  { background-color: #8000ff!important; }
 button, input[type=button], input[type=submit], .button {
     background-color: #01010247;
     color: white;
@@ -251,6 +258,7 @@ button, input[type=button], input[type=submit], .button {
     border-left: 1.1em solid #8000ff;
     -webkit-animation: load8 1s infinite linear;
     animation: load8 1s infinite linear;
+    box-shadow: 0px 0px 20px #00000085, inset 0px 0px 20px #00000085;
 }
 
 /*event time*/
@@ -300,6 +308,7 @@ button, input[type=button], input[type=submit], .button {
 }
 
 /*settings box*/
+.settingsGroup .groupBody .settingLabel .settingDescription { display:inline-block; }
 .settingDescription { min-height:0px!important; color:white!important; }
 .settingsGroup .groupBody .settingContainer {
     padding: 16px;
@@ -324,4 +333,18 @@ button, input[type=button], input[type=submit], .button {
     padding: 10px;
     text-align: center;
     background: #8000ff;
+}
+.settingsGroup .groupBody .settingContainer .listEditButton {
+    float: right;
+    margin-right: 0;
+    margin-left: 8px;
+    margin-top: 35px;
+}
+.settingLabel > div:first-of-type {
+    margin: -10px -10px 0px -10px;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    background: #8000ff;
+    white-space: nowrap;
 }
