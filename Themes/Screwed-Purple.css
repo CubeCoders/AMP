@@ -339,7 +339,7 @@ button, input[type=button], input[type=submit], .button {
 /*settings box*/
 .settingsGroup .groupBody .settingLabel .settingDescription { display:inline-block; }
 .settingDescription { min-height:0px!important; color:white!important; }
-.settingContainer > button.slimButton:nth-last-of-type(1), .settingContainer > button.slimButton:nth-last-of-type(2) { float:left!important; width:15% }
+.settingContainer > button.slimButton:nth-last-of-type(1), .settingContainer > button.slimButton:nth-last-of-type(2) { float:left!important; width:11% }
 .settingsGroup .groupBody .settingContainer {
     padding: 16px;
     border-radius: 5px;
