@@ -8,13 +8,18 @@ Obey The Fist!
 
 /*Background image/color*/
 @keyframes gradient { 0% { background-position: 0% 50%; } 50% {background-position: 100% 50%; }	100% {background-position: 0% 50%; } }
-#tab_ADSModule_Instances, #mainBody, .bodyTab { background:none!important; }
-html { background-image:url("Images/oriental-tiles.png")!important; }
+@keyframes slidein { 0% { top: -100%; padding-top:60px; } 50% { top: 0%; padding-top:55px; } 100% { padding-top:32px; } }
+@keyframes fadein { 0% { opacity: 0; } 10% { opacity: 0.1;  } 20% { opacity: 0.2;  } 30% { opacity: 0.3;  } 40% { opacity: 0.4;  } 50% { opacity: 0.5;  } 60% { opacity: 0.6;  } 70% { opacity: 0.7;  } 80% { opacity: 0.8;  } 90% { opacity: 0.9;  } 100% { opacity: 1; } }
+#tab_ADSModule_Instances, #mainBody, .bodyTab { background:none; }
+html { background-image:url("Images/oriental-tiles.png"); }
 body {
-    background: linear-gradient(-45deg, #2f005fAA, #37006fBB, #430088AA, #2f005fAA)!important;
-	background-size: 400% 400%!important;
+    background: linear-gradient(-45deg, #2f005fAA, #37006fBB, #430088AA, #2f005fAA);
+	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
+    height:100vh;
 }
+
+.bodyTab { animation: fadein 200ms; }
 
   /*Scroll Bar*/
 div ::-webkit-scrollbar { width: 5px; background-color: #20023e;}
@@ -28,28 +33,47 @@ a:hover { color: #ffffff; }
 .bgGreen:hover { background-color: #bc78ff; }
 
 /*login box*/
+#loginContainer button { width: 100%;  border-radius:3px;}
 #loginContainer {
-    position: absolute;
-    right: 64px;
-    width: 400px;
-    box-sizing: border-box;
-    background-color: #8000ff69;
-    padding: 32px 32px 32px 32px;
-    border-radius: 0 0 16px 16px;
-    box-shadow: 0 4px 4px rgb(0 0 0 / 50%);
-    min-height: 690px;
+    box-shadow: 0px 0px 50px 6px rgb(0 0 0);
+    border-width: 4px 4px 4px 4px;
+    border-style: solid;
+    border-color: #000000dd;
+    outline: 3px solid #8000ff;
+    background-image: linear-gradient(#8000ff99, #2c055299);
+    background-color: transparent;
+    animation: slidein 1s;
 }
+#loginContainer * {
+    animation: fadein 600ms;
+}
+
+#loginForm input {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 3px solid #0b00169c;
+    outline: 3px solid #8000ff;
+    border-radius: 3px;
+}
+
+/* Branding*/
+.ModuleAuthor::after{ content:' (With Screwed Purple - By Jaiden W)'; }
 
 /*Side Menu*/
 .itemList .item:hover { background-color: #423369; }
 .itemList .item.selected { border-right: 4px solid #8000ff; }
 .itemList .item:active { background-color: #470a83; }
-.sideItemList { background-color: #25065775!important; }
-#sideMenuContainer, .subMenuWell { background: linear-gradient(180deg,#333333 50%, #222222); }
+.sideItemList { background-color: #25065775; }
+#sideMenuContainer, .subMenuWell { top:48px; }
+#sideMenuContainer { background: linear-gradient(180deg,#333333dd 50%, #222222dd); }
+.subMenuWell { background: linear-gradient(180deg,#333333 50%, #222222); }
 #barTop #tabInfo { margin-left: 16px; color: #a041ff; }
-#barTop, #barBottom, #userInfo, #userInfo:hover { background-color: #333333; }
-#sideMenu a:active { background-color: #8000ff33; }
+#barTop, #barBottom, #userInfo:hover { background-color: #333333dd; }
+#userInfo { background:none; }
+#sideMenu a:active { background-color: #352644; }
 #sideMenu a.selected { border-right: 4px solid #8000ff; }
+#sideMenu { top: 0px; }
+#sideMenu a.selected { background-color: #8000ff2b; border-radius: 0px 0 0 8px; }
 .menuTitle {
     font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
     font-weight: bolder;
@@ -82,6 +106,17 @@ a:hover { color: #ffffff; }
     text-decoration: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     transition: background-color 0.25s, width 0.25s;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/*User Roles*/
+#permNodeDescription{ color:#a9a9a9; }
+#tab_usermanagement .sideItemData, #tab_rolemanagement .sideItemData   {
+    background: #333333;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgb(255 255 255 / 5%), inset 0 -2px 4px rgb(0 0 0 / 20%), 0 4px 4px rgb(0 0 0 / 30%);
+    animation:fadein 300ms;
 }
 
 
@@ -164,7 +199,7 @@ a:hover { color: #ffffff; }
     background-color: #8000ffEE;
 }
 .wizardTab .wizardContents {
-    background-color: #36006be3;
+    background-color: #36006b;
     border-bottom: 8px solid #8000ff;
     box-shadow: 2px 2px 12px rgb(0 0 0 / 50%);
 }
@@ -212,10 +247,11 @@ a:hover { color: #ffffff; }
 /*Graphs server display page*/
 .DisplayMetric .DisplayMetricGraph { background: #00000047; }
 
+
 /* dropdown menu*/
-option{background:#202020;}
+option{ background:#202020; color:#fff;}
 /* Input boxes*/
-input[type="text"], input[type="password"], input[type="url"], input[type="number"], input[type="email"], input[type="search"], select, textarea {background: #0000001c;}
+input[type="text"], input[type="password"], input[type="url"], input[type="number"], input[type="email"], input[type="search"], select, textarea { background: #0000001c; }
 
 /* Input checkbox slider*/
 input[type=checkbox]:checked + span { background-color: #8000ff; }
@@ -249,8 +285,9 @@ button, input[type=button], input[type=submit], .button {
     border-right: 1.1em solid #8000ff;
     border-bottom: 1.1em solid rgba(128, 0, 255, 0.2)!important;
     border-left: 1.1em solid #8000ff;
-    -webkit-animation: load8 1s infinite linear;
-    animation: load8 1s infinite linear;
+    -webkit-animation: load8 1s infinite linear!important;
+    animation: load8 1s infinite linear!important;
+    box-shadow: 0px 0px 20px #00000085, inset 0px 0px 20px #00000085;
 }
 
 /*event time*/
@@ -300,7 +337,9 @@ button, input[type=button], input[type=submit], .button {
 }
 
 /*settings box*/
+.settingsGroup .groupBody .settingLabel .settingDescription { display:inline-block; }
 .settingDescription { min-height:0px!important; color:white!important; }
+.settingContainer > button.slimButton:nth-last-of-type(1), .settingContainer > button.slimButton:nth-last-of-type(2) { float:left!important; width:15% }
 .settingsGroup .groupBody .settingContainer {
     padding: 16px;
     border-radius: 5px;
@@ -325,3 +364,27 @@ button, input[type=button], input[type=submit], .button {
     text-align: center;
     background: #8000ff;
 }
+.settingsGroup .groupBody .settingContainer .listEditButton {
+    float: right;
+    margin-right: 0;
+    margin-left: 8px;
+    margin-top: 35px;
+}
+.settingLabel > div:first-of-type {
+    margin: -10px -10px 0px -10px;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    background: #8000ff;
+    white-space: nowrap;
+}
+
+/* mobile fixes*/
+@media screen and (max-width: 660px), screen and (min-resolution: 100dpi) and (max-width: 980px), screen and (min-resolution: 150dpi) and (max-width: 1440px), screen and (min-resolution: 300dpi) and (max-width: 2000px) {
+    .subMenuWell { top: 0px; width:200px;}
+    #bgtext { position: absolute; }
+    .menuTitle {font-size:20pt; }
+    #sideMenuContainer { background: linear-gradient(180deg,#333333 50%, #222222); overflow:hidden; }
+    #barTop, #barBottom { background-color: #333333; }
+}
+
