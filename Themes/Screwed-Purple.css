@@ -1,6 +1,6 @@
 /*
 Screwed Purple theme by Jaiden W
-Updated 2022/05/05
+Updated 2022/07/04
 Obey The Fist!
 */
 
@@ -378,11 +378,47 @@ button, input[type=button], input[type=submit], .button {
     background: #8000ff;
     white-space: nowrap;
 }
+#bgtext { position: absolute; bottom:50px; }
+
+
+
+@media screen and (max-width: 660px), screen and (min-resolution: 100dpi) and (max-width: 980px), screen and (min-resolution: 150dpi) and (max-width: 1440px), screen and (min-resolution: 300dpi) and (max-width: 2000px){
+#bgtext {
+    position: absolute;
+    bottom: -83px!important;
+    right: 0px!important;
+    left: -173px!important;
+}
+}
+
+
+@media screen and (max-width: 1000px) {
+#bgtext {
+    transform: rotate(-90deg) translate(256px, -54px);
+    width: 220px;
+    transform-origin: top right;
+    border-top: none;
+    padding: 0px!important;
+    bottom: -35px!important;
+    text-align: right;
+    width: 236px;
+    right: 9px;
+
+}
+#updateAvailable button {
+    background-color: transparent;
+    border-color: white;
+    height: 32px;
+    border-radius: 4px;
+    margin: 0px 4px;
+    font-size: 11pt;
+}
+}
 
 /* mobile fixes*/
 @media screen and (max-width: 660px), screen and (min-resolution: 100dpi) and (max-width: 980px), screen and (min-resolution: 150dpi) and (max-width: 1440px), screen and (min-resolution: 300dpi) and (max-width: 2000px) {
     .subMenuWell { top: 0px; width:200px;}
-    #bgtext { position: absolute; }
+    #bgtext { position: absolute; bottom:0px; }
     .menuTitle {font-size:20pt; }
     #sideMenuContainer { background: linear-gradient(180deg,#333333 50%, #222222); overflow:hidden; }
     #barTop, #barBottom { background-color: #333333; }
