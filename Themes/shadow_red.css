@@ -1,0 +1,400 @@
+/*
+Screwed Purple theme by Jaiden W
+Updated 2022/05/05
+Obey The Fist!
+
+Recolored and Renamed by Panics
+*/
+
+
+
+/*Background image/color*/
+@keyframes gradient { 0% { background-position: 0% 50%; } 50% {background-position: 100% 50%; }	100% {background-position: 0% 50%; } }
+@keyframes slidein { 0% { top: -100%; padding-top:60px; } 50% { top: 0%; padding-top:55px; } 100% { padding-top:32px; } }
+@keyframes fadein { 0% { opacity: 0; } 10% { opacity: 0.1;  } 20% { opacity: 0.2;  } 30% { opacity: 0.3;  } 40% { opacity: 0.4;  } 50% { opacity: 0.5;  } 60% { opacity: 0.6;  } 70% { opacity: 0.7;  } 80% { opacity: 0.8;  } 90% { opacity: 0.9;  } 100% { opacity: 1; } }
+#tab_ADSModule_Instances, #mainBody, .bodyTab { background:none; }
+html { 
+	background-image:url("Images/bg.jpg"); 
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+body {
+    background: linear-gradient(-45deg, #000000aa, #000000bb, #000000aa, #000000aa);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    height:100vh;
+}
+
+.bodyTab { animation: fadein 200ms; }
+
+  /*Scroll Bar*/
+div ::-webkit-scrollbar { width: 5px; background-color: #000000;}
+div ::-webkit-scrollbar-thumb { width: 5px; background-color: #ff0000; }
+div ::-webkit-scrollbar-thumb:hover { background-color: #ff0000; }
+
+  /*Buttons/links*/
+a { color: #000000; }
+a:hover { color: #ffffff; }
+
+.provisionSetting{
+	height: auto !important;
+}
+
+/*login box*/
+#loginContainer button { width: 100%;  border-radius:3px;}
+#loginContainer {
+    box-shadow: 0px 0px 50px 6px rgb(0 0 0);
+    border-width: 4px 4px 4px 4px;
+    border-style: solid;
+    border-color: #000000dd;
+    outline: 3px solid #540000;
+    background-image: linear-gradient(#af000099, #52050599);
+    background-color: transparent;
+    animation: slidein 1.5s;
+}
+#loginContainer * {
+    animation: fadein 600ms;
+}
+
+#loginForm input {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 3px solid #0b00169c;
+    outline: 3px solid #620b0b;
+    border-radius: 3px;
+}
+
+#forgotLogin{
+	display: none;
+}
+
+/* Branding*/
+.ModuleAuthor::after{ content:' (With Screwed Purple - By Jaiden W)'; }
+
+/*Side Menu*/
+.itemList .item:hover { background-color: #cb0f0f; }
+.itemList .item.selected { border-right: 4px solid #970000; }
+.itemList .item:active { background-color: #580909; }
+.sideItemList { background-color: #0a0a0a5c; }
+#sideMenuContainer, .subMenuWell { top:48px; }
+#sideMenuContainer { background: linear-gradient(180deg,#333333dd 50%, #222222dd); }
+.subMenuWell { background: linear-gradient(180deg,#333333 50%, #222222); }
+#barTop #tabInfo { margin-left: 16px; color: #ff0000; }
+#barTop, #barBottom, #userInfo:hover { background-color: #333333dd; }
+#userInfo { background:none; }
+#sideMenu a:active { background-color: #442626; }
+#sideMenu a.selected { border-right: 4px solid #970000; }
+#sideMenu { top: 0px; }
+#sideMenu a.selected { background-color: #ff00002b; border-radius: 0px 0 0 8px; }
+.menuTitle {
+    font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
+    font-weight: bolder;
+    color: #ff0000;
+    font-size: 24pt;
+    padding: 20px 16px 20px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+#sideMenu a img {
+    width: 24px;
+    height: 24px;
+    padding: 12px 0.5em 12px 0;
+    float: left;
+    filter: invert(20%) sepia(44%) saturate(430) hue-rotate(0deg) brightness(145%) contrast(90%);
+}
+#sideMenu a {
+    font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
+    font-weight: bold;
+    font-size: 130%;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    display: block;
+    padding: 0.1em 1em 0.1em 0.7em;
+    color: #fff;
+    vertical-align: middle;
+    height: 48px;
+    line-height: 48px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.25s, width 0.25s;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/*User Roles*/
+#permNodeDescription{ color:#a9a9a9; }
+#tab_usermanagement .sideItemData, #tab_rolemanagement .sideItemData   {
+    background: #333333;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgb(255 255 255 / 5%), inset 0 -2px 4px rgb(0 0 0 / 20%), 0 4px 4px rgb(0 0 0 / 30%);
+    animation:fadein 300ms;
+}
+
+
+/*Scheduled tasks*/
+.scheduleTriggerInfo {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ff0000;
+    margin-top: 8px;
+    background-color: #00000055;
+    overflow: hidden;
+}
+.scheduleTriggerDescription {
+    background-color: #850000;
+    padding: 8px;
+    color: ;
+}
+.scheduleTriggerHeaderItem .scheduleHeader {
+    color: #FFF;
+    font-weight: 800;
+}
+.scheduleTriggerTaskDropper {
+    float: right;
+    background-color: #00000045;
+    height: 40px;
+    margin: -8px -8px 0 0;
+    border-radius: 0 0 0 4px;
+    border: 1px solid #341111;
+    border-top: none;
+    border-right: none;
+    overflow: hidden;
+}
+
+/*Toast*/
+.ThirdPartyNotice {
+    float: left;
+    padding: 64px;
+    z-index: 1;
+    position: absolute;
+    background-color: rgb(27, 16, 34);
+    height: 100%;
+    box-sizing: border-box;
+}
+.notificationProgessContainer {
+    width: 100%;
+    height: 16px;
+    border: 1px solid #ff0000;
+    margin-top: 4px;
+    overflow: hidden;
+    position: relative;
+}
+.notificationProgressBar {
+    height: 100%;
+    width: 0;
+    background-color: #ff0000;
+    transition: width 0.5s ease-in-out;
+    margin-left: 0;
+    overflow: visible;
+    position: absolute;
+}
+
+/* Server Entry*/
+.ServerGroup.Online .ServerGroupHeader { background: linear-gradient(to right, #bf0000 0%, rgba(0, 0, 0, 0.3) 85%); }
+.desktopContextMenu.desktopContextMenu .buttonListSeparator { border-bottom: 1px solid #bf0000 !important; }
+.desktopContextMenu { background: #320707 !important; border: 2px solid #bf0000; }
+.ServerEntry .ServerEntryInfo tr { background:#00000088; }
+.ServerEntry .ServerEntryInfo tr:nth-child(2n) { background: #00000038; }
+.ServerEntry.NewServerEntry { background-color: #cd3737 !important; text-align: center; }
+.ServerEntry:hover { border: 1px solid #ff0000 !important; }
+.ServerGroup{ background: #00000061; }
+.ServerEntry .ServerEntryImage {
+    width: 100%;
+    height: calc(100% - 25px);
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    filter: brightness(0.55);
+    background-color: #ff0000EE;
+}
+.wizardTab .wizardContents {
+    background-color: #420000;
+    border-bottom: 8px solid #ff0000;
+    box-shadow: 2px 2px 12px rgb(0 0 0 / 50%);
+}
+.wizardTab .wizardContents h2 {
+    margin: -16px;
+    padding: 8px 16px 8px 16px;
+    width: 100%;
+    background-color: #bf0000;
+    margin-bottom: 16px;
+}
+.provisionSetting img {
+    width: 98%;
+    border: 1px solid #bf0000;
+    box-shadow: 0px 0px 5px black;
+}
+.ServerGroup.Online .ServerGroupHeader {
+    background: linear-gradient(to right, #ff0000 0%, #7b1a1a 85%)!important;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px black;
+}
+.Platform-2, .Platform-1 {
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 170px;
+    filter: brightness(0.90);
+}
+.ServerEntry .ServerEntryHeader {
+    background-color: #a10b13 !important;
+    padding: 4px !important;
+    margin: 2px !important;
+    min-height: 0px !important;
+    margin-bottom: 2px;
+    position: relative;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #00000099;
+}
+.ServerEntry .ServerEntryHeader h4 {
+    margin: 0;
+    font-weight: 1000;
+}
+
+/*Graphs server display page*/
+.DisplayMetric .DisplayMetricGraph { background: #00000047; }
+
+
+/* dropdown menu*/
+option{ background:#202020; color:#fff;}
+/* Input boxes*/
+input[type="text"], input[type="password"], input[type="url"], input[type="number"], input[type="email"], input[type="search"], select, textarea { background: #00000087; }
+
+/* Input checkbox slider*/
+input[type=checkbox]:checked + span { background-color: #ff0000; }
+input[type=checkbox]:checked + span::after { background-color: #333333; }
+input[type=checkbox]:hover + span { border-color: #00000000; }
+button:hover, input[type=button]:hover, input[type=submit]:hover, .button:hover, button:active, input[type="button"]:active, input[type="submit"]:active, .button:active  { background-color: #ff0000; }
+button, input[type=button], input[type=submit], .button {
+    background-color: #01010247;
+    color: white;
+    font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
+    font-weight: lighter;
+    font-size: larger;
+    border: 1px solid #ff0000;
+    min-width: 96px;
+    cursor: pointer;
+    outline: none;
+    height: 48px;
+    margin-right: 8px;
+    transition: background-color 0.3s;
+    border-radius: 2px;
+}
+
+
+ /*loading*/
+.loader {
+    margin: 6em auto;
+    font-size: 10px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 1.1em solid rgba(155, 0, 0, 0.2)!important;
+    border-right: 1.1em solid #ff0000;
+    border-bottom: 1.1em solid rgba(155, 0, 0, 0.2)!important;
+    border-left: 1.1em solid #ff0000;
+    -webkit-animation: load8 1s infinite linear!important;
+    animation: load8 1s infinite linear!important;
+    box-shadow: 0px 0px 20px #00000085, inset 0px 0px 20px #00000085;
+}
+
+/*event time*/
+.scheduleTriggerTask { padding: 8px; border-bottom: 1px solid #ff0000; }
+.iconButton:hover { background-color: #0000004d; }
+.iconButton:active { background-color: #ff0000; }
+.timeSegment.selected { background-color: #ff0000; }
+.timeSegment:hover { padding:10px; border:1px solid #ff0000; }
+.timeSegment {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+    box-sizing: border-box;
+    padding: 4px;
+    cursor: pointer;
+    float: left;
+    user-select: none;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+  /*file manager*/
+.fmPathSegment:hover { background-color: #a858f7!important; }
+.fmPathSegment:hover::after { border-left-color: #a858f7!important; }
+.fileManagerEntry:hover { background: #ff000061!important; }
+.fmPathSegment::after {
+    width: 0;
+    height: 0;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-left: 10px solid #ff0000!important;
+    content: ' ';
+    display: inline-block;
+    float: right;
+    position: relative;
+    left: 10px;
+}
+.fmPathSegment {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 12pt;
+    background-color: #ff0000!important;
+    padding-left: 20px;
+    line-height: 32px;
+    margin-left: -4px;
+}
+
+/*settings box*/
+.settingsGroup .groupBody .settingLabel .settingDescription { display:inline-block; }
+.settingDescription { min-height:0px!important; color:white!important; }
+.settingContainer > button.slimButton:nth-last-of-type(1), .settingContainer > button.slimButton:nth-last-of-type(2) { float:left!important; width:11% }
+.settingsGroup .groupBody .settingContainer {
+    padding: 16px;
+    border-radius: 5px;
+    background-color: #00000061;
+    box-shadow: inset 0 2px 4px rgb(255 255 255 / 5%), inset 0 -2px 4px rgb(0 0 0 / 20%), 0 4px 4px rgb(0 0 0 / 30%);
+    border: 2px solid #ff000099;
+}
+.settingsGroup .groupBody .settingContainer .settingWarning {
+    font-size: 8pt;
+    color: red;
+    padding: 0px;
+    margin-top: 25px;
+}
+.settingLabel  > label:first-of-type{
+    margin-top:9px;
+    margin-left:-20px!important;
+}
+.settingLabel  > div:first-of-type{
+    margin: -10px -10px 0px -10px;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    background: #ff0000;
+}
+.settingsGroup .groupBody .settingContainer .listEditButton {
+    float: right;
+    margin-right: 0;
+    margin-left: 8px;
+    margin-top: 35px;
+}
+.settingLabel > div:first-of-type {
+    margin: -10px -10px 0px -10px;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    background: #ff0000;
+    white-space: nowrap;
+}
+
+/* mobile fixes*/
+@media screen and (max-width: 660px), screen and (min-resolution: 100dpi) and (max-width: 980px), screen and (min-resolution: 150dpi) and (max-width: 1440px), screen and (min-resolution: 300dpi) and (max-width: 2000px) {
+    .subMenuWell { top: 0px; width:200px;}
+    #bgtext { position: absolute; bottom:0px; }
+    .menuTitle {font-size:20pt; }
+    #sideMenuContainer { background: linear-gradient(180deg,#333333 50%, #222222); overflow:hidden; }
+    #barTop, #barBottom { background-color: #333333; }
+}
+
