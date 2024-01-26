@@ -1,0 +1,87 @@
+:root {
+  --primaryColor: #05070e;
+  --accentColor: #3a6ea5;
+  --fontFamily: 'Titillium Web', sans-serif;
+}
+
+body, .bodyTab {
+  background: linear-gradient(to bottom, var(--primaryColor), #05070e);
+  color: #fff;
+  font-family: var(--fontFamily);
+  margin: 0;
+}
+
+#loginContainer, .sideItemList {
+  background: linear-gradient(to bottom, #0c0f23, var(--primaryColor));
+  border-radius: 10px;
+}
+
+#barTop, #userInfo {
+  background: linear-gradient(to bottom, #0f1227, #0c0f23);
+  border-radius: 10px;
+}
+
+#sideMenuContainer, .subMenuWell, #mainBody {
+  background: linear-gradient(to bottom, #0f1227, #0c0f23);
+  border-radius: 10px;
+}
+
+#sideMenu a {
+  font-size: 16px;
+  color: #fff;
+  transition: background 0.3s;
+
+  &:active {
+    background: #030408;
+  }
+
+  &.selected {
+    background: linear-gradient(to bottom, #3a6ea5, #3a6ea5);
+    color: #fff;
+    border-radius: 8px;
+  }
+}
+
+input[type=text], input[type=password], input[type=url], input[type=number], input[type=email], input[type=search], select, textarea {
+  background: #05070e;
+  color: #fff;
+  font-family: var(--fontFamily);
+  border: 1px solid #3a6ea5;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 4px 0;
+}
+
+input.searchBox {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #3a6ea5;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 4px 0;
+}
+
+.wizardTab .wizardContents {
+  background: linear-gradient(to bottom, #3a6ea5, var(--primaryColor));
+  border-bottom: 8px solid #3a6ea5;
+  border-radius: 10px;
+}
+
+.wizardTab .wizardContents h2 {
+  background: #3a6ea5;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.scheduleTriggerInfo {
+  border: 1px solid #3a6ea5;
+  background: #0f1227;
+  border-radius: 10px;
+}
+
+.settingsGroup .groupBody .settingContainer {
+  background: linear-gradient(to bottom, #0f1227, #0c0f23);
+  color: #fff;
+  border-radius: 10px;
+}
