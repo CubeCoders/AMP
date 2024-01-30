@@ -1,0 +1,112 @@
+﻿@keyframes slidein { 0% { top: -100%; padding-top:60px; } 50% { top: 0%; padding-top:55px; } 100% { padding-top:32px; } }
+
+body {
+  background-image: url(../Themes/fantasy.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+.bodyTab {
+  background: none;
+}
+.bgGreen,
+button {
+  background-color: rgba(0,0,0,0.5);
+  border: 1px solid black;
+}
+.bgRed {
+  background-color: #06c;
+  border: none;
+}
+.ServerGroup.Online .ServerGroupHeader,
+.ServerEntry.NewServerEntry,
+.bgGreen:hover,
+button:hover,
+.datastoreItem,
+.wizardTab .wizardContents,
+.wizardTab .wizardContents,
+.settingsGroup .groupBody .settingContainer,
+.scheduleTriggerInfo {
+  background: rgb(2,0,36) !important;
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  border-bottom: none;
+}
+.settingsGroup .groupBody .settingLabel .settingDescription,
+.sideItemData .description, .sideItemData > p,
+.permNodeDescription {
+  color: white;
+}
+.ServerEntry.GuidePrompt,
+#loginContainer,
+.sideItemList,
+#consoleArea,
+.scheduleTriggerTaskDropper {
+  background: rgba(0,0,0,0.5) !important;
+  border: none;
+}
+.wizardTab .wizardContents h2,
+.scheduleTriggerDescription {
+  background: rgba(0,0,0,0.3) !important;
+}
+.scheduleTriggerTask {
+  border: none;
+}
+#loginContainer {
+  background: rgba(0,0,0,0.5) !important;
+  animation: slidein 1s;
+}
+#barTop {
+  background-color: rgba(0,0,0,0.8);
+}
+#userInfo {
+  background: none !important;
+}
+
+.ServerGroup.Platform-1,
+.ServerGroup.Platform-2 {
+  background-image: none !important;
+}
+.subMenuWell,
+#mainBody,
+#fileManagerList {
+  background-color: rgba(0,0,0,0.5);
+}
+#sideMenu a {
+  font-size: 100%;
+}
+#sideMenu a:active {
+  background-color: #111;
+}
+#sideMenu a.selected {
+  background-color: #222;
+  color: #5EA8DE;
+}
+#sideMenuContainer,
+.subMenuWell {
+  background-color: rgba(0,0,0,0.9) !important;
+}
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=number],
+input[type=email],
+select,
+textarea {
+  background-color: rgba(0,0,0,0.5) !important;
+}
+
+input.searchBox {
+  background-color: transparent;
+}
+.scheduleTriggerInfo {
+  border: 1px solid #444;
+  background-color: darkmagenta !important;
+}
+.settingsGroup .groupBody .settingContainer,
+.tooltiptext {
+  background-color: darkmagenta !important;
+}
+input[type="checkbox"]:checked + span,
+input[type="checkbox"]:checked + span::after {
+  background: rgb(200,16,299);
+}
