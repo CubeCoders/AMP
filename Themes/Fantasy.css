@@ -33,6 +33,7 @@ button:hover,
 input[type=button]:hover,
 input[type=submit]:hover,
 .button:hover {
+  border: 1px black !important;
   background-color: darkmagenta !important;
 }
 .datastoreItem,
@@ -146,5 +147,11 @@ input[type="checkbox"]:checked + span::after {
 
 .bgInfo {
   background-color: rgb(160, 0, 160) !important;
-  border: none;
+  border: 1px black !important;
+}
+
+.ServerGroupHeader{
+  background: rgb(2,0,36) !important;
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  border-bottom: none;
 }
