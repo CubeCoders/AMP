@@ -32,6 +32,7 @@ button {
 button:hover,
 input[type=button]:hover,
 input[type=submit]:hover,
+/*overall button hover*/
 .button:hover {
   border: 1px black !important;
   background-color: darkmagenta !important;
