@@ -22,7 +22,7 @@ button {
 }
 
 .bgRed {
-  background-color: #06c;
+  background-color: rgb(187, 0, 187);
   border: none;
 }
 
@@ -32,10 +32,11 @@ button {
 button:hover,
 input[type=button]:hover,
 input[type=submit]:hover,
-/*overall button hover*/
+
+/*Overall Button Hover*/
 .button:hover {
   border: 1px black !important;
-  background-color: darkmagenta !important;
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
 }
 .datastoreItem,
 .wizardTab .wizardContents,
@@ -165,4 +166,19 @@ input[type="checkbox"]:checked + span::after {
   background: rgb(2,0,36) !important;
   background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
   border-bottom: none;
+}
+
+/*Disabled buttons*/
+.disabled {
+  background-color: rgba(0,0,0,0.5);
+  border: 1px solid black;
+  color: #666;
+}
+
+/*Side Icons*/
+button.slideIcon,
+input[type=button].slideIcon,
+input[type=submit].slideIcon,
+.button.slideIcon {
+  transition: background-color 0.3s, background-position 0.3s;
 }
