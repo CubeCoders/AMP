@@ -30,11 +30,6 @@ button {
 .ServerEntry.NewServerEntry,
 .bgGreen:hover,
 button:hover,
-input[type=button]:hover,
-input[type=submit]:hover,
-.button:hover {
-  background-color: darkmagenta !important;
-}
 .datastoreItem,
 .wizardTab .wizardContents,
 .wizardTab .wizardContents,
