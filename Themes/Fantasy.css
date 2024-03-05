@@ -211,3 +211,9 @@ input[type=submit].slideIcon,
 .ServerEntryImage {
   width: 100%
 }
+
+/*Update Button Inside Instance*/
+.bgAmber {
+  background-color: rgb(160, 0, 160);
+  border: 1px solid black;
+}
