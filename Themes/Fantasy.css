@@ -138,3 +138,8 @@ input[type="checkbox"]:checked + span,
 input[type="checkbox"]:checked + span::after {
   background: rgb(200,16,299);
 }
+
+.ServerEntryStatus {
+  background-color: darkmagenta !important;
+  border: none;
+}
