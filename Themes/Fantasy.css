@@ -1,4 +1,6 @@
-﻿@keyframes slidein {
+﻿/*Fantasy Theme By IceOfWraith. Edited by ssfdre38 for 2.5*/
+
+@keyframes slidein {
   0% { top: -100%; padding-top:60px; }
   50% { top: 0%; padding-top:55px; }
   100% { padding-top:32px; }
