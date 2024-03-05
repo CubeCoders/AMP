@@ -140,22 +140,26 @@ input[type="checkbox"]:checked + span::after {
   background: rgb(200,16,299);
 }
 
+/*New status bar in the instance view*/
 .ServerEntryStatus {
   background-color: darkmagenta !important;
   border: none;
 }
 
+/*Buttons inside new instance view box*/
 .bgInfo {
   background-color: rgb(160, 0, 160) !important;
   border: 1px black !important;
 }
 
+/*Instance Status Bar*/
 .ServerGroupHeader{
   background: rgb(2,0,36) !important;
   background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
   border-bottom: none;
 }
 
+/*New Instances Box*/
 .ServerEntry.NewServerEntry {
   background: rgb(2,0,36) !important;
   background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
