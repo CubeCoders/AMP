@@ -143,3 +143,8 @@ input[type="checkbox"]:checked + span::after {
   background-color: darkmagenta !important;
   border: none;
 }
+
+.bgInfo {
+  background-color: rgb(160, 0, 160) !important;
+  border: none;
+}
