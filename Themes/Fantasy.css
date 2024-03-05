@@ -182,3 +182,8 @@ input[type=submit].slideIcon,
 .button.slideIcon {
   transition: background-color 0.3s, background-position 0.3s;
 }
+
+/*Instance Preview Image*/
+.ServerEntryImage {
+  width: 100%
+}
