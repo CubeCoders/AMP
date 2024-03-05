@@ -217,3 +217,17 @@ input[type=submit].slideIcon,
   background-color: rgb(160, 0, 160);
   border: 1px solid black;
 }
+
+/*Diagnostics Table*/
+#diagTable,
+#currentSessionsTable,
+#auditLogTable {
+  border-collapse: unset;
+  width: 100%;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.05), inset 0 -2px 4px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.3);
+}
