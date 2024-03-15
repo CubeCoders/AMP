@@ -1,4 +1,4 @@
-﻿@keyframes slidein {
+@keyframes slidein {
   0% { top: -100%; padding-top:60px; }
   50% { top: 0%; padding-top:55px; }
   100% { padding-top:32px; }
@@ -29,14 +29,20 @@ button {
 .ServerGroup.Online .ServerGroupHeader,
 .ServerEntry.NewServerEntry,
 .bgGreen:hover,
-.button:hover,
 .datastoreItem,
 .wizardTab .wizardContents,
 .settingsGroup .groupBody .settingContainer,
 .scheduleTriggerInfo {
-  background: rgb(2,0,36) !important;
+  background-color: rgb(2,0,36) !important;
   background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
   border-bottom: none;
+}
+
+button:hover,
+input[type=button]:hover,
+input[type=submit]:hover,
+.button:hover {
+  background-color: rgb(2,0,36);
 }
 
 .settingsGroup .groupBody .settingLabel .settingDescription,
