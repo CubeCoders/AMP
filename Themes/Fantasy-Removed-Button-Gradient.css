@@ -28,21 +28,19 @@ button {
 
 .ServerGroup.Online .ServerGroupHeader,
 .ServerEntry.NewServerEntry,
-.bgGreen:hover,
 .datastoreItem,
 .wizardTab .wizardContents,
 .settingsGroup .groupBody .settingContainer,
 .scheduleTriggerInfo {
   background-color: rgb(2,0,36) !important;
-  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  background-image: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
   border-bottom: none;
 }
 
-button:hover,
-input[type=button]:hover,
-input[type=submit]:hover,
-.button:hover {
+.bgGreen:hover,
+button:hover {
   background-color: rgb(2,0,36);
+  border-bottom: none;
 }
 
 .settingsGroup .groupBody .settingLabel .settingDescription,
