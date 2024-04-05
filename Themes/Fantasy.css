@@ -2,7 +2,6 @@
 
 @keyframes slidein {
   0% { inset-block-start: -100%; padding-block-start:60px; }
-  50% { inset-block-start: 0%; padding-block-start:55px; }
   100% { padding-block-start:32px; }
 }
 
@@ -277,4 +276,17 @@ input[type=submit].slideIcon,
   border-block-end: none;
   transition: none;
   animation: fadeIn 1s;
+}
+
+/*Pop-up Infomation Panel*/
+.modalpanel {
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  border-block-end: 4px transparent (0, 0, 0, 0.8);
+  transition: fadeIn 1s !important;
+  inline-size: 750px;
+  transform: translateY(-100%);
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  max-inline-size: 95%;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
 }
