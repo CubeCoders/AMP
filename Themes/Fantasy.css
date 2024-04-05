@@ -199,6 +199,13 @@ input[type="checkbox"]:checked + span::after {
   border-block-end: none;
 }
 
+/*New Instances Box/button*/
+.ServerEntry.NewServerEntry {
+  background: rgb(2,0,36) !important;
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  border-block-end: none;
+}
+
 /*Disabled buttons*/
 button:disabled,
 input[type=button]:disabled,
