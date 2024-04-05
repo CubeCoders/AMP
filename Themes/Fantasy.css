@@ -1,11 +1,20 @@
 ﻿/*Fantasy Theme By IceOfWraith. Edited by ssfdre38 for 2.5*/
 
 @keyframes slidein {
-  0% { top: -100%; padding-top:60px; }
-  50% { top: 0%; padding-top:55px; }
-  100% { padding-top:32px; }
+  0% { inset-block-start: -100%; padding-block-start:60px; }
+  50% { inset-block-start: 0%; padding-block-start:55px; }
+  100% { padding-block-start:32px; }
 }
 
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
+.yourElement {
+  animation: fadeIn 2s;
+}
 /*Background Image*/
 body {
   background-image: url(../Themes/fantasy.jpg);
@@ -43,8 +52,9 @@ input[type=submit]:hover,
 
 /*Buttons*/
 .button {
+  background-color: transparent;
   color: white;
-  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  background: transparent(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
   font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
   font-weight: lighter;
   font-size: larger;
@@ -68,7 +78,7 @@ input[type=submit]:hover,
 .scheduleTriggerInfo {
   background: rgb(2,0,36) !important;
   background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
-  border-bottom: none;
+  border-block-end: none;
 }
 
 .settingsGroup .groupBody .settingLabel .settingDescription,
@@ -97,7 +107,7 @@ input[type=submit]:hover,
 /*Login Screen*/
 #loginContainer {
   background: rgba(0,0,0,0.5) !important;
-  animation: slidein 1s;
+  animation: fadeIn 2s;
 }
 
 #barTop {
@@ -135,7 +145,12 @@ input[type=submit]:hover,
 /*Left Side Menu*/
 #sideMenuContainer,
 .subMenuWell {
-  background-color: rgba(0,0,0,0.9) !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+#multiMenuContainer
+.subMenuWell {
+  background: black !important;
 }
 
 input[type=text],
@@ -183,14 +198,14 @@ input[type="checkbox"]:checked + span::after {
 .ServerGroupHeader{
   background: rgb(2,0,36) !important;
   background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
-  border-bottom: none;
+  border-block-end: none;
 }
 
 /*New Instances Box*/
 .ServerEntry.NewServerEntry {
   background: rgb(2,0,36) !important;
   background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
-  border-bottom: none;
+  border-block-end: none;
 }
 
 /*Disabled buttons*/
@@ -233,7 +248,7 @@ input[type=submit].slideIcon,
 
 /*Instance Preview Image*/
 .ServerEntryImage {
-  width: 100%
+  inline-size: 100%
 }
 
 /*Update Button Inside Instance*/
@@ -247,7 +262,7 @@ input[type=submit].slideIcon,
 #currentSessionsTable,
 #auditLogTable {
   border-collapse: unset;
-  width: 100%;
+  inline-size: 100%;
   padding: 8px;
   background-color: transparent;
   border-radius: 8px;
