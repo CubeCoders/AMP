@@ -12,6 +12,11 @@
   100% {opacity: 1;}
 }
 
+@keyframes fadeInniw {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 .yourElement {
   animation: fadeIn 2s;
 }
@@ -269,4 +274,13 @@ input[type=submit].slideIcon,
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
   box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.05), inset 0 -2px 4px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+/*New Instance wizard*/
+.wizardTab .wizardContents {
+  background: rgb(2,0,36) !important;
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  border-block-end: none;
+  transition: none;
+  animation: fadeInniw 1s;
 }
