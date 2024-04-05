@@ -11,11 +11,6 @@
   100% {opacity: 1;}
 }
 
-@keyframes fadeInniw {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
 .yourElement {
   animation: fadeIn 2s;
 }
@@ -281,5 +276,5 @@ input[type=submit].slideIcon,
   background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
   border-block-end: none;
   transition: none;
-  animation: fadeInniw 1s;
+  animation: fadeIn 1s;
 }
