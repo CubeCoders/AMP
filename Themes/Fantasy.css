@@ -41,7 +41,19 @@ button {
 }
 
 /*Server Group*/
-.ServerGroup.Online .ServerGroupHeader,
+.ServerGroup.Online .ServerGroupHeader {
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  color: white;
+  font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
+  font-weight: lighter;
+  font-size: larger;
+  border: 1px solid rgba(0,0,0,0.5);
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
 .ServerEntry.NewServerEntry,
 .bgGreen:hover,
 button:hover,
@@ -50,9 +62,9 @@ input[type=submit]:hover,
 
 /*Buttons*/
 .button {
-  background-color: transparent;
+  background-color: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
   color: white;
-  background: transparent(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
   font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
   font-weight: lighter;
   font-size: larger;
@@ -65,9 +77,11 @@ input[type=submit]:hover,
 }
 
 /*Overall Button Hover*/
+
 .button:hover {
   border: 1px black !important;
   background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  position: relative;
 }
 .datastoreItem,
 .wizardTab .wizardContents,
