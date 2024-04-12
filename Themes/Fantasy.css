@@ -41,19 +41,7 @@ button {
 }
 
 /*Server Group*/
-.ServerGroup.Online .ServerGroupHeader {
-  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
-  color: white;
-  font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
-  font-weight: lighter;
-  font-size: larger;
-  border: 1px solid rgba(0,0,0,0.5);
-  cursor: pointer;
-  outline: none;
-  transition: background-color 0.3s;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-}
+.ServerGroup.Online .ServerGroupHeader,
 .ServerEntry.NewServerEntry,
 .bgGreen:hover,
 button:hover,
@@ -62,9 +50,9 @@ input[type=submit]:hover,
 
 /*Buttons*/
 .button {
-  background-color: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  background-color: transparent;
   color: white;
-  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  background: transparent(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
   font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
   font-weight: lighter;
   font-size: larger;
@@ -77,11 +65,9 @@ input[type=submit]:hover,
 }
 
 /*Overall Button Hover*/
-
 .button:hover {
   border: 1px black !important;
   background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
-  position: relative;
 }
 .datastoreItem,
 .wizardTab .wizardContents,
@@ -294,7 +280,7 @@ input[type=submit].slideIcon,
 
 /*Pop-up Infomation Panel*/
 .modalpanel {
-  background-color: #222;
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
   border-block-end: 4px transparent (0, 0, 0, 0.8);
   transition: fadeIn 1s !important;
   inline-size: 750px;
