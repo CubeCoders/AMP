@@ -1,6 +1,14 @@
 /*Theme created by Only_a_Shadow*/
 
 /* 
+!!!IMPORTANT NOTE!!!
+THE "forgotLogin" IS SHOW IN THE THEME 
+I DONT NEED THIS IN MY CASE, 
+IF YOU ALSO DONT NEED IT REMOVE THE COMMENT STAR AND BACKSLASH
+AROUND THE DIV-SELECTOR (Search with Ctrl+F)
+*/
+
+/* 
 Colors:
 Red:...........be2e2e
 Darkred:.......852222
@@ -12,9 +20,8 @@ Lightpurple:...493383
 Darkpurple:....211441
 Background:....0c091c
 FADE: linear-gradient(#30118099, #52050599)
-FADE bt: linear-gradient(0, rgba(0, 0, 0, 0.3), transparent)
-Darken: rgba(0, 0, 0, 0.3);
-Lighten: rgba(255, 255, 255, 0.1)
+FADE: LOW linear-gradient(0, rgba(0, 0, 0, 0.3), transparent)
+Darker: rgba(0, 0, 0, 0.3);
 */
 
 
@@ -100,8 +107,13 @@ table.rowSelect tbody tr:hover {
   border-radius: 8px;
   text-align: center;
 }
+/*
 #forgotLogin{
-display: none !important; 
+  display: none !important; 
+}
+*/
+#loginLogo{
+  margin-top: 64px;
 }
 #loginFailureReason {
   background-color: #be2e2e;
@@ -349,7 +361,6 @@ input[type=checkbox]:checked + span::after {
 #sideMenuContainer,
 .subMenuWell {
   height: 96.7%;
-  margin-top: 48px;
   margin-bottom: 48px;
   background-image: linear-gradient(#301180bb, #52050599);
   background-color: #272727;
@@ -394,6 +405,12 @@ a[href="#tab_support"] {
 .ServerGroupOnline,
 .ServerGroupHeader {
   background: #219243 !important;
+}
+.ServerEntry .ServerEntryStatus img {
+  height: 14px !important;
+  float: right;
+  margin-right: 4px;
+  margin-top: 2px;
 }
 
 
@@ -679,7 +696,7 @@ div.twoFactorInput {
     display: contents;
   }
   #sideMenuContainer {
-    padding-top: 4px;
+    padding-top: 0px;
   }
   .ServerGroupContainer, 
   .datastoreContainer {
@@ -693,7 +710,7 @@ div.twoFactorInput {
   }
   #barTop #tabInfo {
     position: absolute;
-    left: 64px;
+    left: 0px;
   }
   #updateAvailable{
     position: relative;
@@ -704,6 +721,10 @@ div.twoFactorInput {
   #updateAvailable button{
     max-height: 25px;
     padding-bottom: 2px;
+  }
+  .splitViewBody.splitViewBody {
+    padding-top: 8px;
+    padding-right: 8px;
   }
 }
 
