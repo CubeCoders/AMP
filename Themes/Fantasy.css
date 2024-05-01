@@ -46,6 +46,7 @@ button {
   background: rgb(2,0,36) !important;
   background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
   border-block-end: none;
+  border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5)  !important;
 }
 .ServerEntry.NewServerEntry,
@@ -76,8 +77,6 @@ input[type=submit]:hover,
   background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
 }
 .datastoreItem,
-.wizardTab .wizardContents,
-.wizardTab .wizardContents,
 .settingsGroup .groupBody .settingContainer,
 .scheduleTriggerInfo {
   background: rgb(2,0,36) !important;
@@ -149,12 +148,12 @@ input[type=submit]:hover,
 /*Left Side Menu*/
 #sideMenuContainer,
 .subMenuWell {
-  background: black !important;
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 
 #multiMenuContainer
 .subMenuWell {
-  background: black !important;
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 
 input[type=text],
