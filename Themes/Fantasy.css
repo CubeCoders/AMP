@@ -1,4 +1,12 @@
-/*Fantasy Theme By IceOfWraith. Edited by ssfdre38 for 2.5*/
+/**
+ * @file
+ * Title: Fantasy
+ * Description: A Pink Fantasy theme.
+ * Author: James Manker (Iceofwraith) Edited By Daniel Elliott (ssfdre38)
+ * Platform: For AMP (Application Management Panel) By Cubecoders Limited
+ * Version: 1.5.0 For AMP 2.5
+ * Image Copyright: Background by Yuki https://github.com/IceOfWraith/Yuki No copyright.
+ **/
 
 @keyframes slidein {
   0% { inset-block-start: -100%; padding-block-start:60px; }
