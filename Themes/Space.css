@@ -1,0 +1,131 @@
+/**
+ * @file
+ * Title: Space
+ * Description: Space theme CSS.
+ * Author: Daniel Elliott https://danielelliott.xyz
+ * Platform: For AMP (Application Management Panel) By Cubecoders Limited
+ * Version: 1.0.0 For AMP 2.5
+ * Image Copyright: Backgroud by https://deepai.org/machine-learning-model/text2img and are free to use for personal and commercial use. Public Domain Use.
+ **/
+
+/*Fade In Animation*/
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.yourElement {
+    animation: fadeIn 2s;
+}
+
+/*Background Image*/
+body {
+    background-image: url(../Themes/Space.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-color: black;
+}
+
+/*Background Tab*/
+.bodyTab {
+    background: none;
+}
+
+/*Login Screen*/
+#loginContainer {
+    background: rgba(0,0,0,0.8) !important;
+    animation: fadeIn 2s;
+    box-sizing: content-box !important;
+    border-radius: 60px !important;
+}
+
+/*Main Body*/
+#mainBody {
+    background: rgba(0, 0, 0, .5) !important;
+    animation: fadeIn 2s;
+}
+
+/*Left Side Menu*/
+#sideMenuContainer,
+.subMenuWell {
+    background: rgba(0, 0, 0, .8) !important;
+}
+
+/*Right Side Menu*/
+.bodyTab .splitViewInfo {
+    background: rgba(0, 0, 0, .8) !important;
+}
+
+/*Top Bar*/
+#barTop {
+    background: rgba(0, 0, 0, .65) !important;
+    block-size: 48px !important;
+    inline-size: 100% !important;
+    border-radius: 20px !important;
+}
+
+/*Settings Boxes*/
+.settingsGroup .groupBody .settingContainer {
+    background: rgba(0, 0, 0, .8) !important;
+    border-radius: 20px !important;
+    padding: 16px !important;
+}
+
+/*File Manager*/
+#tab_FileManagerPlugin_FileManager {
+    background: rgba(0, 0, 0, .6) !important;
+    overflow: initial !important;
+}
+.bodyTab .splitViewInfo {
+    background: transparent !important;
+}
+
+/*Diagnostics Table*/
+#diagTable,
+#currentSessionsTable,
+#auditLogTable {
+    border-collapse: unset;
+    inline-size: 100%;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.05), inset 0 -2px 4px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+/*Pop-up Infomation Panel*/
+.modalpanel #modaltitle {
+    border-radius: 16px !important;
+}
+.modalpanel {
+    background-color: #222;
+    border-block-end: solid #444;
+    transition: fadeIn 1s !important;
+    inline-size: 750px;
+    transform: translateY(-100%);
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    max-inline-size: 95%;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 16px !important;
+    border-block-end: none;
+}
+
+/*New Instance wizard*/
+.wizardTab .wizardContents {
+    border-block-end: none;
+    transition: none;
+    animation: fadeIn 1s !important;
+}
+
+/*Sub Configuration Menu*/
+.sideItemList {
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/*Instance Preview Image*/
+.ServerEntryImage {
+    inline-size: 100%
+}
