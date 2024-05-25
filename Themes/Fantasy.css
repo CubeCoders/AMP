@@ -266,7 +266,7 @@ input[type=submit].slideIcon,
 /*Pop-up Infomation Panel*/
 .modalpanel {
   background-color: #222;
-  border-block-end: 4px solid #444;
+  border-block-end: 0px solid #444;
   transition: fadeIn 1s !important;
   inline-size: 750px;
   transform: translateY(-100%);
@@ -289,4 +289,13 @@ input[type=submit].slideIcon,
   border-block-end: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5)  !important;
+}
+
+/*Loading Flash*/
+.easeLoad{
+  transition: opacity 2s ease;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
