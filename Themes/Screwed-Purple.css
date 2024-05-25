@@ -1,6 +1,6 @@
 /*
 Screwed Purple theme by Jaiden W
-Updated 2022/07/04
+Updated 2024/05/25
 Obey The Fist!
 */
 
@@ -71,7 +71,6 @@ a:hover { color: #ffffff; }
 #barTop, #barBottom, #userInfo:hover { background-color: #333333dd; }
 #userInfo { background:none; }
 #sideMenu a:active { background-color: #352644; }
-#sideMenu a.selected { border-right: 4px solid #8000ff; }
 #sideMenu { top: 0px; }
 #sideMenu a.selected { background-color: #8000ff2b; border-radius: 0px 0 0 8px; }
 .menuTitle {
@@ -108,6 +107,27 @@ a:hover { color: #ffffff; }
     transition: background-color 0.25s, width 0.25s;
     border-radius: 0px 0px 5px 5px;
 }
+.hasNotice{
+    line-height: 25px!important;
+    font-size:17px!important;
+    
+}
+.warn{
+    left:0px;
+    filter: invert(20%) sepia(52%) saturate(888) hue-rotate(10deg) brightness(130%) contrast(173%)!important;
+    opacity: 0.5;
+    height: 20px!important;
+}
+#sideMenu a.selected {
+  box-shadow: inset 4px 0px 0 #8000ff!important;
+}
+#sideMenu a.padBottom {
+  padding-bottom: 10px;
+  font-size: 19px;
+  padding-top: 10px;
+  margin-bottom:0px;
+}
+
 
 /*User Roles*/
 #permNodeDescription{ color:#a9a9a9; }
@@ -243,6 +263,14 @@ a:hover { color: #ffffff; }
     margin: 0;
     font-weight: 1000;
 }
+.ServerEntry[data-state="20"] {
+  border: 1px solid #8000ff!important;
+}
+
+.bgInfo {
+  background-color: unset!important;
+  border: 1px solid #ffffff73!important;
+}
 
 /*Graphs server display page*/
 .DisplayMetric .DisplayMetricGraph { background: #00000047; }
@@ -335,6 +363,10 @@ button, input[type=button], input[type=submit], .button {
     line-height: 32px;
     margin-left: -4px;
 }
+.ace-ambiance .ace_gutter {
+  color: #fff!important;
+}
+
 
 /*settings box*/
 .settingsGroup .groupBody .settingLabel .settingDescription { display:inline-block; }
