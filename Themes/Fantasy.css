@@ -303,3 +303,13 @@ input[type=submit].slideIcon,
   max-inline-size: 95%;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
 }
+
+/*Settings Tab*/
+.tabHeaderContainer
+{
+  background: rgb(2,0,36) !important;
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  border-block-end: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5)  !important;
+}
