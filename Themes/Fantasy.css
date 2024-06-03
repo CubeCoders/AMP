@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file
  * Title: Fantasy
  * Description: A Pink Fantasy theme.
@@ -83,13 +83,25 @@ button:hover {
 
 button:disabled {
   background-color: rgba(0,0,0,0.5);
-  background: darkmagenta !important;
+  background: rgb(88, 0, 88) !important;
 }
 
 .secureLoginButton{
   line-height: 0px !important;
   margin-inline-end: 0px !important;
   padding: 0px !important;
+  background-position: 4px 4px !important;
+  background-size: 40px !important;
+  background-repeat: no-repeat !important;
+}
+
+.secureLoginButton:hover{
+  line-height: 0px !important;
+  margin-inline-end: 0px !important;
+  padding: 0px !important;
+  background-position: 4px 4px !important;
+  background-size: 40px !important;
+  background-repeat: no-repeat !important;
 }
 
 /*Overall Button Hover*/
@@ -149,7 +161,7 @@ button:disabled {
 }
 
 #userInfo {
-  background: none !important;
+  background: rgba(0,0,0,0.8) !important;
 }
 
 .ServerGroup.Platform-1,
@@ -302,6 +314,10 @@ input[type=submit].slideIcon,
   margin-inline-end: auto;
   max-inline-size: 95%;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+.modalpanel.visible {
+  transform: translate(-50%, -50%);
 }
 
 /*Settings Tab*/
