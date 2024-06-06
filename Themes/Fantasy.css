@@ -8,7 +8,7 @@
  * Image Copyright: Background by Yuki https://github.com/IceOfWraith/Yuki No copyright.
  **/
 
-@keyframes slidein {
+ @keyframes slidein {
   0% { inset-block-start: -100%; padding-block-start:60px; }
   100% { padding-block-start:32px; }
 }
@@ -321,11 +321,6 @@ input[type=submit].slideIcon,
 }
 
 /*Settings Tab*/
-
-.bodyTab {
-  padding: 0px !important;
-}
-
 .tabHeaderContainer
 {
   background: rgb(2,0,36) !important;
