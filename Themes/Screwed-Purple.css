@@ -1,31 +1,21 @@
 /*
 Screwed Purple theme by Jaiden W
-Updated 2022/07/04
+Updated 2024/06/07
 Obey The Fist!
 */
 
 /*Background image/color*/
-@keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-@keyframes slidein {
-    0% { top: -100%; padding-top: 60px; }
-    50% { top: 0%; padding-top: 55px; }
-    100% { padding-top: 32px; }
-}
-@keyframes fadein {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-html { background-image: url("Images/oriental-tiles.png"); }
+@keyframes gradient { 0% { background-position: 0% 50%; } 50% {background-position: 100% 50%; }	100% {background-position: 0% 50%; } }
+@keyframes slidein { 0% { top: -100%; padding-top:60px; } 50% { top: 0%; padding-top:55px; } 100% { padding-top:32px; } }
+@keyframes fadein { 0% { opacity: 0; } 10% { opacity: 0.1;  } 20% { opacity: 0.2;  } 30% { opacity: 0.3;  } 40% { opacity: 0.4;  } 50% { opacity: 0.5;  } 60% { opacity: 0.6;  } 70% { opacity: 0.7;  } 80% { opacity: 0.8;  } 90% { opacity: 0.9;  } 100% { opacity: 1; } }
+#tab_ADSModule_Instances, #mainBody, .bodyTab { background:none; }
+#mainBody { top: 48px; left: 25px; width: 99%;}
+html { background-image:url("Images/oriental-tiles.png"); }
 body {
-    background: linear-gradient(-45deg, #2f005fAA, #37006fBB, #430088AA, #2f005fAA)!important;
-    background-size: 400% 400%!important;
-    animation: gradient 15s ease infinite;
-    height: 100vh;
+    background: linear-gradient(-45deg, #2f005fAA, #37006fBB, #430088AA, #2f005fAA);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    height:100vh;
 }
 
 .bodyTab { animation: fadein 200ms; }
