@@ -264,11 +264,6 @@ input[type=submit].slideIcon,
   transition: background-color 0.3s, background-position 0.3s;
 }
 
-/*Instance Preview Image*/
-.ServerEntryImage {
-  inline-size: 100%
-}
-
 /*Update Button Inside Instance*/
 .bgAmber {
   background-color: rgb(160, 0, 160);
