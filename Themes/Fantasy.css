@@ -164,11 +164,6 @@ button:disabled {
   background: rgba(0,0,0,0.8) !important;
 }
 
-.ServerGroup.Platform-1,
-.ServerGroup.Platform-2 {
-  background-image: none !important;
-}
-
 .subMenuWell,
 #mainBody,
 #fileManagerList {
@@ -307,25 +302,40 @@ input[type=submit].slideIcon,
 .modalpanel {
   background-color: #222;
   border-block-end: 0px solid #444;
-  transition: fadeIn 1s !important;
+  animation: fadeIn 1s !important;
   inline-size: 750px;
   transform: translateY(-100%);
   margin-inline-start: auto;
   margin-inline-end: auto;
   max-inline-size: 95%;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
-}
-
-.modalpanel.visible {
-  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: none;
 }
 
 /*Settings Tab*/
 .tabHeaderContainer
 {
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
   border-block-end: none;
   border-radius: 4px !important;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5)  !important;
+}
+
+.tabHeaderContainer .tabHeader.active
+{
+  background: rgb(160, 0, 160) !important;
+}
+
+.tabHeaderContainer .tabHeader:hover
+{
+  background: rgb(100, 0, 100) !important;
+}
+
+.settingsGroup .groupBody .settingContainer
+{
+  border-radius: 16px !important;
 }
 
 /*Loading Flash*/
@@ -335,4 +345,33 @@ input[type=submit].slideIcon,
     transition-duration: 2s;
     transition-timing-function: ease;
     transition-delay: 0s;
+}
+
+.ServerGroup.Online
+{
+  border: 2px solid green !important;
+}
+
+.ServerGroup.Offline
+{
+  border: 2px solid red !important;
+}
+
+.ServerGroup.Offline .ServerGroupHeader
+{
+  background: rgb(150, 0, 0) !important;
+}
+
+.ServerGroup
+{
+  background-color: rgba(0,0,0,0.25) !important;
+}
+
+.InstanceList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 12px !important;
+  padding: 8px;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
