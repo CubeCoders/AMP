@@ -347,6 +347,7 @@ input[type=submit].slideIcon,
     transition-delay: 0s;
 }
 
+/* New Server Group*/
 .ServerGroup.Online
 {
   border: 2px solid green !important;
@@ -366,7 +367,7 @@ input[type=submit].slideIcon,
 {
   background-color: rgba(0,0,0,0.25) !important;
 }
-
+/* New Instance Info*/
 .InstanceList {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -374,4 +375,19 @@ input[type=submit].slideIcon,
   padding: 8px;
   border-radius: 16px;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.InstanceList .ServerEntry {
+  height: 210px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  position: relative;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), transparent);
+  box-sizing: border-box;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
 }
