@@ -1,6 +1,6 @@
 /*
 Screwed Purple theme by Jaiden W
-Updated 2024/06/07
+Updated 2024/06/26
 Obey The Fist!
 */
 
@@ -28,6 +28,8 @@ body {
     margin-left: -25px;
 }
 .tabHeaderContainer .tabHeader { border: 1px solid #6f6f6f; border-bottom: 0px; }
+.tabHeaderContainer .tabHeader.active { background-color:#8000ff; }
+.tabHeaderContainer .tabHeader.active:hover { background-color: #9e44f7; }
 
 /*Scroll Bar*/
 div ::-webkit-scrollbar { width: 5px; background-color: #20023e; }
@@ -64,7 +66,15 @@ a:hover { color: #ffffff; }
     outline: 3px solid #8000ff;
     border-radius: 3px;
 }
-
+.loader2 {
+  border-left-color: #ffffff1f;
+  border-right-color: #ffffff1f;
+  border-top-color: #4e0b91;
+  border-bottom-color: #4e0b91;
+  background: #8000ff;
+  box-shadow: inset 0px 0px 60px 10px #0000005e, 0px 0px 30px 20px #00000054;
+  border-style:groove;
+}
 /* Branding */
 .ModuleAuthor::after { content: ' (With Screwed Purple - By Jaiden W)'; }
 
