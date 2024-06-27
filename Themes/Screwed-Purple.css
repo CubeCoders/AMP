@@ -28,8 +28,11 @@ body {
     margin-left: -25px;
 }
 .tabHeaderContainer .tabHeader { border: 1px solid #6f6f6f; border-bottom: 0px; }
-.tabHeaderContainer .tabHeader.active { background-color:#8000ff; }
+.tabHeaderContainer .tabHeader.active, .tabHeaderContainer .tabHeader:active { background-color:#8000ff; }
 .tabHeaderContainer .tabHeader.active:hover { background-color: #9e44f7; }
+ {
+  background-color: #5EA8DE;
+}
 
 /*Scroll Bar*/
 div ::-webkit-scrollbar { width: 5px; background-color: #20023e; }
