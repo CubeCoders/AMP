@@ -4,6 +4,8 @@ Updated 2024/06/26
 Obey The Fist!
 */
 
+
+
 /*Background image/color*/
 @keyframes gradient { 0% { background-position: 0% 50%; } 50% {background-position: 100% 50%; }	100% {background-position: 0% 50%; } }
 @keyframes slidein { 0% { top: -100%; padding-top:60px; } 50% { top: 0%; padding-top:55px; } 100% { padding-top:32px; } }
@@ -24,7 +26,7 @@ body {
 .tabHeaderContainer {
     background: #333;
 }
-#tab_settings { width: 100%; }
+
 .tabHeaderContainer .tabHeader { border: 1px solid #6f6f6f; border-bottom: 0px; }
 .tabHeaderContainer .tabHeader.active, .tabHeaderContainer .tabHeader:active { background-color:#8000ff; }
 .tabHeaderContainer .tabHeader.active:hover { background-color: #9e44f7; }
@@ -424,6 +426,7 @@ button, input[type=button], input[type=submit], .button {
 .ace-ambiance .ace_gutter { color: #fff!important; }
 
 /*Settings box*/
+.settingsGroup { max-width: fit-content; margin-left: -25px; }
 .settingsGroup .groupBody .settingLabel .settingDescription { display: inline-block; }
 .settingDescription { min-height: 0px!important; color: white!important; }
 .settingsGroup .groupBody { max-width: 100%; padding: 0 0 0 20px; }
@@ -483,7 +486,7 @@ button, input[type=button], input[type=submit], .button {
 @media screen and (max-width: 1000px) {
 
   #sideMenu, #sideMenuContainer {
-top:45px;
+    top:45px;
 }
 
 #mainBody { left: 4%!important; width: 96%!important;}
@@ -514,7 +517,9 @@ top:45px;
 /* mobile fixes*/
 @media screen and (max-width: 660px), screen and (min-resolution: 100dpi) and (max-width: 980px), screen and (min-resolution: 150dpi) and (max-width: 1440px), screen and (min-resolution: 300dpi) and (max-width: 2000px) {
 
-
+  #sideMenu, #sideMenuContainer {
+    top:0px;
+}
 
 #mainBody { left: 0px!important; width: 100%!important;}
 
