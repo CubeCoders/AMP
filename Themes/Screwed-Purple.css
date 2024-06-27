@@ -426,7 +426,7 @@ button, input[type=button], input[type=submit], .button {
 .ace-ambiance .ace_gutter { color: #fff!important; }
 
 /*Settings box*/
-.settingsGroup { max-width: fit-content; margin-left: -25px; }
+.settingsGroup {max-width: fit-content;  margin-left: -25px; }
 .settingsGroup .groupBody .settingLabel .settingDescription { display: inline-block; }
 .settingDescription { min-height: 0px!important; color: white!important; }
 .settingsGroup .groupBody { max-width: 100%; padding: 0 0 0 20px; }
