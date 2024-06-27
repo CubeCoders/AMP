@@ -22,17 +22,13 @@ body {
 #mainBody {left:0px; background:transparent; top: 48px; width: 99%;}
 
 .tabHeaderContainer {
-    padding-left: 25px;
-    width: 101%;
     background: #333;
-    margin-left: -25px;
 }
+#tab_settings { width: 100%; }
 .tabHeaderContainer .tabHeader { border: 1px solid #6f6f6f; border-bottom: 0px; }
 .tabHeaderContainer .tabHeader.active, .tabHeaderContainer .tabHeader:active { background-color:#8000ff; }
 .tabHeaderContainer .tabHeader.active:hover { background-color: #9e44f7; }
- {
-  background-color: #5EA8DE;
-}
+
 
 /*Scroll Bar*/
 div ::-webkit-scrollbar { width: 5px; background-color: #20023e; }
