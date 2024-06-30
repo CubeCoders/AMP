@@ -1,43 +1,124 @@
-﻿@keyframes slidein {
-  0% { top: -100%; padding-top:60px; }
-  50% { top: 0%; padding-top:55px; }
-  100% { padding-top:32px; }
+/**
+ * @file
+ * Title: Fantasy
+ * Description: A Pink Fantasy theme.
+ * Author: James Manker (Iceofwraith) Edited By Daniel Elliott (ssfdre38)
+ * Platform: For AMP (Application Management Panel) By Cubecoders Limited
+ * Version: 1.5.0 For AMP 2.5
+ * Image Copyright: Background by Yuki https://github.com/IceOfWraith/Yuki No copyright.
+ **/
+
+@keyframes slidein {
+  0% { inset-block-start: -100%; padding-block-start:60px; }
+  100% { padding-block-start:32px; }
 }
 
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.yourElement {
+  animation: fadeIn 2s;
+}
+/*Background Image*/
 body {
   background-image: url(../Themes/fantasy.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: bottom center;
+  background-color: black;
 }
 
+/*Background Tab*/
 .bodyTab {
   background: none;
 }
 
+/*Buttons*/
 .bgGreen,
 button {
   background-color: rgba(0,0,0,0.5);
   border: 1px solid black;
 }
 
+/*Active Button*/
 .bgRed {
-  background-color: #06c;
+  background-color: rgb(180, 0, 180);
   border: none;
 }
 
-.ServerGroup.Online .ServerGroupHeader,
-.ServerEntry.NewServerEntry,
-.bgGreen:hover,
-button:hover,
+/*Server Group*/
+.ServerGroup.Online .ServerGroupHeader
+{
+  background: rgb(2,0,36) !important;
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  border-block-end: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5)  !important;
+}
+
+/*Buttons*/
+.button {
+  background-color: transparent;
+  color: white;
+  background: transparent(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
+  font-weight: lighter;
+  font-size: larger;
+  border: 1px solid rgba(0,0,0,0.5);
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  line-height: 0px !important;
+}
+
+button:hover {
+  background-color: rgba(0,0,0,0.5);
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  line-height: 0px !important;
+}
+
+button:disabled {
+  background-color: rgba(0,0,0,0.5);
+  background: rgb(88, 0, 88) !important;
+}
+
+.secureLoginButton{
+  line-height: 0px !important;
+  margin-inline-end: 0px !important;
+  padding: 0px !important;
+  background-position: 4px 4px !important;
+  background-size: 40px !important;
+  background-repeat: no-repeat !important;
+}
+
+.secureLoginButton:hover{
+  line-height: 0px !important;
+  margin-inline-end: 0px !important;
+  padding: 0px !important;
+  background-position: 4px 4px !important;
+  background-size: 40px !important;
+  background-repeat: no-repeat !important;
+}
+
+/*Overall Button Hover*/
+.button:hover {
+  border: 1px black !important;
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+}
 .datastoreItem,
-.wizardTab .wizardContents,
-.wizardTab .wizardContents,
 .settingsGroup .groupBody .settingContainer,
 .scheduleTriggerInfo {
   background: rgb(2,0,36) !important;
   background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
-  border-bottom: none;
+  border-block-end: none;
+}
+
+.bgGreen:active {
+  line-height: 0px !important;
 }
 
 .settingsGroup .groupBody .settingLabel .settingDescription,
@@ -63,9 +144,16 @@ button:hover,
   border: none;
 }
 
+/*Login Screen*/
 #loginContainer {
-  background: rgba(0,0,0,0.5) !important;
-  animation: slidein 1s;
+  background: rgba(0,0,0,0.8) !important;
+  animation: fadeIn 2s;
+}
+
+.bgGreen:hover {
+  border: 1px black !important;
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  line-height: 0px !important;
 }
 
 #barTop {
@@ -73,12 +161,7 @@ button:hover,
 }
 
 #userInfo {
-  background: none !important;
-}
-
-.ServerGroup.Platform-1,
-.ServerGroup.Platform-2 {
-  background-image: none !important;
+  background: rgba(0,0,0,0.8) !important;
 }
 
 .subMenuWell,
@@ -100,9 +183,15 @@ button:hover,
   color: #5EA8DE;
 }
 
+/*Left Side Menu*/
 #sideMenuContainer,
 .subMenuWell {
-  background-color: rgba(0,0,0,0.9) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+#multiMenuContainer
+.subMenuWell {
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 
 input[type=text],
@@ -132,4 +221,168 @@ input.searchBox {
 input[type="checkbox"]:checked + span,
 input[type="checkbox"]:checked + span::after {
   background: rgb(200,16,299);
+}
+
+/*New status bar in the instance view*/
+.ServerEntryStatus {
+  background-color: darkmagenta !important;
+  border: none !important;
+}
+
+/*Buttons inside new instance view box*/
+.bgInfo {
+  background-color: rgb(160, 0, 160) !important;
+  border: 1px black !important;
+}
+
+/*Instance Status Bar*/
+.ServerGroupHeader{
+  background: rgb(2,0,36) !important;
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  border-block-end: none;
+}
+
+/*New Instances Box/button*/
+.ServerEntry.NewServerEntry {
+  background: rgb(2,0,36) !important;
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  border-block-end: none;
+  border-radius: 16px !important;
+}
+.ServerEntry.NewServerEntry,
+.bgGreen:hover,
+button:hover,
+input[type=button]:hover,
+input[type=submit]:hover,
+
+
+/*Side Icons*/
+button.slideIcon,
+input[type=button].slideIcon,
+input[type=submit].slideIcon,
+.button.slideIcon {
+  transition: background-color 0.3s, background-position 0.3s;
+}
+
+/*Update Button Inside Instance*/
+.bgAmber {
+  background-color: rgb(160, 0, 160);
+  border: 1px solid black !important;
+}
+
+/*Diagnostics Table*/
+#diagTable,
+#currentSessionsTable,
+#auditLogTable {
+  border-collapse: unset;
+  inline-size: 100%;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.05), inset 0 -2px 4px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+/*New Instance wizard*/
+.wizardTab .wizardContents {
+  background: rgb(2,0,36) !important;
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  border-block-end: none;
+  transition: none;
+  animation: fadeIn 1s !important;
+}
+
+/*Pop-up Infomation Panel*/
+.modalpanel {
+  background-color: #222;
+  border-block-end: 0px solid #444;
+  animation: fadeIn 1s !important;
+  inline-size: 750px;
+  transform: translateY(-100%);
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  max-inline-size: 95%;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: none;
+}
+
+/*Settings Tab*/
+.tabHeaderContainer
+{
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  border-block-end: none;
+  border-radius: 4px !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5)  !important;
+}
+
+.tabHeaderContainer .tabHeader.active
+{
+  background: rgb(160, 0, 160) !important;
+}
+
+.tabHeaderContainer .tabHeader:hover
+{
+  background: rgb(100, 0, 100) !important;
+}
+
+.settingsGroup .groupBody .settingContainer
+{
+  border-radius: 16px !important;
+}
+
+/*Loading Flash*/
+.easeLoad{
+  transition: opacity 2s ease;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+/* New Server Group*/
+.ServerGroup.Online
+{
+  border: 2px solid green !important;
+}
+
+.ServerGroup.Offline
+{
+  border: 2px solid red !important;
+}
+
+.ServerGroup.Offline .ServerGroupHeader
+{
+  background: rgb(150, 0, 0) !important;
+}
+
+.ServerGroup
+{
+  background-color: rgba(0,0,0,0.25) !important;
+}
+/* New Instance Info*/
+.InstanceList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 12px !important;
+  padding: 8px;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.InstanceList .ServerEntry {
+  height: 210px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  position: relative;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), transparent);
+  box-sizing: border-box;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
 }
