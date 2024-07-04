@@ -1,6 +1,6 @@
 /*
 Screwed Purple theme by Jaiden W
-Updated 2024/06/29
+Updated 2024/07/04
 Obey The Fist!
 */
 
@@ -15,7 +15,6 @@ html { background-image: url('data:image/jpeg;base64,/9j/2wCEAAEBAQEBAQEBAQEBAQE
 @keyframes slidein { 0% { top: -100%; padding-top:60px; } 50% { top: 0%; padding-top:55px; } 100% { padding-top:32px; } }
 @keyframes fadein { 0% { opacity: 0; } 10% { opacity: 0.1;  } 20% { opacity: 0.2;  } 30% { opacity: 0.3;  } 40% { opacity: 0.4;  } 50% { opacity: 0.5;  } 60% { opacity: 0.6;  } 70% { opacity: 0.7;  } 80% { opacity: 0.8;  } 90% { opacity: 0.9;  } 100% { opacity: 1; } }
 #tab_ADSModule_Instances, #mainBody, .bodyTab { background:none; }
-#mainBody { top: 48px; left: 25px; width: 99%;}
 body {
     background: linear-gradient(-45deg, #2f005fAA, #37006fBB, #430088AA, #2f005fAA);
 	background-size: 400% 400%;
@@ -24,7 +23,7 @@ body {
 }
 
 .bodyTab { animation: fadein 200ms; }
-#mainBody {left:0px; background:transparent; top: 48px; width: 99%;}
+#mainBody {left:0px;  top: 48px;}
 
 .tabHeaderContainer {
     background: #333;
@@ -211,6 +210,7 @@ a:hover { color: #ffffff; }
 }
 
 /* Server Entry*/
+.contextMenu.contextMenu .buttonListSeparator { border-bottom: 1px solid #8000ff; }
 .desktopContextMenu .buttonListSeparator { border-bottom: 1px solid #8000ff!important; }
 .desktopContextMenu {
     background: #290e44!important;
@@ -235,7 +235,7 @@ a:hover { color: #ffffff; }
     background-color: #8000ff !important;
     border-color: black;
 }
-.ServerGroup { background: #00000061; }
+.ServerGroup { background: #00000061!important; }
 .ServerEntry .ServerEntryInfo button { padding-right: 10px!important; }
 .ServerEntry.NewServerEntry .ServerEntryHeader {
     font-size: 25px;
@@ -284,11 +284,13 @@ a:hover { color: #ffffff; }
     border: 1px solid #8000ff;
     box-shadow: 0px 0px 5px black;
 }
+.ServerGroup.Online {
+border: 2px solid rgb(128, 0, 255) !important;
+  border-radius: 13px;
+}
 .ServerGroup.Online .ServerGroupHeader {
     background: linear-gradient(to right, rgb(128, 0, 255) 0%, rgb(75, 26, 123) 85%) !important;
-    border: 1px solid rgb(128, 0, 255);
-    border-radius: 10px 10px 4px 4px;
-    box-shadow: black 0px 0px 10px;
+    border-radius: 10px 10px 0px 0px;
     margin-bottom: -2px;
 }
 .Platform-2, .Platform-1 {
@@ -327,8 +329,8 @@ a:hover { color: #ffffff; }
     padding: 20px 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    border: 1px solid #8000ff;
     border-top: 0px;
+    background-color:transparent!important;
 }
 
 /*Graphs server display page*/
