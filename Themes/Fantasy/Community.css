@@ -17,7 +17,7 @@
   inset-inline-end: 0;
   padding: 16px;
   background: linear-gradient(270deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 80%);
-  inline-size: 128px;
+  inline-size: 256px;
   max-inline-size: 100%;
   cursor: pointer;
 }
