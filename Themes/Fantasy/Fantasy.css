@@ -367,7 +367,7 @@ input[type=submit].slideIcon,
 .InstanceList {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-gap: 0px !important;
+  grid-gap: 16px !important;
   padding: 8px;
   border-radius: 16px;
   background-color: rgba(0, 0, 0, 0.5);
