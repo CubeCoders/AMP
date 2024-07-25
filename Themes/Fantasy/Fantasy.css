@@ -399,3 +399,46 @@ input[type=submit].slideIcon,
 .iconButton.toggled {
   background-color: rgb(120, 0, 120) !important;
 }
+
+/*Community Pages*/
+
+#AMPLogo{
+  inlnie-size: 128px !important;
+}
+
+.ServerInfo{
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+}
+
+.ServerInfo .InfoActions .JoinDiscord {
+  background-color: rgb(88, 0, 88) !important;
+}
+
+.ServerInfo .InfoActions .JoinDiscord:hover {
+  background-color: #800080 !important;
+}
+
+.ServerInfo .InfoActions button:hover,
+.ServerInfo .InfoActions a:hover {
+  background: #800080 !important;
+}
+.ServerInfo .InfoActions button:active,
+.ServerInfo .InfoActions a:active {
+  transition: none;
+  background: #700086 !important;
+}
+
+.ServerInfo .InfoActions button,
+.ServerInfo .InfoActions a {
+  background: rgb(88, 0, 88) !important;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s !important;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-evenly;
+}
