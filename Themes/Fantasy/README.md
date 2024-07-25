@@ -6,4 +6,4 @@ To have this theme be used fully, you will need to add both the Fantasy.css and 
 
 You will need to do a hard refresh for the theme to take affect on your AMP on your current browser.
 
-For Community Pages to match up with your Panel, Then you will need to download the Community.css file and add it to `ADS01/Plugins/ADSModule/WebRoot` and replace the `Community.css` File with the one in this folder. Note, When AMP updates, it will undo this css file and you will need to re-add it back into your panel at the location above.
+For Community Pages to match up with your Panel, The new theme setup will take care of everything and you just need to update the theme.
