@@ -442,3 +442,9 @@ input[type=submit].slideIcon,
   flex-grow: 1;
   justify-content: space-evenly;
 }
+
+.ServerInfo .BannerImage{
+  width: 460px;
+  height: 215px;
+  width: 100%;
+}
