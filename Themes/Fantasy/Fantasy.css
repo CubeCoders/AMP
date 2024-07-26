@@ -4,7 +4,7 @@
  * Description: A Pink Fantasy theme.
  * Author: James Manker (Iceofwraith) Edited By Daniel Elliott (ssfdre38)
  * Platform: For AMP (Application Management Panel) By Cubecoders Limited
- * Version: 1.5.0 For AMP 2.5
+ * Version: 1.6.0 For AMP 2.5.1.2
  * Image Copyright: Background by Yuki https://github.com/IceOfWraith/Yuki No copyright.
  **/
 
@@ -362,18 +362,19 @@ input[type=submit].slideIcon,
 {
   background-color: rgba(0,0,0,0.25) !important;
 }
+
 /* New Instance Info*/
 .InstanceList {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-gap: 12px !important;
+  grid-gap: 16px !important;
   padding: 8px;
   border-radius: 16px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .InstanceList .ServerEntry {
-  height: 210px;
+  block-size: 210px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   cursor: pointer;
   position: relative;
@@ -385,4 +386,65 @@ input[type=submit].slideIcon,
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
+}
+
+.InstanceList .ServerEntry .ServerEntryInfo {
+  padding: 0px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  block-size: 100%;
+}
+
+.iconButton.toggled {
+  background-color: rgb(120, 0, 120) !important;
+}
+
+/*Community Pages*/
+
+#AMPLogo{
+  width: 128px !important;
+}
+
+.ServerInfo{
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+}
+
+.ServerInfo .InfoActions .JoinDiscord {
+  background-color: rgb(88, 0, 88) !important;
+}
+
+.ServerInfo .InfoActions .JoinDiscord:hover {
+  background-color: #800080 !important;
+}
+
+.ServerInfo .InfoActions button:hover,
+.ServerInfo .InfoActions a:hover {
+  background: #800080 !important;
+}
+.ServerInfo .InfoActions button:active,
+.ServerInfo .InfoActions a:active {
+  transition: none;
+  background: #700086 !important;
+}
+
+.ServerInfo .InfoActions button,
+.ServerInfo .InfoActions a {
+  background: rgb(88, 0, 88) !important;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s !important;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-evenly;
+}
+
+.ServerInfo .BannerImage{
+  width: 460px;
+  height: 215px;
+  width: 100%;
 }
