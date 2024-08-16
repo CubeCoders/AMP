@@ -87,24 +87,6 @@ button:disabled {
   background: rgb(88, 0, 88) !important;
 }
 
-.secureLoginButton{
-  line-height: 0px !important;
-  margin-inline-end: 0px !important;
-  padding: 0px !important;
-  background-position: 4px 4px !important;
-  background-size: 40px !important;
-  background-repeat: no-repeat !important;
-}
-
-.secureLoginButton:hover{
-  line-height: 0px !important;
-  margin-inline-end: 0px !important;
-  padding: 0px !important;
-  background-position: 4px 4px !important;
-  background-size: 40px !important;
-  background-repeat: no-repeat !important;
-}
-
 /*Overall Button Hover*/
 .button:hover {
   border: 1px black !important;
