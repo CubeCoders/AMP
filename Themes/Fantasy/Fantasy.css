@@ -67,7 +67,7 @@ button {
   font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
   font-weight: lighter;
   font-size: larger;
-  border: 1px solid rgba(0,0,0,0.5);
+  border: none;
   cursor: pointer;
   outline: none;
   transition: background-color 0.3s;
@@ -90,7 +90,8 @@ button:disabled {
 .bgPink{
   border: none !important;
   }
-  .bgPurple{
+  
+.bgPurple{
   border: none !important;
   }
 
@@ -141,9 +142,7 @@ button:disabled {
 }
 
 .bgGreen:hover {
-  border: 1px black !important;
   background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
-  line-height: 0px !important;
 }
 
 #barTop {
