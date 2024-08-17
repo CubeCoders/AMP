@@ -87,9 +87,16 @@ button:disabled {
   background: rgb(88, 0, 88) !important;
 }
 
+.bgPink{
+  border: none !important;
+  }
+  .bgPurple{
+  border: none !important;
+  }
+
 /*Overall Button Hover*/
 .button:hover {
-  border: 1px black !important;
+  border: none !important;
   background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
 }
 .datastoreItem,
