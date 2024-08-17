@@ -328,7 +328,7 @@ input[type=submit].slideIcon,
 /* New Server Group*/
 .ServerGroup.Online
 {
-  border: 2px solid green !important;
+  border: 2px solid rgb(180, 0, 180) !important;
 }
 
 .ServerGroup.Offline
