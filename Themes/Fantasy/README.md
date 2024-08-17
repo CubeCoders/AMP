@@ -7,3 +7,5 @@ To have this theme be used fully, you will need to add both the Fantasy.css and 
 You will need to do a hard refresh for the theme to take affect on your AMP on your current browser.
 
 For Community Pages to match up with your Panel, The new theme setup will take care of everything and you just need to update the theme.
+
+![screenshot 271](https://github.com/user-attachments/assets/efe7be29-bc14-4f67-a593-9d500a833258)
