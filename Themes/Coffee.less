@@ -1,0 +1,245 @@
+﻿/**
+ * "Would you like the cream, the off-white, the white, the ivory, the bone, or the beige?"
+ * -- "Yes, and I'll take it with my coffee."
+ *
+ * Coffee theme isn't loud, but it's proud. Subdued pastel colours based on the Black theme, whilst stripping out most of the blue.
+ * _cough_ no !important _cough_
+ *
+ * Created by KDallas | V1.0 | 23/08/2024
+ * https://wlab.au/
+ *
+ */
+
+@colorPrimary :  #111;
+@colorBgMain:    #222;
+@colorSecondary: #333;
+@colorDarkGrey:  #3b3b3b;
+@colorAccent:    #444;
+@colorBgSecond:  #888;
+
+@colorDarkest:   #5a3d1c;   // hsl(32deg 53% 23%)
+@colorHighlite:  #764f23;   // hsl(32deg 54.55% 30%)
+@colorBgDarker:  #865f32;   // hsl(32deg 45.65% 36%)
+@colorBgDark:    #695033;   // hsl(32deg 34.62% 30.5%)
+@colorActive:    #b47834;   // hsl(32deg 54.98% 45.5%)
+@colorSelect:    #dea25e;   // hsl(32deg 65.98% 62%)
+@linkTrans:      #ebbc87;   // hsl(32deg 71.43% 72.5%)
+@noticeTrans:    #ff88001a; // hsl(32deg 100% 50% / 10%)
+
+
+body, .bodyTab, .tabHeaderContainer {
+    background-color: @colorBgMain;
+
+    .tabHeader.active, .tabHeader:active {
+        background-color: @colorActive;
+        &:hover {
+            background-color: @colorSelect;
+            color: @colorSecondary;
+        }
+    }
+}
+
+#loginContainer, .sideItemList, #sideMenuContainer, .subMenuWell {
+    background-color: @colorSecondary;
+}
+
+.ServerGroupContainer {
+    .ServerGroup.Online {
+        background-color: @colorBgSecond;
+        border-color: @colorBgSecond;
+        padding: 2px;
+        .ServerGroupHeader {
+            background-color: @colorBgDark;
+            border-radius: 8px 8px 5px 5px;
+            margin-bottom: 4px;
+        }
+        .InstanceList {
+            border-radius: 5px 5px 16px 16px;
+            .ServerEntry {
+                .ServerEntryImage.Offline {
+                    filter: sepia(1) saturate(2) hue-rotate(0deg) brightness(0.2);
+                }
+                &.NewServerEntry {
+                    background-color: @colorActive;
+                }
+                .ServerEntryInfo {
+                    .bgInfo {
+                        background-color: @colorActive;
+                        border-color: @colorActive;
+                        &:hover {
+                            background-color: @colorDarkest;
+                            border-color: @colorDarkest;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+button, .button {
+    border: 1px solid @colorActive;
+    background-color: @colorActive;
+    &:hover {
+        background-color: @colorHighlite;
+    }
+}
+
+a {
+    color: @colorSelect;
+    &:hover {
+        color: @colorActive;
+    }
+}
+
+.iconButton {
+    &.toggled {
+        background-color: @colorDarkGrey;
+    }
+    &:hover {
+        background-color: @colorDarkest;
+        border-color: @colorDarkest;
+    }
+}
+
+.bgPurple, .bgPink, .bgInfo {
+    background-color: @colorAccent;
+    border: 1px solid @colorAccent;
+    &:hover {
+        background-color: @colorActive;
+    }
+}
+
+#mainBody {
+    background: @colorBgMain;
+}
+
+#sideMenu a {
+    font-size: 100%;
+
+    &:active {
+        background-color: @colorPrimary;
+    }
+    &.selected {
+        color: @colorSelect;
+    }
+    &.hasNotice {
+        background-color: @noticeTrans;
+    }
+    &.info {
+        .warn, .subtitle {
+            color: @colorSelect;
+        }        
+    }
+}
+
+input[type=text], input[type=password], input[type=url], input[type=number], input[type=email], input[type=search], select, textarea, .popupTrigger {
+    background-color: #474747;
+}
+
+input.searchBox {
+    background-color:transparent;
+}
+
+.settingsGroup .groupBody {
+    .settingContainer {
+        background-color: @colorSecondary;
+        border-color: @colorAccent;
+    }
+    .settingInfo {
+        color: @linkTrans;
+    }    
+}
+
+.wizardTab .wizardContents {
+    background-color: @colorBgMain;
+    border-bottom: 8px solid @colorAccent;
+
+    h2 {
+        background-color: @colorAccent;
+    }
+
+    .containerWarning {
+        button {
+            &.bgInfo {
+                background-color: @colorDarkest;
+                border-color: @colorDarkest;
+                &:hover {
+                    background-color: @colorActive;
+                    border-color: @colorActive;
+                }
+            }
+        }
+    }
+}
+
+#tabInfo {
+    h2 {
+        margin: 6px 0 0 0;
+        font-size: 1.7em;
+        font-weight: bold;
+    }
+}
+
+.scheduleTriggerInfo {
+    border: 1px solid @colorAccent;
+    background-color: @colorSecondary;
+}
+
+.splitViewInfo.splitViewInfo { 
+    background-color: @colorBgMain;
+}
+
+.itemList .item {
+    &.selected {
+        border-right: 4px solid @colorSelect;
+    }
+    &:hover {
+        background-color: @colorBgDark;
+    }    
+}
+
+#fileManagerHeader .fmPathSegment {
+    background-color: @colorHighlite;
+    &::after {
+        border-left: 10px solid @colorHighlite;
+    }
+}
+
+#fileManagerHeader .fmPathSegment:nth-child(even) {
+    background-color: @colorBgDarker;
+    &::after {
+        border-left: 10px solid @colorBgDarker;
+    }
+}
+
+#fileManagerHeader .fmPathSegment,
+#fileManagerHeader .fmPathSegment:nth-child(even) {
+    &::after {
+        left: 9px;
+    }
+    &:hover {
+        background-color: @colorSelect;
+        color: @colorSecondary;
+        &::after {
+            border-left: 10px solid @colorSelect;
+        }
+    }
+}
+
+.consoleTimestamp {
+    color: @colorSelect;
+}
+
+.datastoreContainer {
+    .datastoreItem {
+        background-color: @colorDarkGrey;
+    }
+    .newDatastoreItem {
+        background-color: @colorActive;
+    }
+}
+
+.bodyTab .analyticsSection .sectionHeader .headerControls div.active {
+    color: @colorActive;
+}
