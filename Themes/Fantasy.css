@@ -131,14 +131,10 @@ button:disabled {
 #loginLogo {
   display: block; /* Ensure it is displayed */
   margin-bottom: auto; /* Push it to the top */
-  height: 161px;
-  width: 512px;
 }
 
 #loginLogo img {
   animation: fadeIn 2s;
-  height: 161px;
-  width: 512px;
 }
 
 h2 {
