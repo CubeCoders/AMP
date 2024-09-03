@@ -12,7 +12,7 @@ body:
       * Some background on what information you might like to see in the documentation.
 - type: textarea
   attributes:
-    label: Documentation Request
+    label: Documentation Description
     description: Describe your request.
   validations:
     required: true
