@@ -14,7 +14,7 @@ body:
         required: true
 - type: textarea
   attributes:
-    label: Feature Request
+    label: Feature Description
     description: Describe your request.
   validations:
     required: true
