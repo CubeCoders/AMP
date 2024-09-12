@@ -1,0 +1,517 @@
+﻿/**
+ * "I don't like sand. It's coarse and rough and irritating and it gets everywhere..."
+ *
+ * Sandy: A light theme in stark contrast with dark Coffee. Aka "Cream".
+ *
+ * Created by KDallas | V1.0 | 12/09/2024
+ * https://wlab.au/
+ *
+ */
+
+@colorPrimary :  #fffde8;
+@colorBgMain:    #f2dba6;
+@colorSecondary: #ffefcb;
+@colorDataItem:  #f6e3b9;
+@colorInput:     #ecd093;
+@colorAccent:    #dfca9f;
+@colorBgSecond:  #ceb283;
+@colorTertiary:  #b59f7d;
+@colorBgThird:   #826c4a;
+
+@colorDarkest:   #888;
+@colorHighlite:  #444;
+@colorBgDarker:  #3b3b3b;
+@colorBgDark:    #333;
+@colorActive:    #222;
+@colorSelect:    #111;
+
+@linkStandard:   #835016;
+@actionDark:     #775710;
+@actionDark80:   rgba(119, 87, 16, 0.8);
+
+@actionLite:     #a68e59;
+@noticeTrans:    #ff88001a; // hsl(32deg 100% 50% / 10%)
+
+@black90pct:     rgba(0, 0, 0, 0.9);
+@black80pct:     rgba(0, 0, 0, 0.8);
+@black50pct:     rgba(0, 0, 0, 0.5);
+@black40pct:     rgba(0, 0, 0, 0.4);
+@black30pct:     rgba(0, 0, 0, 0.3);
+
+@white40pct:     rgba(255, 255, 255, 0.4);
+@white60pct:     rgba(255, 255, 255, 0.6);
+@white70pct:     rgba(255, 255, 255, 0.7);
+@white80pct:     rgba(255, 255, 255, 0.8);
+
+@bgRedV2:        rgba(185, 0, 0, 0.8);
+@bgRedV2Hov:     rgba(135, 0, 0, 0.7);
+@bgGreenV2:      rgba(0, 185, 0, 0.8);
+@bgGreenV2Hov:   rgba(0, 135, 0, 0.7);
+
+
+body, .bodyTab, .tabHeaderContainer {
+    background-color: @colorBgMain;
+    color: @black80pct;
+
+    .tabHeader {
+        &:hover {
+            background-color: @black50pct;
+            color: @colorSecondary;
+        }
+        &.active, &:active {
+            background-color: @actionDark;
+            border-bottom: 2px solid @actionDark !important; // yeah I know... base template does this :(
+
+            &:hover {
+                background-color: @black50pct;
+                border-bottom: 2px solid transparent !important; // yeah I know... base template does this :(
+                color: @colorSecondary;
+            }
+    
+        }
+    }
+
+    #tab_currentuser {
+        span.bgRed {
+            background-color: @bgRedV2;
+            border: 1px solid @bgRedV2;
+            padding: 1px 5px;
+            border-radius: 4px;
+            color: @white70pct;
+        }
+    }
+}
+
+.tabHeaderContainer {
+    border-bottom: 4px solid @actionDark;
+}
+
+#loginContainer, .sideItemList, #sideMenuContainer {
+    background-color: @colorSecondary;
+    > #userInfo {
+        background-color: @noticeTrans;
+        color: @colorBgThird;
+        border-radius: 23px 0 0 23px;
+    }
+    > #loginLogo img {
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        margin: -15px 0 0 -20px;
+        border-radius: 16px;
+    }
+    .menuTitle {
+        color: @colorBgThird;
+    }
+}
+
+.subMenuWell {
+    background: @colorSecondary;
+    .menuTitle {
+        color: @colorBgThird;
+    }
+}
+
+.ServerGroupContainer {
+    .ServerGroup {
+        &.Online {
+            background-color: @colorBgSecond;
+            border-color: @colorBgSecond;
+            padding: 2px;
+            .ServerGroupHeader {
+                background-color: @colorBgSecond;
+                border-radius: 8px 8px 5px 5px;
+                margin-bottom: 4px;
+            }
+            .InstanceList {
+                border-radius: 5px 5px 16px 16px;
+                .ServerEntry {
+                    color: @white80pct;
+                    .ServerEntryImage.Offline {
+                        filter: sepia(1) saturate(2) hue-rotate(0deg) brightness(0.2);
+                    }
+                    &.NewServerEntry {
+                        background-color: @colorBgSecond;
+                    }
+                    .ServerEntryInfo {
+                        .bgInfo {
+                            background-color: @colorActive;
+                            border-color: @colorActive;
+                            &:hover {
+                                background-color: @colorDarkest;
+                                border-color: @colorDarkest;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ServerGroupHeader {
+            text-shadow: 2px 2px 6px @black30pct;
+        }
+    }
+}
+
+button, .button {
+    border: 1px solid @black30pct;
+    background-color: @black30pct;
+    &:hover {
+        background-color: @black50pct;
+    }
+    &#loginButton {
+        background-color: @actionDark;
+        border: 1px solid @actionDark;
+        &:hover {
+            background-color: @actionLite;
+        }
+    }
+}
+
+a {
+    color: @colorSelect;
+    &:hover {
+        color: @colorActive;
+    }
+}
+
+.iconButton {
+    background-color: @actionDark80;
+    
+    &.toggled {
+        background-color: @actionLite;
+    }
+    &:hover {
+        background-color: @colorTertiary;
+        border-color: @colorTertiary;
+    }
+}
+
+.ServerEntryActions {
+    .iconButton {
+        border: 1px solid @black30pct;
+
+        &:nth-of-type(5) {
+            // this is the middle button (they are floating right to left, and one has display:none)
+            border-left: none;
+            border-right: none;
+        }
+
+        &.bgRed {
+            background-color: @bgRedV2;
+            border: 1px solid @bgRedV2;
+            &:hover {
+                background-color: @bgRedV2Hov;
+                border: 1px solid @bgRedV2Hov;
+            }
+        }
+
+        &.bgGreen {
+            background-color: @bgGreenV2;
+            border: 1px solid @bgGreenV2;
+            &:hover {
+                background-color: @bgGreenV2Hov;
+                border: 1px solid @bgGreenV2Hov;
+            }
+        }
+    }
+}
+
+.icons_computer {
+    background-color: @black50pct;
+    border-radius: 24px;
+}
+
+.bgPurple, .bgPink, .bgInfo {
+    background-color: @colorAccent;
+    border: 1px solid @colorAccent;
+    &:hover {
+        background-color: @colorActive;
+    }
+}
+
+#mainBody {
+    background: @colorBgMain;
+}
+
+#sideMenu a {
+    font-size: 100%;
+    color: @colorBgThird;
+
+    &:hover {
+        color: @colorSecondary;
+        background-color: @black50pct;
+    }
+    &:active {
+        background-color: @colorPrimary;
+    }
+    &.selected {
+        color: @actionDark;
+        background-color: @colorBgMain;
+    }
+    &.hasNotice {
+        background-color: @noticeTrans;
+        &:hover {
+            color: @colorBgThird;
+        }
+    }
+    &.info {
+        .warn, .subtitle {
+            color: @actionDark;
+        }        
+    }
+}
+
+input[type=text], input[type=password], input[type=url], input[type=number], input[type=email], select, textarea, .popupTrigger {
+    background-color: @colorInput;
+    color: @black80pct;
+    &::placeholder {
+        color: @black40pct;
+    }
+    &:focus-visible {
+        outline: @colorBgSecond auto 1px;
+    }
+}
+
+input.searchBox {
+    background-color:transparent;
+    ::placeholder {
+        color: @white40pct;
+    }
+}
+
+input[type=checkbox] + span,
+input[type=checkbox][indeterminate] + span {
+    background-color: @actionLite;
+    &::after {
+        background-color: @colorAccent;
+    }
+}
+
+input[type=checkbox]:checked + span,
+input[type=checkbox][indeterminate]:checked + span {
+    background-color: @actionDark;
+    &::after {
+        background-color: #ca931c;
+    }
+}
+
+#searchResults {
+    color: @white60pct;
+    background-color: @black80pct;
+
+    .searchResultCategory {
+        .searchResultCategoryInfo {
+            background-color: @black50pct;
+        }
+    }
+}
+
+#searchResults .searchResult {
+    border-bottom: 1px solid gray;
+    padding: 8px;
+    font-size: smaller;
+}
+
+.settingsGroup .groupBody {
+    .settingContainer {
+        background-color: @colorSecondary;
+        border-color: @colorAccent;
+    }
+    .settingInfo {
+        color: @linkStandard;
+    }
+    .settingLabel {
+        .settingDescription {
+            color: @black80pct;
+        }
+        span.inputFieldSuffix {
+            color: @black40pct;
+        }
+    }
+}
+
+.provisionSettingContainer, .sideItemData {
+    .provisionSetting {
+        .settingDescription, .permNodeDescription {
+            color: @black80pct;
+        }
+    }
+    .treeContainer {
+        margin-bottom: 5px;
+    }
+    hr {
+        color: @black30pct;
+    }
+}
+
+thead {
+    border-bottom: 1px solid @black30pct;
+}
+
+.wizardTab .wizardContents {
+    background-color: @colorBgMain;
+    border-bottom: 8px solid @colorAccent;
+
+    h2 {
+        background-color: @colorAccent;
+    }
+
+    .containerWarning {
+        button {
+            &.bgInfo {
+                background-color: @colorDarkest;
+                border-color: @colorDarkest;
+                &:hover {
+                    background-color: @colorActive;
+                    border-color: @colorActive;
+                }
+            }
+        }
+        &.required {
+            background-color: @colorTertiary;
+        }
+    }
+
+    button.bgGreen {
+        border: 1px solid @white40pct;
+        background-color: @white40pct;
+        color: @black90pct;
+        &:hover {
+            border: 1px solid @black50pct;
+            background-color: @black50pct;
+            color: white;
+        }
+    }
+}
+
+#tabInfo {
+    h2 {
+        margin: 6px 0 0 0;
+        font-size: 1.7em;
+        font-weight: bold;
+        color: @black50pct;
+    }
+}
+
+.scheduleTriggerInfo {
+    border: 1px solid @colorAccent;
+    background-color: @colorSecondary;
+}
+
+.splitViewInfo.splitViewInfo { 
+    background-color: @colorBgMain;
+}
+
+.itemList .item {
+    &.selected {
+        border-right: 4px solid @actionDark;
+        background-color: @colorBgMain;
+        color: @actionDark;
+    }
+    &:hover {
+        background-color: @black50pct;
+        color: @colorSecondary;
+    }    
+}
+
+#fileManagerHeader .fmPathSegment {
+    background-color: @colorSecondary;
+    &::after {
+        border-left: 10px solid @colorSecondary;
+    }
+}
+
+#fileManagerHeader .fmPathSegment:nth-child(even) {
+    background-color: @colorPrimary;
+    &::after {
+        border-left: 10px solid @colorPrimary;
+    }
+}
+
+#fileManagerHeader .fmPathSegment,
+#fileManagerHeader .fmPathSegment:nth-child(even) {
+    &::after {
+        left: 9px;
+    }
+    &:hover {
+        background-color: @colorSelect;
+        color: @colorSecondary;
+        &::after {
+            border-left: 10px solid @colorSelect;
+        }
+    }
+}
+
+#fileManagerList {
+    background-color: @colorBgSecond;
+
+    .fileManagerEntry {
+        .fileEntrySubtitle {
+            color: @colorSecondary;
+        }
+        &.selected {
+            background-color: @colorBgThird;
+        }
+        &:hover {
+            background: none;
+            background-color: @colorAccent;
+            
+        }
+    }
+}
+
+.consoleTimestamp {
+    color: @colorSelect;
+}
+
+.datastoreContainer {
+    .datastoreItem {
+        background-color: @colorDataItem;
+        text-shadow: 2px 2px 2px @black30pct;
+    }
+    .newDatastoreItem {
+        background-color: @black40pct;
+        .plusIcon {
+            color: @black50pct;
+        }
+    }
+}
+
+.bodyTab .analyticsSection .sectionHeader .headerControls div.active {
+    color: @colorActive;
+}
+
+.permissionDescriptions div .description,
+.permNodeDescription {
+    color: @white60pct;
+}
+
+.modalpanel {
+    background-color: @colorTertiary;
+    border-bottom: 8px solid @colorAccent;
+
+    #modaltitle {
+        background-color: @colorAccent;
+    }
+
+    button.bgGreen {
+        border: 1px solid @white40pct;
+        background-color: @white40pct;
+        color: @black90pct;
+        &:hover {
+            border: 1px solid @black50pct;
+            background-color: @black50pct;
+            color: white;
+        }
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+    #loginContainer {
+        > #loginLogo img {
+            margin: 0;
+            max-width: 88%;
+        }    
+    }
+}
+
