@@ -18,7 +18,9 @@
 @colorTertiary:  #b59f7d;
 @colorBgThird:   #826c4a;
 
-@colorDarkest:   #888;
+@greyLighter:    #9e9e9e;
+@greyLight:      #888;
+@greyMid:        #737373;
 @colorHighlite:  #444;
 @colorBgDarker:  #3b3b3b;
 @colorBgDark:    #333;
@@ -37,6 +39,7 @@
 @black50pct:     rgba(0, 0, 0, 0.5);
 @black40pct:     rgba(0, 0, 0, 0.4);
 @black30pct:     rgba(0, 0, 0, 0.3);
+@black15pct:     rgba(0, 0, 0, 0.15);
 
 @white40pct:     rgba(255, 255, 255, 0.4);
 @white60pct:     rgba(255, 255, 255, 0.6);
@@ -52,6 +55,11 @@
 body, .bodyTab, .tabHeaderContainer {
     background-color: @colorBgMain;
     color: @black80pct;
+
+    .AppStatus {
+        color: @white70pct;
+        text-shadow: 1px 1px 3px @black50pct;
+    }
 
     .tabHeader {
         &:hover {
@@ -137,8 +145,8 @@ body, .bodyTab, .tabHeaderContainer {
                             background-color: @colorActive;
                             border-color: @colorActive;
                             &:hover {
-                                background-color: @colorDarkest;
-                                border-color: @colorDarkest;
+                                background-color: @greyLight;
+                                border-color: @greyLight;
                             }
                         }
                     }
@@ -173,9 +181,11 @@ a {
     }
 }
 
+.InstanceList .ServerEntry .ServerEntryTop .ServerEntryStatus.bgGray,
+.ServerGroupContainer .ServerGroup.Online .InstanceList .ServerEntry .ServerEntryInfo .bgInfo,
 .iconButton {
     background-color: @actionDark80;
-    
+
     &.toggled {
         background-color: @actionLite;
     }
@@ -358,8 +368,8 @@ thead {
     .containerWarning {
         button {
             &.bgInfo {
-                background-color: @colorDarkest;
-                border-color: @colorDarkest;
+                background-color: @greyLight;
+                border-color: @greyLight;
                 &:hover {
                     background-color: @colorActive;
                     border-color: @colorActive;
@@ -389,6 +399,9 @@ thead {
         font-size: 1.7em;
         font-weight: bold;
         color: @black50pct;
+    }
+    h4 {
+        color: @black80pct;
     }
 }
 
@@ -501,6 +514,37 @@ thead {
             border: 1px solid @black50pct;
             background-color: @black50pct;
             color: white;
+        }
+    }
+
+    .modalcontents {
+        #modalsubtitle {
+            color: @white80pct;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px @black50pct;
+        }
+    }
+}
+
+#notificationContainer {
+    background-color: @colorTertiary;
+
+    .notificationBanner {
+        background-color: @colorAccent;
+    }
+
+    .notification {
+        &:hover {
+            background-color: @black15pct;
+        }
+
+        .notificationProgessContainer {
+            box-shadow: inset 0px 1px 0px @black50pct, inset 0px -1px 0px @black50pct, inset 1px 0px 0px @black50pct, inset -1px 0 0px @black50pct;
+
+            .notificationProgressBar {
+                background-color: @black50pct;
+                background-image: linear-gradient(45deg, @black15pct 14%, @black50pct 14%, @black50pct 40%, @black15pct 40%, @black15pct 60%, @black50pct 60%, @black50pct 85%, @black15pct 85%, @black15pct 100%);
+            }
         }
     }
 }
