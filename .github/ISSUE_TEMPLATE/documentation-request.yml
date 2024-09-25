@@ -1,0 +1,18 @@
+name: Documentation Request
+description: To request documentation on a given aspect of AMP.
+labels: [documentation]
+body:
+- type: markdown
+  attributes:
+    value: |
+      Please include the following:
+      * Links to any existing documentation if it exists but is unclear.
+      * Information on what feature/aspect of AMP needs documenting.
+      * What you're currently trying to do with AMP that has led you to require the given feature.
+      * Some background on what information you might like to see in the documentation.
+- type: textarea
+  attributes:
+    label: Documentation Description
+    description: Describe your request.
+  validations:
+    required: true

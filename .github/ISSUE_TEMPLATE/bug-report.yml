@@ -1,0 +1,69 @@
+name: Bug Report
+description: Bugs in AMP, the instance manager, or official AMP modules.
+labels: [bug]
+body:
+- type: markdown
+  attributes:
+    value: |
+      Please only include one issue per post! Do not try and bring up multiple requests in a single post.
+- type: input
+  attributes:
+    label: Operating System
+    description: Include distribution name and version number.
+    placeholder: Debian 12.6.0
+  validations:
+    required: true
+- type: input      
+  attributes:
+    label: AMP Version and Build Date
+    description: |
+      Always use the version number, 'latest' is not valid!
+    placeholder: 2.5.1.6 - 20240816.1
+  validations:
+    required: true
+- type: dropdown      
+  attributes:
+    label: AMP Release Stream
+    options:
+      - LTS
+      - Mainline
+      - Preview
+      - Development
+  validations:
+    required: true
+- type: checkboxes
+  attributes:
+    label: I confirm that
+    options:
+      - label: I have searched for an existing bug report for this issue.
+        required: true
+      - label: I am using the latest available version of AMP.
+        required: true
+      - label: my operating system is up-to-date.
+        required: true
+- type: textarea
+  attributes:
+    label: Intended Action
+    description: What are you trying to do?
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Expected Behaviour
+    description: What are you expecting to happen?
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Actual Behaviour
+    description: |
+      What is actually happening? 'Nothing' is not an acceptable answer!
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Reproduction
+    description: |
+      Starting from a clean install, how do you reproduce the issue that causes the symptoms described above? Imagine you're describing the problem to someone who has no idea what AMP is and needs to recreate the issue themselves.
+  validations:
+    required: true
