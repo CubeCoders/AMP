@@ -4,7 +4,7 @@
  * Description: A Pink Fantasy theme.
  * Author: James Manker (Iceofwraith) Edited By Daniel Elliott (ssfdre38)
  * Platform: For AMP (Application Management Panel) By Cubecoders Limited
- * Version: 1.7.2 For AMP 2.5.1.8
+ * Version: 1.7.4 For AMP 2.5.1.8
  * Image Copyright: Background by Yuki https://github.com/IceOfWraith/Yuki No copyright.
  **/
 
@@ -130,7 +130,6 @@ button:disabled {
 
 #loginLogo {
   display: block; /* Ensure it is displayed */
-  margin-bottom: auto; /* Push it to the top */
 }
 
 #loginLogo img {
@@ -157,8 +156,7 @@ h6 {
 
 #loginForm {
   border-radius: 6px !important;
-  margin-top: auto; /* Push it to the bottom */
-  width: 450px; /* Adjust width as needed */
+  width: 400px; /* Adjust width as needed */
   align-items: center !important;
 }
 
@@ -194,7 +192,7 @@ h6 {
 
 #sideMenu a.selected {
   background-color: #222;
-  color: darkmagenta ;
+  color: rgba(160,0,160) ;
 }
 
 /*Left Side Menu*/
@@ -238,7 +236,7 @@ input[type="checkbox"]:checked + span::after {
 }
 
 #sideMenu a.selected{
-  color:rgb(160, 0, 160);
+  color:rgb(180, 0, 180);
 }
 
 /*New status bar in the instance view*/
@@ -406,7 +404,7 @@ input[type=submit].slideIcon,
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
 }
@@ -421,6 +419,43 @@ input[type=submit].slideIcon,
 
 .iconButton.toggled {
   background-color: rgb(120, 0, 120) !important;
+}
+
+/*File Manager*/
+.fmPathSegment {
+  background-color: rgb(100, 0, 100) !important;
+}
+
+.fmPathSegment::after{
+  border-left: 10px solid rgb(100, 0, 100) !important;
+}
+
+.fmPathSegment:nth-child(2n)
+{
+  background-color: rgb(180, 0, 180) !important;
+}
+
+.fmPathSegment:nth-child(2n)::after
+{
+  border-left: 10px solid rgb(180, 0, 180) !important;
+}
+
+.fileManagerEntry.selected {
+  background-color: rgb(120, 0, 120, 0.4) !important;
+}
+
+.fileManagerEntry:hover {
+  background: rgb(180, 0, 180, 0.4);
+  background-color: rgb(180, 0, 180, 0.4) !important;
+}
+
+#editorFilename{
+  color: white !important;
+}
+
+/*Minecraft Plugins Page*/
+#BukGetSearchQuery input{
+  color: white;
 }
 
 /*Community Pages*/
