@@ -455,7 +455,7 @@ input[type=submit].slideIcon,
 
 /*Minecraft Plugins Page*/
 #BukGetSearchQuery input{
-  color: white;
+  color: white !important;
 }
 
 /*Community Pages*/
