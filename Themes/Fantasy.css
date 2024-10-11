@@ -520,12 +520,18 @@ input[type=submit].slideIcon,
   border:1px solid darkmagenta;
 }
 
+/*Side Menu Colors*/
+
 #sideMenu a.info .warn, #sideMenu a.info .subtitle{
   color: darkmagenta;
 }
 
 #sideMenu a.hasNotice{
-  background-color: rgb(101,21,71, 0.2)
+  background-color: rgb(101,21,71, 0.2);
+}
+
+#sideMenu a:hover{
+  background-color: rgba(140, 0, 140, 0.2);
 }
 
 /*Background Image*/
