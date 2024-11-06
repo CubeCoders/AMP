@@ -25,10 +25,10 @@ body:
   attributes:
     label: AMP Release Stream
     options:
-      - LTS
       - Mainline
       - Preview
       - Development
+      - LTS
   validations:
     required: true
 - type: checkboxes
