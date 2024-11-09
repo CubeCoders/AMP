@@ -2,7 +2,8 @@
  * @title: Steam Classic
  *         A flashback to a bygone era for Valve's game store client
  *
- * Created by KDallas | V1.0 | 09/10/2024
+ * Created by KDallas | V1.0 | 09/10/2024 | AMP 2.5.x.x
+ *                    | V1.1 | 09/11/2024 | AMP 2.6.0.x
  * https://wlab.au/
  *
  */
@@ -26,6 +27,7 @@
 
 @black90pct:     rgba(0, 0, 0, 0.9);
 @black80pct:     rgba(0, 0, 0, 0.8);
+@black70pct:     rgba(0, 0, 0, 0.7);
 @black50pct:     rgba(0, 0, 0, 0.5);
 @black40pct:     rgba(0, 0, 0, 0.4);
 @black30pct:     rgba(0, 0, 0, 0.3);
@@ -138,45 +140,73 @@ body, .bodyTab, .tabHeaderContainer {
         &.Online {
             background-color: @steamBg2nd;
             border-color: @steamBg2nd;
-            padding: 2px;
+            border-radius: 8px;
+
             .ServerGroupHeader {
-                background-color: @steamBg2nd;
-                border-radius: 8px 8px 5px 5px;
-                margin-bottom: 4px;
+                background-color: @steamBg3rd;
+                margin: 8px;
+                border-radius: 8px;
+
+                .ServerGroupName {
+                    padding-top: 10px;
+                }
+                .SystemInfo {
+                    right: 8px;
+                }
             }
+
             .InstanceList {
-                border-radius: 5px 5px 16px 16px;
+                margin: 12px;
+
                 .ServerEntry {
-                    &[data-state="0"] {
-                        color: @white80pct;
-                    }
                     .ServerEntryImage {
-                        width: 100%;
+                        &.Blur {
+                            &.Offline {
+                                filter: sepia(1) saturate(2) hue-rotate(20deg) brightness(0.2) blur(16px);
+                            }
+                        }
                         &.Offline {
                             filter: sepia(1) saturate(2) hue-rotate(20deg) brightness(0.2);
-                        }                        
+                        }
                     }
+
                     &.NewServerEntry {
                         background-color: @steamBg2nd;
+                        border-left: 1px solid @black30pct;
                         span {
                             color: @steamLite;
                         }
                     }
+
+                    &.statusOffline {
+                        border-left-color: @black70pct;
+                    }
+                    &.statusBusy {
+                        border-left-color: @actionMed;
+                        
+                    }
+                    &.statusNotice {
+                        border-left-color: @actionDark;
+                    }
+                    &.statusRunning {
+                        border-left-color: @steamLite;
+                    }
+                    &.statusFail {
+                        border-left-color: @bgRedV2;
+                    }
+
                     .ServerEntryTop {
                         .ServerEntryStatus {
                             &.bgInfo {
                                 background-color: @actionMed;
                                 border-color: @actionMed;
                             }
-                        }
-                    }
-                    .ServerEntryInfo {
-                        .bgInfo {
-                            background-color: @colorActive;
-                            border-color: @colorActive;
-                            &:hover {
-                                background-color: @greyLight;
-                                border-color: @greyLight;
+                            &.bgGreen {
+                                background-color: @steamLite;
+                                border-color: @steamLite;
+                                color: @black50pct;
+                                font-weight: bold;
+                                text-shadow: 2px 2px 2px @white30pct;
                             }
                         }
                     }
@@ -287,7 +317,7 @@ a {
     }
 }
 
-.bgPurple, .bgPink, .bgInfo {
+.bgPurple, .bgPink, .bgInfo, .bgBlue {
     background-color: @actionMed;
     border: 1px solid @actionMed;
     &:hover {
