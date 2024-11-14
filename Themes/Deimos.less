@@ -1,0 +1,751 @@
+﻿/**
+ * @title: Deimos
+ *         "Fear" followed "Dread", although the latter is quite pathetic by comparison!
+ *
+ * Created by KDallas | V1.0 | 14/11/2024 | AMP 2.6.0.x
+ *
+ * https://wlab.au/
+ *
+ */
+
+@thHilite:       #736659;
+@thBgMain:       #584f44;
+@thBgMain80:     #584f44cc;
+@thBg2nd:        #464037;
+@thBg3rd:        #312d26;
+
+@thLite:         #c48c50;
+@thLite80:       #c48c50cc;
+@thLite60:       #c48e5099;
+@noticeTrans:    #ff88001a;
+
+@actionDark:     #654522;
+@actionMed:      #795f49;
+@actionLite:     #a78e6d;
+
+@greyLight:      #888;
+@colorActive:    #222;
+
+@black90pct:     rgba(0, 0, 0, 0.9);
+@black80pct:     rgba(0, 0, 0, 0.8);
+@black70pct:     rgba(0, 0, 0, 0.7);
+@black50pct:     rgba(0, 0, 0, 0.5);
+@black40pct:     rgba(0, 0, 0, 0.4);
+@black30pct:     rgba(0, 0, 0, 0.3);
+@black20pct:     rgba(0, 0, 0, 0.2);
+@black15pct:     rgba(0, 0, 0, 0.15);
+
+@white30pct:     rgba(255, 255, 255, 0.3);
+@white40pct:     rgba(255, 255, 255, 0.4);
+@white50pct:     rgba(255, 255, 255, 0.5);
+@white60pct:     rgba(255, 255, 255, 0.6);
+@white70pct:     rgba(255, 255, 255, 0.7);
+@white80pct:     rgba(255, 255, 255, 0.8);
+
+@infoStandard:   rgba(196, 140, 80, 0.8);
+@bgRedV2:        rgba(185, 0, 0, 0.8);
+@bgRedV2Hov:     rgba(135, 0, 0, 0.7);
+@bgGreenV2:      rgba(0, 185, 0, 0.8);
+@bgGreenV2Hov:   rgba(0, 135, 0, 0.7);
+
+
+body, .bodyTab, .tabHeaderContainer {
+    color: @white70pct;
+
+    .AppStatus {
+        color: @white70pct;
+        text-shadow: 1px 1px 3px @black50pct;
+    }
+
+    .tabHeader {
+        &:hover {
+            background-color: @black50pct;
+            color: @white50pct
+        }
+        &.active, &:active {
+            background-color: @thHilite;
+            border-bottom: 2px solid @thHilite !important; // yeah I know... base template does this :(
+
+            &:hover {
+                background-color: @black50pct;
+                border-bottom: 2px solid transparent !important; // yeah I know... base template does this :(
+                color: @white50pct;
+            }
+        }
+    }
+
+    #tab_currentuser {
+        span.bgRed {
+            background-color: @bgRedV2;
+            border: 1px solid @bgRedV2;
+            padding: 1px 5px;
+            border-radius: 4px;
+            color: @white70pct;
+        }
+    }
+
+    #tab_usermanagement, #tab_rolemanagement, #tab_activesessions, #tab_auditlog, #tab_AnalyticsPlugin_Analytics {
+        background-color: @thBgMain80;
+    }
+}
+
+body {
+    background-image: url(/Images/Phobos.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.tabHeaderContainer {
+    background-color: @thBgMain;
+}
+
+#barTop {
+    background-color: @black30pct;
+}
+
+.tabHeaderContainer {
+    border-bottom: 4px solid @thHilite;
+    padding-top: 5px;
+    background-color: @black30pct;
+
+    .tabHeader {
+        &.active {
+            box-shadow: 0 22px 32px @black80pct;
+        }
+    }
+}
+
+#loginContainer, .sideItemList, #sideMenuContainer {
+    background: none;
+    background-color: @thBg2nd;
+    > #userInfo {
+        background-color: @black30pct;
+        color: @white60pct;
+        border-radius: 23px 0 0 23px;
+    }
+    > #loginLogo img {
+        background-color: @black20pct;
+        padding: 20px;
+        margin: -15px 0 0 -20px;
+        border-radius: 16px;
+    }
+    .menuTitle {
+        color: @thLite;
+    }
+}
+
+#loginContainer {
+    #loginForm {
+        input {
+            background-color: @thHilite;
+        }
+    }
+}
+
+.sideItemList {
+    height: calc(100% - 48px);
+}
+
+.subMenuWell {
+    background: none;
+    background-color: @thBg2nd;
+    .menuTitle {
+        color: @thLite;
+    }
+}
+
+.ServerGroupContainer {
+    .ServerGroup {
+        &.Online {
+            background-color: @thBgMain80;
+            border-color: @thBgMain80;
+            border-radius: 8px;
+
+            .ServerGroupHeader {
+                background-color: @thBg3rd;
+                margin: 8px;
+                border-radius: 8px;
+
+                .ServerGroupName {
+                    padding-top: 10px;
+                }
+                .SystemInfo {
+                    right: 8px;
+                }
+            }
+
+            .InstanceList {
+                margin: 12px;
+
+                .ServerEntry {
+                    .ServerEntryImage {
+                        &.Blur {
+                            &.Offline {
+                                filter: sepia(1) saturate(2) hue-rotate(-15deg) brightness(0.2) blur(16px);
+                            }
+                        }
+                        &.Offline {
+                            filter: sepia(1) saturate(2) hue-rotate(-15deg) brightness(0.2);
+                        }
+                    }
+
+                    &.NewServerEntry {
+                        background-color: @thBg2nd;
+                        border-left: 1px solid @black30pct;
+                        span {
+                            color: @thLite;
+                        }
+                    }
+
+                    &.statusOffline {
+                        border-left-color: @black70pct;
+                    }
+                    &.statusBusy {
+                        border-left-color: @actionMed;
+                    }
+                    &.statusNotice {
+                        border-left-color: @actionDark;
+                    }
+                    &.statusRunning {
+                        border-left-color: @thLite;
+                    }
+                    &.statusFail {
+                        border-left-color: @bgRedV2;
+                    }
+
+                    .ServerEntryTop {
+                        .ServerEntryStatus {
+                            &.bgInfo {
+                                background-color: @actionMed;
+                                border-color: @actionMed;
+                            }
+                            &.bgGreen {
+                                background-color: @thLite;
+                                border-color: @thLite;
+                                color: @black50pct;
+                                font-weight: bold;
+                                text-shadow: 2px 2px 2px @white30pct;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ServerGroupHeader {
+            text-shadow: 2px 2px 6px @black30pct;
+        }
+    }
+}
+
+button, .button {
+    border: 1px solid @black30pct;
+    background-color: @black30pct;
+    &:hover {
+        background-color: @black50pct;
+    }
+    &#loginButton {
+        background-color: @actionDark;
+        border: 1px solid @actionDark;
+        &:hover {
+            background-color: @thBg3rd;
+            border-color: @thBg3rd;
+        }
+    }
+    &.disabled {
+        border: 1px solid @black15pct;
+        background-color: @black15pct;
+        &:hover {
+            background-color: @black40pct;
+            border: 1px solid @black40pct;
+        }
+    }
+}
+
+.contextMenu {
+    .flexButtonGroup {
+        .buttonListSeparator {
+           border-bottom: 1px solid @thLite80;
+       }
+   }
+}
+
+.well.info {
+    border: 1px solid @thLite80;
+    .mat-icon {
+        color: @thLite80;
+    }
+}
+
+a {
+    color: @black90pct;
+    &:hover {
+        color: @black80pct;
+    }
+    &:visited {
+        color: @black50pct;
+    }
+}
+
+.InstanceList .ServerEntry .ServerEntryTop .ServerEntryStatus.bgGray,
+.ServerGroupContainer .ServerGroup.Online .InstanceList .ServerEntry .ServerEntryInfo .bgInfo,
+.iconButton {
+    background-color: @thBg3rd;
+    border-color: @thBg3rd;
+    &.toggled {
+        background-color: @actionMed;
+        border-color: @actionMed;
+    }
+    &:hover {
+        background-color: @thBg2nd;
+        border-color: @thBg2nd;
+    }
+}
+
+.ServerEntryActions {
+    .iconButton {
+        border: 1px solid @black30pct;
+
+        &:nth-of-type(5) {
+            // this is the middle button (they are floating right to left, and one has display:none)
+            border-left: none;
+            border-right: none;
+        }
+
+        &.bgRed {
+            background-color: @bgRedV2;
+            border: 1px solid @bgRedV2;
+            &:hover {
+                background-color: @bgRedV2Hov;
+                border: 1px solid @bgRedV2Hov;
+            }
+        }
+
+        &.bgGreen {
+            background-color: @bgGreenV2;
+            border: 1px solid @bgGreenV2;
+            &:hover {
+                background-color: @bgGreenV2Hov;
+                border: 1px solid @bgGreenV2Hov;
+            }
+        }
+    }
+}
+
+#currentSessionsTable {
+    .icon {
+        background-color: @black50pct;
+        border-radius: 24px;
+    }
+}
+
+.bgPurple, .bgPink, .bgInfo, .bgBlue {
+    background-color: @actionMed;
+    border: 1px solid @actionMed;
+    &:hover {
+        background-color: @thBg2nd;
+        border: 1px solid @thBg2nd;
+    }
+}
+
+.bgAmber {
+    background-color: @thLite;
+    border: 1px solid @thLite;
+    color: @black80pct;
+    &:hover {
+        background-color: @thHilite;
+        border: 1px solid @thHilite;
+    }
+}
+
+.itemTag {
+    background-color: @thLite60;
+    color: @black80pct;
+}
+
+#mainBody {
+    background: none;
+}
+
+#sideMenu a {
+    font-size: 100%;
+    color: @white50pct;
+    &:hover, &:active {
+        color: @white80pct;
+        background-color: @black50pct;
+    }
+    &.selected {
+        color: @thLite;
+        background-color: @thBgMain;
+    }
+    &.hasNotice {
+        background-color: @noticeTrans;
+        &:hover {
+            color: @white50pct;
+        }
+    }
+    &.info {
+        .warn, .subtitle {
+            color: @thLite;
+        }        
+    }
+}
+
+input[type=text], input[type=password], input[type=url], input[type=number], input[type=email], select, textarea, .popupTrigger {
+    background-color: @thHilite;
+    color: @black80pct;
+    border-bottom: 1px solid @black80pct;
+    &::placeholder {
+        color: @black40pct;
+    }
+    &:focus-visible {
+        outline: @black50pct solid 1px;
+    }
+}
+
+input.searchBox {
+    background-color:transparent;
+    ::placeholder {
+        color: @white40pct;
+    }
+}
+
+input[type=checkbox] + span,
+input[type=checkbox][indeterminate] + span {
+    background-color: @actionMed;
+    &::after {
+        background-color: @actionLite;
+    }
+}
+
+input[type=checkbox]:checked + span,
+input[type=checkbox][indeterminate]:checked + span {
+    background-color: @actionDark;
+    &::after {
+        background-color: @thLite;
+    }
+}
+
+#searchResults {
+    color: @white60pct;
+    background-color: @black80pct;
+
+    .searchResultCategory {
+        .searchResultCategoryInfo {
+            background-color: @black50pct;
+        }
+    }
+}
+
+#searchResults .searchResult {
+    border-bottom: 1px solid gray;
+    padding: 8px;
+    font-size: smaller;
+}
+
+.settingsGroup .groupBody {
+    .settingContainer {
+        background-color: @thBg2nd;
+        border-color: @thBg2nd;
+        .settingWarning {
+            color: @thLite;
+            margin-top: -32px;
+        }
+    }
+    .settingInfo {
+        color: @infoStandard;
+    }
+    .settingLabel {
+        .settingDescription {
+            color: @white50pct;
+            a {
+                color: @thLite;
+                &:hover {
+                    color: @white80pct;
+                }
+            }
+        }
+        span.inputFieldSuffix {
+            color: @black50pct
+        }
+        textarea {
+            max-width: 100%;
+        }
+    }
+}
+
+.provisionSettingContainer, .sideItemData {
+    .provisionSetting {
+        .settingDescription, .permNodeDescription {
+            color: @black80pct;
+        }
+    }
+    .treeContainer {
+        margin-bottom: 5px;
+    }
+    hr {
+        color: @black30pct;
+    }
+}
+
+thead {
+    border-bottom: 1px solid @black30pct;
+}
+
+.wizardTab .wizardContents, .modalpanel, .modalbuttons,
+#tab_auditlog, #tab_schedule, #tab_ADSModule_Datastores, #tab_LocalFileBackupPlugin_Backups, #statusActions {
+    button.bgGreen {
+        padding: 0 10px;
+        background-color: @actionMed;
+        border: 1px solid @actionMed;
+        color: @white70pct;
+        &:hover {
+            background-color: @thBg2nd;
+            border: 1px solid @thBg2nd;
+            color: @white50pct;
+        }
+    }
+}
+
+#tab_LocalFileBackupPlugin_Backups {
+    #backupsList {
+        .backupListing {
+            &:nth-child(odd) {
+                background-color: @black30pct;
+            }
+            &:hover {
+                background-color: @actionMed;
+            }
+            &:active, &.selected {
+                background-color: @actionDark;
+            }
+            td:first-child {
+                padding-left: 8px;
+            }
+            td:last-child {
+                padding-right: 8px;
+            }
+        }
+    }
+}
+
+.wizardTab .wizardContents {
+    background-color: @thBgMain;
+    border-bottom: 8px solid @thHilite;
+
+    h2 {
+        background-color: @thHilite;
+    }
+
+    .containerWarning {
+        button {
+            &.bgInfo {
+                background-color: @greyLight;
+                border-color: @greyLight;
+                &:hover {
+                    background-color: @colorActive;
+                    border-color: @colorActive;
+                }
+            }
+        }
+        &.required {
+            background-color: @thBg2nd;
+        }
+    }
+
+    &.wizardPopup {
+        > .iconButton {
+            border: 1px solid @white50pct !important;
+        }
+    }
+}
+
+#tabInfo {
+    h2 {
+        margin: 6px 0 0 0;
+        font-size: 1.7em;
+        font-weight: bold;
+        color: @white60pct;
+    }
+    h4 {
+        color: @white50pct
+    }
+}
+
+.scheduleTriggerInfo {
+    border: 1px solid @thHilite;
+    background-color: @thBg2nd;
+
+    .scheduleTriggerDescription {
+        background-color: @thHilite;
+
+        .scheduleTriggerHeaderItem {
+            .scheduleHeader {
+                color: @black50pct;
+            }
+        }
+    }
+
+    .scheduleTriggerTask {
+        border-color: @thHilite;
+
+        .iconButton {
+            &:hover {
+                background-color: @thHilite;
+            }
+        }
+    }
+}
+
+.splitViewInfo.splitViewInfo { 
+    background-color: @thBgMain;
+}
+
+.itemList .item {
+    &.selected {
+        border-right: 4px solid @thLite;
+        background-color: @thBgMain;
+        color: @thLite;
+    }
+    &:hover {
+        background-color: @black50pct;
+        color: @white50pct;
+    }    
+}
+
+#fileManagerHeader .fmPathSegment {
+    background-color: @thBg2nd;
+
+    &::after {
+        border-left: 10px solid @thBg2nd;
+    }
+}
+
+#fileManagerHeader .fmPathSegment:nth-child(even) {
+    background-color: @thBg3rd;
+    &::after {
+        border-left: 10px solid @thBg3rd;
+    }
+}
+
+#fileManagerHeader .fmPathSegment,
+#fileManagerHeader .fmPathSegment:nth-child(even) {
+    &::after {
+        left: 9px;
+    }
+    &:hover {
+        background-color: @actionDark;
+        color: @white40pct;
+        &::after {
+            border-left: 10px solid @actionDark;
+        }
+    }
+}
+
+#fileManagerList {
+    background-color: @black30pct;
+    .fileManagerEntry {
+        .fileEntrySubtitle {
+            color: @white30pct;
+        }
+        &.selected {
+            background-color: @actionDark;
+        }
+        &:hover {
+            background: none;
+            background-color: @actionMed;
+        }
+    }
+}
+
+.consoleEntry {
+    .consoleName {
+        color: @thLite80;
+        &:hover {
+            color: @thLite;
+        }
+    }
+    .consoleTimestamp {
+        color: @white40pct;
+    }
+}
+
+.datastoreContainer {
+    .datastoreItem {
+        background-color: @thBg2nd;
+        text-shadow: 2px 2px 2px @black30pct;
+    }
+    .newDatastoreItem {
+        background-color: @black40pct;
+        .plusIcon {
+            color: @thLite80;
+        }
+    }
+}
+
+.bodyTab .analyticsSection .sectionHeader .headerControls div.active {
+    color: @colorActive;
+}
+
+.permissionDescriptions div .description,
+.permNodeDescription {
+    color: @white60pct;
+}
+
+.modalpanel {
+    background-color: @thBgMain;
+    border-bottom: 8px solid @thHilite;
+
+    #modaltitle {
+        background-color: @thBg2nd;
+    }
+
+    .modalcontents {
+        #modalsubtitle {
+            color: @white80pct;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px @black50pct;
+        }
+    }
+}
+
+#notificationContainer {
+    background-color: @thBg2nd;
+
+    .notificationBanner {
+        background-color: @thHilite;
+    }
+
+    .notification {
+        &:hover {
+            background-color: @black15pct;
+        }
+
+        .notificationProgessContainer {
+            box-shadow: inset 0px 1px 0px @black50pct, inset 0px -1px 0px @black50pct, inset 1px 0px 0px @black50pct, inset -1px 0 0px @black50pct;
+
+            .notificationProgressBar {
+                background-color: @black50pct;
+                background-image: linear-gradient(45deg, @black15pct 14%, @black50pct 14%, @black50pct 40%, @black15pct 40%, @black15pct 60%, @black50pct 60%, @black50pct 85%, @black15pct 85%, @black15pct 100%);
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+    #loginContainer {
+        > #loginLogo img {
+            margin: 0;
+            max-width: 88%;
+        }    
+    }
+}
+
+@media screen and (min-width: 661px) and (max-width: 1000px) {
+    #loginContainer, .sideItemList, #sideMenuContainer {
+        > #userInfo {
+            border-radius: 0;
+        }
+    }
+}
