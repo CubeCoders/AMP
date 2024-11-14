@@ -4,6 +4,7 @@
  *
  * Created by KDallas | V1.0 | 09/10/2024 | AMP 2.5.x.x
  *                    | V1.1 | 09/11/2024 | AMP 2.6.0.x
+ *                    | V1.2 | 14/11/2024 | AMP 2.6.0.x
  * https://wlab.au/
  *
  */
@@ -31,6 +32,7 @@
 @black50pct:     rgba(0, 0, 0, 0.5);
 @black40pct:     rgba(0, 0, 0, 0.4);
 @black30pct:     rgba(0, 0, 0, 0.3);
+@black20pct:     rgba(0, 0, 0, 0.2);
 @black15pct:     rgba(0, 0, 0, 0.15);
 
 @white30pct:     rgba(255, 255, 255, 0.3);
@@ -109,7 +111,7 @@ body, .bodyTab, .tabHeaderContainer {
         border-radius: 23px 0 0 23px;
     }
     > #loginLogo img {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: @black20pct;
         padding: 20px;
         margin: -15px 0 0 -20px;
         border-radius: 16px;
@@ -183,7 +185,6 @@ body, .bodyTab, .tabHeaderContainer {
                     }
                     &.statusBusy {
                         border-left-color: @actionMed;
-                        
                     }
                     &.statusNotice {
                         border-left-color: @actionDark;
@@ -253,6 +254,9 @@ button, .button {
 
 .well.info {
     border: 1px solid @steamLite80;
+    .mat-icon {
+        color: @steamLite80;
+    }
 }
 
 a {
@@ -481,6 +485,28 @@ thead {
             background-color: @steamBg2nd;
             border: 1px solid @steamBg2nd;
             color: @white50pct;
+        }
+    }
+}
+
+#tab_LocalFileBackupPlugin_Backups {
+    #backupsList {
+        .backupListing {
+            &:nth-child(odd) {
+                background-color: @black30pct;
+            }
+            &:hover {
+                background-color: @actionMed;
+            }
+            &:active, &.selected {
+                background-color: @actionDark;
+            }
+            td:first-child {
+                padding-left: 8px;
+            }
+            td:last-child {
+                padding-right: 8px;
+            }
         }
     }
 }
