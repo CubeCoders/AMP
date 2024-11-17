@@ -14,7 +14,7 @@ Recolored and Renamed by Panics
 @keyframes fadein { 0% { opacity: 0; } 10% { opacity: 0.1;  } 20% { opacity: 0.2;  } 30% { opacity: 0.3;  } 40% { opacity: 0.4;  } 50% { opacity: 0.5;  } 60% { opacity: 0.6;  } 70% { opacity: 0.7;  } 80% { opacity: 0.8;  } 90% { opacity: 0.9;  } 100% { opacity: 1; } }
 #tab_ADSModule_Instances, #mainBody, .bodyTab { background:none; }
 html { 
-	background-image:url("Images/shadow_red.jpg"); 
+	background-image:url("../Images/Shadow-Red_html.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -105,16 +105,19 @@ a:hover { color: #ffffff; }
 #sideMenu a {
     font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
     font-weight: bold;
-    font-size: 130%;
     cursor: pointer;
     margin: 0;
     padding: 0;
-    display: block;
     padding: 0.1em 1em 0.1em 0.7em;
     color: #fff;
-    vertical-align: middle;
+    /*
+    font-size: 130%;
+    display: block;
+    vertical-align: middle; 
     height: 48px;
     line-height: 48px;
+    */
+    font-size: 105%;
     text-decoration: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     transition: background-color 0.25s, width 0.25s;
@@ -144,7 +147,6 @@ a:hover { color: #ffffff; }
 .scheduleTriggerDescription {
     background-color: #850000;
     padding: 8px;
-    color: ;
 }
 .scheduleTriggerHeaderItem .scheduleHeader {
     color: #FFF;
@@ -331,8 +333,10 @@ button, input[type=button], input[type=submit], .button {
     border-bottom: 16px solid transparent;
     border-left: 10px solid #ff0000!important;
     content: ' ';
+    /* 
     display: inline-block;
     float: right;
+    */
     position: relative;
     left: 10px;
 }

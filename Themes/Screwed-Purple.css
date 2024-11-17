@@ -11,7 +11,9 @@ Obey The Fist!
 @keyframes slidein { 0% { top: -100%; padding-top:60px; } 50% { top: 0%; padding-top:55px; } 100% { padding-top:32px; } }
 @keyframes fadein { 0% { opacity: 0; } 10% { opacity: 0.1;  } 20% { opacity: 0.2;  } 30% { opacity: 0.3;  } 40% { opacity: 0.4;  } 50% { opacity: 0.5;  } 60% { opacity: 0.6;  } 70% { opacity: 0.7;  } 80% { opacity: 0.8;  } 90% { opacity: 0.9;  } 100% { opacity: 1; } }
 #tab_ADSModule_Instances, #mainBody, .bodyTab { background:none; }
-html { background-image:url("Images/oriental-tiles.png"); }
+html {
+    background-image:url("../Images/Screwed-Purple_html.png");
+}
 body {
     background: linear-gradient(-45deg, #2f005fAA, #37006fBB, #430088AA, #2f005fAA);
 	background-size: 400% 400%;
@@ -93,16 +95,19 @@ a:hover { color: #ffffff; }
 #sideMenu a {
     font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
     font-weight: bold;
-    font-size: 130%;
     cursor: pointer;
     margin: 0;
     padding: 0;
-    display: block;
     padding: 0.1em 1em 0.1em 0.7em;
     color: #fff;
-    vertical-align: middle;
+    /* 
+    font-size: 130%;
+    display: block;
+    vertical-align: middle; 
     height: 48px;
     line-height: 48px;
+    */
+    font-size: 105%;
     text-decoration: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     transition: background-color 0.25s, width 0.25s;
@@ -132,7 +137,6 @@ a:hover { color: #ffffff; }
 .scheduleTriggerDescription {
     background-color: #8000ff;
     padding: 8px;
-    color: ;
 }
 .scheduleTriggerHeaderItem .scheduleHeader {
     color: #FFF;
@@ -321,8 +325,10 @@ button, input[type=button], input[type=submit], .button {
     border-bottom: 16px solid transparent;
     border-left: 10px solid #8000ff!important;
     content: ' ';
+    /* 
     display: inline-block;
     float: right;
+    */
     position: relative;
     left: 10px;
 }
@@ -383,36 +389,36 @@ button, input[type=button], input[type=submit], .button {
 
 
 @media screen and (max-width: 660px), screen and (min-resolution: 100dpi) and (max-width: 980px), screen and (min-resolution: 150dpi) and (max-width: 1440px), screen and (min-resolution: 300dpi) and (max-width: 2000px){
-#bgtext {
-    position: absolute;
-    bottom: -83px!important;
-    right: 0px!important;
-    left: -173px!important;
-}
+    #bgtext {
+        position: absolute;
+        bottom: -83px!important;
+        right: 0px!important;
+        left: -173px!important;
+    }
 }
 
 
 @media screen and (max-width: 1000px) {
-#bgtext {
-    transform: rotate(-90deg) translate(256px, -54px);
-    width: 220px;
-    transform-origin: top right;
-    border-top: none;
-    padding: 0px!important;
-    bottom: -35px!important;
-    text-align: right;
-    width: 236px;
-    right: 9px;
+    #bgtext {
+        transform: rotate(-90deg) translate(256px, -54px);
+        width: 220px;
+        transform-origin: top right;
+        border-top: none;
+        padding: 0px!important;
+        bottom: -35px!important;
+        text-align: right;
+        width: 236px;
+        right: 9px;
 
-}
-#updateAvailable button {
-    background-color: transparent;
-    border-color: white;
-    height: 32px;
-    border-radius: 4px;
-    margin: 0px 4px;
-    font-size: 11pt;
-}
+    }
+    #updateAvailable button {
+        background-color: transparent;
+        border-color: white;
+        height: 32px;
+        border-radius: 4px;
+        margin: 0px 4px;
+        font-size: 11pt;
+    }
 }
 
 /* mobile fixes*/
@@ -423,4 +429,3 @@ button, input[type=button], input[type=submit], .button {
     #sideMenuContainer { background: linear-gradient(180deg,#333333 50%, #222222); overflow:hidden; }
     #barTop, #barBottom { background-color: #333333; }
 }
-
