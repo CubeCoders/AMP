@@ -5,7 +5,7 @@
  *         Down Under, carefully packed
  *         And bottled for you
  *
- * Created by KDallas | V1.1 | 23/11/2024 | AMP 2.6.0.x
+ * Created by KDallas | V1.2 | 23/11/2024 | AMP 2.6.0.x
  *
  * https://wlab.au/
  *
@@ -51,6 +51,7 @@
 @white95pct:     rgba(255, 255, 255, 0.95);
 
 @bgRedV2:        hsla(360, 65%, 55%, 0.8);
+@bgRedMuted:     hsla(360, 55%, 55%, 0.65);
 @bgGreenV2:      hsla(120, 100%, 35%, 0.8);
 @bgGreenMuted:   hsla(120, 80%, 35%, 0.65);
 @bgGradient:     linear-gradient(165deg, @actionDark 0%, @actionMed 45%, @thLite80 100%);
@@ -409,8 +410,8 @@ a {
 
 .AppStatus {
     &.bgRed {
-        background-color: @bgRedV2;
-        border: 1px solid @bgRedV2;
+        background-color: @bgRedMuted;
+        border: 1px solid @bgRedMuted;
     }
 
     &.bgGreen {
@@ -427,15 +428,18 @@ a {
 
     &.bgRed {
         &:hover {
-            background: @btnRedGrad;
+            background: @bgRedMuted;
         }
     }
 
     &.bgGreen {
         &:hover {
             background: @bgGreenMuted;
-            cursor: not-allowed;
         }
+    }
+
+    &:hover {
+        cursor: not-allowed;
     }
 }
 
