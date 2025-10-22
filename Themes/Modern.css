@@ -1,0 +1,1064 @@
+body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+#loginContainer,
+.sideItemList,
+#sideMenuContainer,
+.subMenuWell,
+#barTop,
+.tabHeaderContainer {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.subMenuWell {
+    backdrop-filter: none;
+    background: transparent;
+}
+
+@media screen and (max-width: 660px) {
+    #sideMenuContainer .subMenuWell.appear {
+        background: #16213e;
+    }
+
+    .hiddenOnMobile {
+        display: none !important;
+    }
+}
+
+#sideMenuContainer {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#sideMenu .heroImage {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menuTitle {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+#sideMenu a.padBottom {
+    border-bottom: none;
+}
+
+.sideItemList {
+    box-shadow: inset 8px 8px 8px rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#userInfo {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#bgtext {
+    margin-top: auto;
+    padding: 16px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 12px;
+    color: #71717a;
+    text-align: left;
+}
+
+#barTop {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    height: 48px;
+    padding: 4px 0 4px 250px;
+    right: 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#barTop #tabInfo h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#barTop #tabInfo.remoteInfo h2 {
+    margin: 0;
+}
+
+#barTop #tabInfo h4 {
+    margin: 0;
+}
+
+#barTop #topSearchBox {
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+    margin: 0 32px;
+}
+
+#barTop #topSearchBox input.searchBox {
+    width: 100%;
+    padding: 10px 40px 10px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #e4e4e7;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+#barTop #topSearchBox input:focus {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #3b82f6;
+}
+
+#barTop #topSearchBox .icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #71717a;
+}
+
+#mainBody {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    top: 57px;
+}
+
+#sideMenu a {
+    font-size: 100%;
+}
+
+#sideMenu a:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#sideMenu a:active {
+    background: rgba(59, 130, 246, 0.15);
+}
+
+#sideMenu a.selected {
+    color: #5EA8DE;
+    background: rgba(59, 130, 246, 0.15);
+    box-shadow: none;
+    border-right: 3px solid #3b82f6;
+}
+
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=number],
+input[type=email],
+input[type=search],
+select,
+textarea,
+.popupTrigger {
+    background: #2f3348;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    outline: none;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=url]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=search]:focus,
+select:focus,
+textarea:focus,
+.popupTrigger:focus {
+    background: #2f3348;
+    border-color: #3b82f6;
+}
+
+select option {
+    background: #2f3348;
+    color: #fff;
+}
+
+input.searchBox {
+    background-color: transparent;
+}
+
+.settingsGroup .groupBody .settingContainer {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.3s ease;
+}
+
+.settingsGroup:hover .groupBody:hover .settingContainer:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.scheduleTriggerInfo {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.splitViewInfo.splitViewInfo {
+    background-color: #222;
+}
+
+@media screen and (max-width: 1000px) {
+    #sideMenuContainer {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 10%);
+    }
+    #barTop {
+        width: 100%;
+        left: 0;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #statusActions > div:nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .DisplayMetricHeader .circleChart {
+        display: none;
+    }
+}
+
+
+
+.AppStatus, .listenPort > .AppStatus {
+    align-items: center;
+    gap: 8px;
+    background: rgba(34, 197, 94, 0.1);
+    border: 1px solid #22c55e;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+button,
+input[type=button],
+input[type=submit],
+.button {
+    background-color: rgba(52, 126, 179, 0.1) !important;
+    border: 1px solid #347EB3 !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+button:hover,
+input[type=button]:hover,
+input[type=submit]:hover,
+.button:hover {
+    background-color: rgba(52, 126, 179, 0.3) !important;
+}
+button:active,
+input[type=button]:active,
+input[type=submit]:active,
+.button:active {
+    background-color: rgba(52, 126, 179, 0.1) !important;
+}
+
+.tabHeaderContainer .tabHeader.active {
+    background-color: #347EB3 !important;
+}
+
+.bgBlue {
+    background-color: rgba(41, 134, 204, 0.1) !important;
+    border: 1px solid #2986cc !important;
+}
+.bgBlue:hover {
+    background-color: rgba(41, 134, 204, 0.3) !important;
+}
+.bgBlue:active {
+    background-color: rgba(41, 134, 204, 0.1) !important;
+}
+
+.bgRed {
+    background-color: rgba(183, 0, 0, 0.1) !important;
+    border: 1px solid #B70000 !important;
+}
+.bgRed:hover {
+    background-color: rgba(183, 0, 0, 0.3) !important;
+}
+.bgRed:active {
+    background-color: rgba(183, 0, 0, 0.1) !important;
+}
+
+.bgPink {
+    background-color: rgba(201, 0, 118, 0.1) !important;
+    border: 1px solid #c90076 !important;
+}
+.bgPink:hover {
+    background-color: rgba(201, 0, 118, 0.3) !important;
+}
+.bgPink:active {
+    background-color: rgba(201, 0, 118, 0.1) !important;
+}
+
+.bgPurple {
+    background-color: rgba(147, 73, 216, 0.1) !important;
+    border: 1px solid #9349d8 !important;
+}
+.bgPurple:hover {
+    background-color: rgba(147, 73, 216, 0.3) !important;
+}
+.bgPurple:active {
+    background-color: rgba(147, 73, 216, 0.1) !important;
+}
+
+.bgGray {
+    background-color: rgba(51, 51, 51, 0.1) !important;
+    border: 1px solid #333 !important;
+}
+.bgGray:hover {
+    background-color: rgba(51, 51, 51, 0.3) !important;
+}
+.bgGray:active {
+    background-color: rgba(51, 51, 51, 0.1) !important;
+}
+
+.bgGreen {
+    background-color: rgba(21, 153, 34, 0.1) !important;
+    border: 1px solid #159922 !important;
+}
+.bgGreen:hover {
+    background-color: rgba(21, 153, 34, 0.3) !important;
+}
+.bgGreen:active {
+    background-color: rgba(21, 153, 34, 0.1) !important;
+}
+
+.bgAmber {
+    background-color: rgba(193, 77, 0, 0.1) !important;
+    border: 1px solid #C14D00 !important;
+}
+.bgAmber:hover {
+    background-color: rgba(193, 77, 0, 0.3) !important;
+}
+.bgAmber:active {
+    background-color: rgba(193, 77, 0, 0.1) !important;
+}
+
+.DisplayMetric {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.3s ease;
+    flex-direction: column;
+    width: 100%
+}
+
+.DisplayMetric:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+#AMP_Core_MetricsDisplay {
+    display: flex;
+}
+
+.DisplayMetric .DisplayMetricHeader {
+    background: none !important;
+    margin-bottom: 48px;
+}
+
+.DisplayMetric .DisplayMetricGraph {
+    height: 120px;
+}
+
+.DisplayMetricHeader .circleChart {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.DisplayMetric .DisplayMetricHeader > :nth-child(1) {
+    font-size: 14px;
+    color: #a1a1aa;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.DisplayMetric .DisplayMetricHeader > :nth-child(2) {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+#statusActions {
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: nowrap;
+}
+
+#statusActions > * {
+    width: 100%;
+    justify-items: center;
+    transition: all 0.3s ease;
+}
+
+#statusActions > *:hover {
+    transform: translateY(-4px);
+}
+
+#statusActions > :nth-child(3) {
+    min-width: auto !important;
+}
+
+#statusActions > div {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+#statusActions > div > h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+}
+
+#AMP_Core_Ports {
+    width: 100%;
+}
+
+#AMP_Core_Ports > div > .listenPort {
+    display: grid;
+    grid-template-columns: 8px 12fr 1fr 1fr;
+    column-gap: 8px;
+}
+
+.listenPort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+div[data-viewmodel*="DiagnosticsVM"] > .listenPort > span:nth-child(1) {
+    color: #a1a1aa;
+    font-size: 14px;
+}
+
+div[data-viewmodel*="DiagnosticsVM"] > .listenPort > span:nth-child(2) {
+    font-family: 'Courier New', monospace;
+    color: #3b82f6;
+    font-size: 13px;
+}
+
+.listenPort > .AppStatus.bgGray {
+    padding: 0;
+    min-width: 10px;
+    width: 10px;
+    min-height: 10px;
+    height: 10px;
+    background-color: #6b7280 !important;
+    border: none !important;
+    border-radius: 50%;
+    outline: none !important;
+    box-shadow: 0 0 12px #6b7280;
+}
+
+.listenPort > .AppStatus.bgRed {
+    padding: 0;
+    min-width: 10px;
+    width: 10px;
+    min-height: 10px;
+    height: 10px;
+    background-color: #ef4444 !important;
+    border: none !important;
+    border-radius: 50%;
+    outline: none !important;
+    box-shadow: 0 0 12px #ef4444;
+}
+
+.listenPort > .AppStatus.bgGreen {
+    padding: 0;
+    min-width: 10px;
+    width: 10px;
+    min-height: 10px;
+    height: 10px;
+    background-color: #22c55e !important;
+    border: none !important;
+    border-radius: 50%;
+    box-shadow: 0 0 12px #22c55e;
+}
+
+.AppStatus.bgGreen > span[data-bind*="text: Caption"],
+.AppStatus.bgGray > span[data-bind*="text: Caption"],
+.AppStatus.bgRed > span[data-bind*="text: Caption"] {
+    color: transparent !important;
+    text-shadow: none;
+    position: absolute;
+    pointer-events: none;
+}
+
+.AppStatus.bgGreen > span[data-bind*="text: Icon"],
+.AppStatus.bgGray > span[data-bind*="text: Icon"],
+.AppStatus.bgRed > span[data-bind*="text: Icon"] {
+    color: transparent !important;
+    text-shadow: none;
+    position: absolute;
+    pointer-events: none;
+}
+
+span[data-bind*="text: Name"] {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+span[data-bind*="text: Port"] {
+    font-family: 'Courier New', monospace;
+    color: #e4e4e7;
+}
+
+span[data-bind*="text: ProtocolName"] {
+    padding: 4px 8px;
+    background: rgba(59, 130, 246, 0.2);
+    border: 1px solid #3b82f6;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.ServerEntryActions > button:first-child,
+.ServerEntryActions > button:first-child[style*="none"] + button {
+    border-radius: 8px 0 0 8px;
+}
+
+.ServerEntryActions > button:last-child,
+.ServerEntryActions > button:nth-child(7) {
+    border-radius: 0 8px 8px 0;
+}
+
+
+
+
+.ServerGroup {
+    background-image: none !important;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.ServerGroup:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.ServerGroupHeader {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.ServerGroupName {
+    width: 100%;
+}
+
+.ServerGroupActions {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: #24283f !important;
+    padding: 20px 24px;
+    margin: 0 !important;
+    align-items: center;
+    gap: 16px;
+}
+
+.ServerGroupName > span {
+    padding-top: 16px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: none;
+}
+
+.SystemInfo {
+    font-size: 12px !important;
+    color: #71717a !important;
+    top: 8px !important;
+    right: 12px !important;
+    font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
+    font-weight: lighter;
+}
+
+.InstanceList .ServerEntry.GuidePrompt {
+    flex-direction: column !important;
+}
+
+.InstanceList .ServerEntry.GuidePrompt span {
+    margin-top: 8px;
+    position: initial !important;
+}
+
+.InstanceList .ServerEntry.NewServerEntry {
+    background: rgba(59, 130, 246, 0.1) !important;
+    border: 2px dashed rgba(59, 130, 246, 0.5) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-direction: column-reverse;
+}
+
+.InstanceList .ServerEntry.NewServerEntry span {
+    line-height: 50% !important;
+}
+
+.InstanceList .ServerEntry.NewServerEntry:hover {
+    background: rgba(59, 130, 246, 0.15) !important;
+    border-color: #3b82f6 !important;
+}
+
+.InstanceList .ServerEntry:hover {
+    outline: none !important;
+}
+
+.InstanceList .ServerEntry.NewServerEntry .ServerEntryHeader {
+    background: none !important;
+    font-size: 16px;
+    margin: 0 !important;
+    text-shadow: none !important;
+    color: #3b82f6;
+}
+
+.InstanceList .ServerEntry.NewServerEntry .ServerEntryHeader > h4 {
+    font-weight: 600 !important;
+}
+
+.ServerEntryTop {
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+h3[data-bind*="text: friendlyname"] {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.ServerEntryHeader > h5:nth-child(2) {
+    display: none;
+}
+
+h5[data-bind*="text: endpoint"] {
+    font-size: 12px;
+    color: #A1A1AA;
+    font-family: 'Courier New', monospace;
+    text-shadow: none;
+}
+
+.ServerEntryStatus.bgGreen {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(34, 197, 94, 0.15);
+    border: 1px solid #22c55e;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.ServerEntryStatus.bgGreen > .mat-icon {
+    color: transparent !important;
+    text-shadow: none;
+    pointer-events: none;
+    width: 8px;
+    height: 8px;
+    background: #22c55e;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+.ServerEntryStatus.bgRed {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(34, 197, 94, 0.15);
+    border: 1px solid #ef4444;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.ServerEntryStatus.bgRed > .mat-icon {
+    color: transparent !important;
+    text-shadow: none;
+    pointer-events: none;
+    width: 8px;
+    height: 8px;
+    background: #ef4444;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+.ServerEntryStatus.bgInfo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(34, 197, 94, 0.15);
+    border: 1px solid #3b82f6;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.ServerEntryStatus.bgInfo > .mat-icon {
+    color: transparent !important;
+    text-shadow: none;
+    pointer-events: none;
+    width: 8px;
+    height: 8px;
+    background: #3b82f6;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.InstanceList .ServerEntry .ServerEntryTop .ServerEntryStatus .mat-icon {
+    margin: 0 0 0 4px;
+}
+
+.ServerEntryMetrics {
+    padding: 8px 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.InstanceList .ServerEntry .ServerEntryInfo .Notice {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.InstanceList .ServerEntry .ServerEntryInfo {
+    padding: 0 !important;
+}
+
+.InstanceList .ServerEntry .ServerEntryActions {
+    margin: 0 12px 0 12px !important;
+    position: relative !important;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+.InstanceList .ServerEntry .ServerEntryImage {
+    filter: none !important;
+}
+
+.InstanceList .ServerEntry .ServerEntryImage.Blur {
+    filter: blur(16px) !important;
+}
+
+.ServerEntry {
+    height: auto !important;
+    transition: all 0.3s ease;
+}
+
+.ServerEntry:hover {
+    transform: translateY(-4px);
+}
+
+.InstanceList .ServerEntry .ServerEntryMetrics {
+    text-align: center;
+}
+
+.InstanceList .ServerEntry .ServerEntryMetrics .ServerEntryMetric {
+    flex-direction: column;
+    background: none !important;
+}
+
+.InstanceList .ServerEntry .ServerEntryMetrics .ServerEntryMetric .mat-icon {
+    margin: 0 !important;
+}
+
+.InstanceList .ServerEntry .ServerEntryMetrics .ServerEntryMetric .MetricText h3 {
+    font-size: 11px;
+    color: #a1a1aa;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.InstanceList .ServerEntry .ServerEntryInfo h2, .InstanceList .ServerEntry .ServerEntryInfo h4 {
+    font-size: 16px;
+    font-weight: 700;
+    text-shadow: none !important;
+}
+
+#tab_FileManagerPlugin_FileInfoPopup {
+    background: none !important;
+}
+
+#fileManagerList {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+#tab_FileManagerPlugin_FileManager {
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.fileManagerEntry {
+    padding: 8px 12px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+    align-items: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.fileManagerEntry:hover {
+    background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.fileManagerEntry.selected {
+    background: rgba(34, 197, 94, 0.15) !important;
+    border-left: 4px solid #22c55e !important;
+}
+
+.fileEntryTitle {
+    font-size: 15px;
+    font-weight: 600;
+    color: #e4e4e7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fileManagerEntry .fileEntrySubtitle {
+    font-size: 12px !important;
+    color: #71717a !important;
+}
+
+.fmPathSegment {
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.fmPathSegment {
+    color: #71717a;
+    transition: all ease 0.5s;
+}
+
+.fmPathSegment:hover {
+    color: white;
+}
+
+.fmPathSegment + .fmPathSegment::before {
+    color: #71717a;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border: none !important;
+    content: '>' !important;
+    left: 0 !important;
+}
+
+.fmPathSegment::after {
+    display: none !important;
+}
+
+#fileManagerInfo {
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: 8px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+}
+
+#fileManagerInfo h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#fileManagerInfo .mat-icon {
+    margin: 8px 8px 0 8px !important;
+}
+
+#fileManagerInfo th {
+    display: block;
+    font-size: 12px;
+    color: #a1a1aa;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+    padding: 0;
+}
+
+#fileManagerInfo td {
+    display: block;
+    font-size: 14px;
+    color: #e4e4e7;
+    word-break: break-all;
+    padding-left: 8px;
+    padding-bottom: 20px;
+}
+
+tbody tr:nth-child(even), thead {
+    background: none !important;
+}
+
+.fileManagerEntry .fileEntryKebab {
+    margin: 4px 0 0 4px !important;
+}
+
+.ace-ambiance {
+    background: none !important;
+}
+
+.ace-ambiance .ace_gutter-layer, .ace-ambiance .ace_text-layer {
+    background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.ace-ambiance .ace_scroller {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+#editorContainer {
+    margin-left: -16px;
+    margin-top: 4px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ace-ambiance .ace_gutter {
+    background: rgba(0, 0, 0, 0.3) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+    text-shadow: none !important;
+}
+
+.ace_folding-enabled > .ace_gutter-cell {
+    color: #71717a !important;
+    background: none !important
+}
+
+.ace-ambiance .ace_invisible {
+    color: transparent !important;
+}
+
+.wizardTab .wizardContents {
+    transition: none !important;
+}
+
+.contextMenu.contextMenu {
+    border-radius: 16px;
+    border: none !important;
+    background: #252940 !important;
+}
+
+.wizardTab .wizardContents h2 {
+    background: #1c2033 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contextMenu.contextMenu .flexButtonGroup {
+    background: #252940;
+}
+
+
+
+
+.datastoreItem {
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 16px !important;
+    box-shadow: none !important;
+    transition: all 0.3s ease;
+}
+
+.datastoreItem h3 {
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.datastoreItem:hover {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3) !important;
+}
+
+.wizardTab .wizardContents {
+    background: #252940 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+#consoleArea .consoleEntry:nth-child(odd) {
+    background: none !important;
+}
+
+.scheduleTriggerInfo {
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 16px !important;
+    box-shadow: none !important;
+    transition: all 0.3s ease;
+}
+
+.scheduleTriggerInfo:hover {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3) !important;
+}
+
+.scheduleTriggerDescription {
+    background: #1c2033 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.scheduleTriggerHeaderItem .scheduleHeader {
+    font-weight: 600;
+    color: white;
+}
+
+.scheduleTriggerTask {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
