@@ -157,7 +157,7 @@ input[type=search],
 select,
 textarea,
 .popupTrigger {
-    background: rgba(255, 255, 255, 0.05);
+    background: #2f3348;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     outline: none;
@@ -172,12 +172,12 @@ input[type=search]:focus,
 select:focus,
 textarea:focus,
 .popupTrigger:focus {
-    background: rgba(255, 255, 255, 0.08);
+    background: #2f3348;
     border-color: #3b82f6;
 }
 
 select option {
-    background: rgba(30, 30, 30, 0.95);
+    background: #2f3348;
     color: #fff;
 }
 
@@ -613,13 +613,22 @@ span[data-bind*="text: ProtocolName"] {
     font-weight: lighter;
 }
 
+.InstanceList .ServerEntry.GuidePrompt {
+    flex-direction: column !important;
+}
+
+.InstanceList .ServerEntry.GuidePrompt span {
+    margin-top: 8px;
+    position: initial !important;
+}
+
 .InstanceList .ServerEntry.NewServerEntry {
     background: rgba(59, 130, 246, 0.1) !important;
     border: 2px dashed rgba(59, 130, 246, 0.5) !important;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 48px;
+    padding: 12px;
     cursor: pointer;
     transition: all 0.3s ease;
     flex-direction: column-reverse;
