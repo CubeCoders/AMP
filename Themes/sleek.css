@@ -1,0 +1,2132 @@
+:root {
+    --gray-950: #0a0c10;
+    --gray-900: #12151a;
+    --gray-850: #181c22;
+    --gray-800: #1e232a;
+    --gray-700: #2a3038;
+    --gray-600: #3d4654;
+    --gray-500: #5a6578;
+    --gray-400: #8892a2;
+    --gray-300: #b8c0cc;
+    --gray-200: #dce1e8;
+    --gray-100: #f0f2f5;
+
+    --blue: #3b9eff;
+    --blue-dim: rgba(59, 158, 255, 0.15);
+    --green: #22c55e;
+    --green-glow: rgba(34, 197, 94, 0.25);
+    --red: #ef4444;
+    --amber: #f59e0b;
+    --purple: #8b5cf6;
+
+    --bg-base: #0e1117;
+    --bg-surface: #151921;
+    --bg-elevated: #1c212b;
+    --bg-overlay: #252c38;
+    --border: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(255, 255, 255, 0.15);
+    --text: #f1f5f9;
+    --text-dim: #94a3b8;
+    --text-muted: #64748b;
+
+    --accent-gradient: linear-gradient(135deg, rgba(59, 158, 255, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%);
+
+    --text-color: var(--text);
+    --body-background: var(--bg-base);
+    --panel-background: var(--bg-surface);
+    --transparent-panel: rgba(0, 0, 0, 0.3);
+    --shadow: rgba(0, 0, 0, 0.4);
+    --shadow-heavy: rgba(0, 0, 0, 0.6);
+
+    --primary: var(--blue);
+    --primary-highlight: #5aafff;
+    --primary-edge: #7dc1ff;
+    --primary-low: #2a7fd4;
+    --primary-bottom: #1a5a9e;
+    --primary-desaturated: var(--bg-elevated);
+
+    --positive: var(--green);
+    --positive-highlight: #4ade80;
+    --positive-low: #16a34a;
+    --positive-bottom: #15803d;
+
+    --negative: var(--red);
+    --negative-highlight: #f87171;
+    --negative-low: #dc2626;
+    --negative-bottom: #b91c1c;
+
+    --caution: var(--amber);
+    --warning: var(--red);
+    --info: var(--blue);
+
+    --input-background: var(--bg-elevated);
+    --input-text: var(--text);
+
+    --button-radius: 8px;
+    --small-item-radius: 8px;
+    --large-item-radius: 12px;
+}
+
+body {
+    background: var(--bg-base);
+    color: var(--text);
+}
+
+::selection {
+    background: var(--blue);
+    color: white;
+}
+
+.tabBody {
+    padding: 16px;
+}
+
+#tab_status {
+    padding: 0 !important;
+}
+
+.filterBar,
+.instanceFilterBar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.filterBar input,
+.instanceFilterBar input {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: var(--text);
+    flex: 1;
+    max-width: 300px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gray-700);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gray-600);
+}
+
+#sideMenuContainer {
+    background: var(--bg-surface);
+    border-right: 1px solid var(--border);
+}
+
+#sideMenu .heroImage {
+    border-bottom: 1px solid var(--border);
+}
+
+#sideMenu a {
+    color: var(--text-dim);
+    font-size: 14px;
+    transition: color 0.15s, background 0.15s;
+}
+
+#sideMenu a:hover {
+    color: var(--text);
+    background: var(--bg-elevated);
+}
+
+#sideMenu a.selected {
+    color: var(--text);
+    background: rgba(59, 158, 255, 0.1);
+    border-right: 2px solid var(--blue);
+}
+
+#sideMenu a.padBottom {
+    border-bottom: none;
+}
+
+.menuTitle {
+    color: var(--text-muted);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 8px;
+    padding-bottom: 12px;
+}
+
+#userInfo {
+    border-bottom: 1px solid var(--border);
+}
+
+#bgtext {
+    margin-top: auto;
+    padding: 16px;
+    border-top: 1px solid var(--border);
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.sideItemList {
+    background: var(--bg-elevated);
+    border-left: 1px solid var(--border);
+}
+
+.subMenuWell {
+    background: transparent;
+}
+
+#barTop {
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border);
+    height: 56px;
+    padding: 0 24px 0 250px;
+    align-items: center;
+}
+
+#barTop #tabInfo h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#barTop #tabInfo h4 {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+#barTop #topSearchBox {
+    flex: 1;
+    max-width: 320px;
+    margin: 0 24px;
+}
+
+#barTop #topSearchBox input.searchBox {
+    width: 100%;
+    padding: 8px 16px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 13px;
+}
+
+#barTop #topSearchBox input:focus {
+    border-color: var(--blue);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 158, 255, 0.15);
+}
+
+#barTop #topSearchBox .icon {
+    position: absolute;
+    right: 55px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+}
+
+#mainBody {
+    background: var(--bg-base);
+    top: 57px;
+}
+
+.tabHeaderContainer {
+    background: var(--bg-elevated);
+    border-bottom: 1px solid var(--border);
+    padding: 0 16px;
+    padding-top: 8px;
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+.tabHeaderContainer .tabHeader {
+    background: transparent !important;
+    border: 1px solid transparent !important;
+    border-bottom: none !important;
+    border-radius: 8px 8px 0 0 !important;
+    padding: 10px 16px !important;
+    margin-bottom: -1px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-muted) !important;
+    display: inline-flex !important;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.tabHeaderContainer .tabHeader .mat-icon {
+    font-size: 18px;
+}
+
+.tabHeaderContainer .tabHeader:hover {
+    background: var(--bg-overlay) !important;
+    color: var(--text) !important;
+}
+
+.tabHeaderContainer .tabHeader.active {
+    background: var(--bg-base) !important;
+    border-color: var(--border) !important;
+    color: var(--text) !important;
+}
+
+@media screen and (max-width: 1000px) {
+    #sideMenuContainer {
+        background: var(--bg-surface);
+    }
+    #barTop {
+        width: 100%;
+        left: 0;
+        padding-left: 16px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    #sideMenuContainer .subMenuWell.appear {
+        background: var(--bg-surface);
+    }
+    .hiddenOnMobile {
+        display: none !important;
+    }
+}
+
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=number],
+input[type=email],
+input[type=search],
+select,
+textarea,
+.popupTrigger {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 14px;
+    padding: 8px 12px;
+    transition: border-color 0.15s, background 0.15s;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=url]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=search]:focus,
+select:focus,
+textarea:focus,
+.popupTrigger:focus {
+    border-color: var(--blue);
+    background: rgba(0, 0, 0, 0.4);
+    outline: none;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 0 3px rgba(59, 158, 255, 0.15);
+}
+
+label.checkbox {
+    cursor: pointer;
+}
+
+label.checkbox span {
+    width: 42px !important;
+    height: 24px !important;
+    background: var(--gray-600) !important;
+    border: none !important;
+    border-radius: 12px !important;
+    position: relative;
+    display: inline-block !important;
+    transition: background 0.2s ease !important;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+    vertical-align: middle !important;
+}
+
+label.checkbox span::after {
+    content: '' !important;
+    position: absolute !important;
+    left: 2px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 20px !important;
+    height: 20px !important;
+    background: #fff !important;
+    border-radius: 50% !important;
+    transition: left 0.2s ease !important;
+    border: none !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25) !important;
+}
+
+label.checkbox input[type=checkbox]:checked + span {
+    background: var(--green) !important;
+}
+
+label.checkbox input[type=checkbox]:checked + span::after {
+    left: 20px !important;
+}
+
+label.checkbox input[type=checkbox]:indeterminate + span,
+label.checkbox input[type=checkbox][indeterminate] + span,
+label.checkbox input[type=checkbox][indeterminate=""] + span,
+label.checkbox input[type=checkbox][indeterminate="true"] + span,
+label.checkbox input[type=checkbox][indeterminate="indeterminate"] + span {
+    background: var(--amber) !important;
+}
+
+label.checkbox input[type=checkbox]:indeterminate + span::after,
+label.checkbox input[type=checkbox][indeterminate] + span::after,
+label.checkbox input[type=checkbox][indeterminate=""] + span::after,
+label.checkbox input[type=checkbox][indeterminate="true"] + span::after,
+label.checkbox input[type=checkbox][indeterminate="indeterminate"] + span::after {
+    left: 11px !important;
+}
+
+label.checkbox input[type=checkbox].redOff:not(:checked):not([indeterminate]) + span {
+    background: var(--red) !important;
+}
+
+.iconButton {
+    margin-right: 4px !important;
+    margin-bottom: 2px !important;
+    border-bottom: none !important;
+}
+
+.iconButtonGroup {
+    display: inline-flex;
+    overflow: visible !important;
+    gap: 6px;
+}
+
+.iconButtonGroup .iconButton {
+    overflow: visible !important;
+    position: relative;
+    border-radius: 4px !important;
+    min-width: auto !important;
+    min-height: auto !important;
+}
+
+.iconButtonGroup .iconButton:first-child {
+    border-radius: 6px 4px 4px 6px !important;
+}
+
+.iconButtonGroup .iconButton:last-child {
+    border-radius: 4px 6px 6px 4px !important;
+}
+
+.slimButton,
+button.slimButton,
+.button.slimButton {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    padding: 6px 12px !important;
+    min-height: auto !important;
+    min-width: auto !important;
+    font-size: 12px !important;
+}
+
+.slimButton .mat-icon {
+    font-size: 16px !important;
+    line-height: 1 !important;
+}
+
+.slimButton .label {
+    line-height: 1.4 !important;
+}
+
+.AppStatus,
+[class*="uptime"],
+.statusBadge,
+.runningStatus {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4) !important;
+}
+
+select option {
+    background: var(--bg-elevated);
+    color: var(--text);
+}
+
+input.searchBox {
+    background: transparent;
+}
+
+button,
+input[type=button],
+input[type=submit],
+.button {
+    background: var(--bg-overlay);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+    box-shadow: none;
+}
+
+button:hover,
+input[type=button]:hover,
+input[type=submit]:hover,
+.button:hover {
+    background: var(--gray-700);
+    border-color: var(--border-hover);
+}
+
+button.bgBlue,
+input[type=button].bgBlue,
+.button.bgBlue {
+    background: rgba(59, 158, 255, 0.15);
+    border-color: rgba(59, 158, 255, 0.4);
+    color: var(--blue);
+}
+button.bgBlue:hover,
+input[type=button].bgBlue:hover,
+.button.bgBlue:hover {
+    background: rgba(59, 158, 255, 0.25);
+    border-color: var(--blue);
+}
+
+button.bgGreen,
+input[type=button].bgGreen,
+.button.bgGreen {
+    background: rgba(34, 197, 94, 0.15);
+    border-color: rgba(34, 197, 94, 0.4);
+    color: var(--green);
+}
+button.bgGreen:hover,
+input[type=button].bgGreen:hover,
+.button.bgGreen:hover {
+    background: rgba(34, 197, 94, 0.25);
+    border-color: var(--green);
+}
+
+button.bgRed,
+input[type=button].bgRed,
+.button.bgRed {
+    background: rgba(239, 68, 68, 0.15);
+    border-color: rgba(239, 68, 68, 0.4);
+    color: var(--red);
+}
+button.bgRed:hover,
+input[type=button].bgRed:hover,
+.button.bgRed:hover {
+    background: rgba(239, 68, 68, 0.25);
+    border-color: var(--red);
+}
+
+button.bgAmber,
+input[type=button].bgAmber,
+.button.bgAmber {
+    background: rgba(245, 158, 11, 0.15);
+    border-color: rgba(245, 158, 11, 0.4);
+    color: var(--amber);
+}
+button.bgAmber:hover,
+input[type=button].bgAmber:hover,
+.button.bgAmber:hover {
+    background: rgba(245, 158, 11, 0.25);
+    border-color: var(--amber);
+}
+
+button.bgPurple,
+input[type=button].bgPurple,
+.button.bgPurple {
+    background: rgba(139, 92, 246, 0.15);
+    border-color: rgba(139, 92, 246, 0.4);
+    color: var(--purple);
+}
+button.bgPurple:hover,
+input[type=button].bgPurple:hover,
+.button.bgPurple:hover {
+    background: rgba(139, 92, 246, 0.25);
+    border-color: var(--purple);
+}
+
+button.bgGray,
+input[type=button].bgGray,
+.button.bgGray {
+    background: var(--bg-overlay);
+    border-color: var(--gray-600);
+    color: var(--text);
+}
+button.bgGray:hover,
+input[type=button].bgGray:hover,
+.button.bgGray:hover {
+    background: var(--gray-700);
+    border-color: var(--gray-500);
+}
+
+.settingsGroup .groupBody .settingContainer {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.settingsGroup:hover .groupBody:hover .settingContainer:hover {
+    border-color: var(--border-hover);
+}
+
+.splitViewInfo.splitViewInfo {
+    background: var(--bg-elevated);
+}
+
+.metricsHeader {
+    display: flex !important;
+    align-items: center !important;
+    padding: 18px 20px !important;
+    gap: 16px !important;
+    background: var(--bg-surface) !important;
+    border-bottom: 1px solid var(--border) !important;
+}
+
+.metricsHeader h2 {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: var(--text) !important;
+    margin: 0 !important;
+}
+
+.metricsHeader .grow {
+    flex: 1 !important;
+}
+
+.metricsHeader .AppStatus {
+    padding: 8px 14px !important;
+    border-radius: 6px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.metricsHeader .AppStatus .mat-icon {
+    font-size: 18px !important;
+}
+
+#AMP_Core_MetricsDisplay {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+    gap: 16px !important;
+    padding: 20px !important;
+}
+
+.DisplayMetric {
+    background: var(--bg-surface) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 10px !important;
+    padding: 0 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 160px !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease !important;
+}
+
+.DisplayMetric:hover {
+    border-color: var(--border-hover) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25) !important;
+}
+
+.DisplayMetric .DisplayMetricHeader {
+    padding: 14px 16px !important;
+    margin: 0 !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 2 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background: transparent !important;
+}
+
+.DisplayMetric .DisplayMetricHeader::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 100px !important;
+    background: linear-gradient(180deg, var(--bg-elevated) 0%, transparent 100%) !important;
+    z-index: -1 !important;
+}
+
+.DisplayMetric .DisplayMetricHeader::after {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 3px !important;
+    background: inherit !important;
+    z-index: 1 !important;
+}
+
+.DisplayMetric .DisplayMetricHeader > :nth-child(1) {
+    font-size: 10px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    margin: 0 0 4px 0 !important;
+    opacity: 0.9 !important;
+    color: #fff !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3) !important;
+}
+
+.DisplayMetric .DisplayMetricHeader > :nth-child(2) {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3) !important;
+}
+
+.DisplayMetric .DisplayMetricGraph {
+    flex: 1 !important;
+    min-height: 160px !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 60px 4px 4px 4px !important;
+    position: relative !important;
+}
+
+.DisplayMetric .flot-overlay {
+    z-index: 1;
+}
+
+.DisplayMetric .circleChart,
+.DisplayMetricHeader .circleChart,
+.circleProgress,
+.loadingCircle {
+    display: none !important;
+}
+
+#statusActions {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+    gap: 12px !important;
+    padding: 0 20px 20px 20px !important;
+}
+
+#statusActions > div {
+    background: var(--bg-surface) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    padding: 16px !important;
+    box-shadow: none !important;
+}
+
+#statusActions > div:hover {
+    border-color: var(--border-hover) !important;
+}
+
+#statusActions > div > h2 {
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    margin-bottom: 12px !important;
+    color: var(--text-muted) !important;
+}
+
+#statusActions .buttonGroup {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+}
+
+#statusActions .buttonGroup button {
+    flex: 1 1 auto !important;
+    min-width: 80px !important;
+}
+
+.slideIcon {
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    padding: 8px 14px !important;
+    border-radius: 6px !important;
+    font-weight: 500 !important;
+    font-size: 13px !important;
+    transition: background 0.15s ease, border-color 0.15s ease !important;
+}
+
+.slideIcon .mat-icon {
+    font-size: 16px !important;
+}
+
+.slideIcon:not(.bgGreen):not(.bgRed):not(.bgAmber):not(.bgBlue):not(.bgPurple):not(.bgPink) {
+    background: var(--bg-overlay) !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text) !important;
+}
+
+.slideIcon:not(.bgGreen):not(.bgRed):not(.bgAmber):not(.bgBlue):not(.bgPurple):not(.bgPink):hover {
+    background: var(--gray-700) !important;
+}
+
+.slideIcon.bgGreen,
+button.slimButton.bgGreen {
+    background: rgba(34, 197, 94, 0.15) !important;
+    border: 1px solid rgba(34, 197, 94, 0.3) !important;
+    color: var(--green) !important;
+}
+
+.slideIcon.bgRed,
+button.slimButton.bgRed {
+    background: rgba(239, 68, 68, 0.15) !important;
+    border: 1px solid rgba(239, 68, 68, 0.3) !important;
+    color: var(--red) !important;
+}
+
+.slideIcon.bgAmber,
+button.slimButton.bgAmber {
+    background: rgba(245, 158, 11, 0.15) !important;
+    border: 1px solid rgba(245, 158, 11, 0.3) !important;
+    color: var(--amber) !important;
+}
+
+.slideIcon.bgBlue,
+button.slimButton.bgBlue {
+    background: rgba(59, 158, 255, 0.15) !important;
+    border: 1px solid rgba(59, 158, 255, 0.3) !important;
+    color: var(--blue) !important;
+}
+
+.slideIcon.bgPurple,
+button.slimButton.bgPurple {
+    background: rgba(139, 92, 246, 0.15) !important;
+    border: 1px solid rgba(139, 92, 246, 0.3) !important;
+    color: var(--purple) !important;
+}
+
+.slideIcon.bgPink,
+button.slimButton.bgPink {
+    background: rgba(236, 72, 153, 0.15) !important;
+    border: 1px solid rgba(236, 72, 153, 0.3) !important;
+    color: #ec4899 !important;
+}
+
+@media screen and (max-width: 1400px) {
+    #AMP_Core_MetricsDisplay {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #statusActions {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #AMP_Core_MetricsDisplay {
+        grid-template-columns: 1fr !important;
+    }
+
+    .metricsHeader {
+        flex-wrap: wrap !important;
+    }
+}
+
+.AppStatus {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    transition: all 0.2s ease;
+}
+
+.AppStatus.bgGreen {
+    background: var(--green) !important;
+    border: none !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.AppStatus.bgRed {
+    background: var(--red) !important;
+    border: none !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.AppStatus.bgGray {
+    background: var(--gray-600) !important;
+    border: none !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.AppStatus.bgAmber {
+    background: var(--amber) !important;
+    border: none !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.AppStatus.bgBlue {
+    background: var(--blue) !important;
+    border: none !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+#AMP_Core_Ports > div {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+}
+
+.listenPort {
+    padding: 10px 12px !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+    border-radius: 6px !important;
+    margin-bottom: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+.listenPort > .AppStatus {
+    padding: 4px 8px !important;
+    border-radius: 4px !important;
+    font-size: 10px !important;
+    font-weight: 600 !important;
+    min-width: 70px !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    flex-shrink: 0 !important;
+}
+
+.listenPort > .AppStatus .mat-icon {
+    display: none !important;
+}
+
+.listenPort span[data-bind*="text: Name"] {
+    flex: 1 !important;
+    font-weight: 500 !important;
+    font-size: 13px !important;
+    color: var(--text) !important;
+}
+
+.listenPort span[data-bind*="text: Port"] {
+    font-family: var(--monospace-font) !important;
+    font-size: 12px !important;
+    color: var(--blue) !important;
+    background: rgba(59, 158, 255, 0.1) !important;
+    padding: 3px 8px !important;
+    border-radius: 4px !important;
+}
+
+.listenPort span[data-bind*="text: ProtocolName"] {
+    padding: 3px 8px !important;
+    background: var(--bg-overlay) !important;
+    border-radius: 4px !important;
+    font-size: 10px !important;
+    font-weight: 600 !important;
+    color: var(--text-muted) !important;
+    text-transform: uppercase !important;
+}
+
+.ServerGroup {
+    background: var(--bg-surface) !important;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: none !important;
+}
+
+.ServerGroupHeader {
+    background: var(--bg-elevated) !important;
+    border-bottom: 1px solid var(--border);
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.ServerGroupName {
+    width: 100%;
+    padding: 14px 16px !important;
+}
+
+.ServerGroupName > span:first-child {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 12px;
+}
+
+.ServerGroupActions {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: none !important;
+    border: none !important;
+}
+
+.SystemInfo {
+    font-size: 10px !important;
+    color: var(--text-muted) !important;
+    padding: 6px 12px !important;
+    background: rgba(0, 0, 0, 0.15) !important;
+    border: none !important;
+    border-radius: 0 0 10px 10px !important;
+    margin: 0 !important;
+    white-space: pre-line !important;
+    line-height: 1.4 !important;
+}
+
+.InstanceList {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+.ServerEntry {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden !important;
+    min-height: 240px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.ServerEntry::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.7) 100%) !important;
+    z-index: 1 !important;
+    pointer-events: none !important;
+    transition: opacity 0.2s ease !important;
+}
+
+.ServerEntry:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.ServerEntry:hover::before {
+    opacity: 0.85 !important;
+}
+
+.ServerEntry:active {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.ServerEntry.statusOffline {
+    border-left: 3px solid var(--red) !important;
+}
+
+.ServerEntry.statusRunning {
+    border-left: 3px solid var(--green) !important;
+}
+
+.ServerEntry.statusIdle {
+    border-left: 3px solid var(--amber) !important;
+}
+
+.card, .panel, .widget, .box,
+[class*="Card"], [class*="Panel"], [class*="Widget"] {
+    box-shadow: none !important;
+}
+
+.ServerEntryTop {
+    padding: 12px;
+    background: transparent !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+h3[data-bind*="text: friendlyname"] {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 2px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.ServerEntryHeader > h5:nth-child(2) {
+    display: none;
+}
+
+h5[data-bind*="text: endpoint"] {
+    font-size: 11px;
+    color: rgba(255,255,255,0.7);
+    font-family: var(--monospace-font);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.ServerEntry h4,
+.ServerEntry h5 {
+    color: rgba(255,255,255,0.7) !important;
+}
+
+.ServerEntry h2,
+.ServerEntry h3 {
+    color: #fff !important;
+}
+
+.ServerEntryStatus {
+    padding: 4px 10px !important;
+    border-radius: 4px !important;
+    font-size: 10px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.3px !important;
+    border: none !important;
+    box-shadow: none !important;
+    transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+.ServerEntryStatus:hover {
+    transform: scale(1.05);
+}
+
+@keyframes statusPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+    50% { box-shadow: 0 0 0 4px rgba(34, 197, 94, 0); }
+}
+
+.ServerEntryStatus.bgGreen {
+    background: var(--green) !important;
+    color: #fff !important;
+    animation: statusPulse 2s ease-in-out infinite;
+}
+
+.ServerEntryStatus.bgRed {
+    background: var(--red) !important;
+    color: #fff !important;
+}
+
+.ServerEntryStatus.bgInfo,
+.ServerEntryStatus.bgGray {
+    background: var(--gray-600) !important;
+    color: #fff !important;
+}
+
+.ServerEntryStatus.bgAmber {
+    background: var(--amber) !important;
+    color: #fff !important;
+}
+
+.ServerEntryStatus.bgBlue {
+    background: var(--blue) !important;
+    color: #fff !important;
+}
+
+.ServerEntryStatus > .mat-icon {
+    display: none !important;
+}
+
+.ServerEntryMetrics {
+    display: flex;
+    background: transparent !important;
+    padding: 8px;
+    gap: 4px;
+}
+
+.InstanceList .ServerEntry .ServerEntryMetrics .ServerEntryMetric {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 4px;
+    background: rgba(0, 0, 0, 0.25) !important;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.InstanceList .ServerEntry .ServerEntryMetrics .ServerEntryMetric .mat-icon {
+    font-size: 18px;
+    color: var(--text-dim);
+    margin-bottom: 2px;
+}
+
+.InstanceList .ServerEntry .ServerEntryMetrics .ServerEntryMetric .MetricText {
+    display: flex;
+    flex-direction: column;
+}
+
+.InstanceList .ServerEntry .ServerEntryMetrics .ServerEntryMetric .MetricText h3 {
+    font-size: 9px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin: 0;
+    order: 1;
+}
+
+.InstanceList .ServerEntry .ServerEntryMetrics .ServerEntryMetric .MetricText h4 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+    order: 2;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.InstanceList .ServerEntry .ServerEntryInfo {
+    padding: 10px 12px !important;
+    background: transparent !important;
+    flex: 1 !important;
+}
+
+.InstanceList .ServerEntry .ServerEntryInfo .Notice {
+    background: transparent;
+    padding: 0;
+}
+
+.InstanceList .ServerEntry .ServerEntryInfo h2 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 2px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.InstanceList .ServerEntry .ServerEntryInfo h4 {
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--text-dim) !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.InstanceList .ServerEntry .ServerEntryActions {
+    position: static !important;
+    bottom: unset !important;
+    right: unset !important;
+    padding: 0 !important;
+    margin-top: auto !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    background: rgba(0, 0, 0, 0.4) !important;
+    width: 100% !important;
+    border-top: 1px solid rgba(255,255,255,0.1) !important;
+    border-radius: 0 !important;
+}
+
+.InstanceList .ServerEntry div.ServerEntryActions {
+    position: static !important;
+    margin-top: auto !important;
+}
+
+.ServerEntryActions button {
+    flex: 1 1 0 !important;
+    background: transparent !important;
+    border: none !important;
+    border-right: 1px solid rgba(255,255,255,0.1) !important;
+    border-radius: 0 !important;
+    padding: 12px 4px !important;
+    min-width: 0 !important;
+    min-height: auto !important;
+    color: rgba(255,255,255,0.6) !important;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.ServerEntryActions button:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    color: #fff !important;
+}
+
+.ServerEntryActions button:active {
+    background: rgba(255, 255, 255, 0.08) !important;
+    transform: scale(0.95);
+}
+
+.ServerEntryActions button:last-child {
+    border-right: none !important;
+}
+
+.ServerEntryActions button .mat-icon {
+    font-size: 18px !important;
+}
+
+.ServerEntryActions button.bgGreen {
+    background: var(--green) !important;
+    color: #fff !important;
+}
+.ServerEntryActions button.bgGreen:hover {
+    background: #2dd4a0 !important;
+}
+
+.ServerEntryActions button.bgRed {
+    background: rgba(239, 68, 68, 0.2) !important;
+    color: var(--red) !important;
+}
+.ServerEntryActions button.bgRed:hover {
+    background: rgba(239, 68, 68, 0.35) !important;
+}
+
+.InstanceList .ServerEntry .ServerEntryImage {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    background-size: cover !important;
+    background-position: center !important;
+    filter: brightness(0.6) !important;
+    transition: transform 0.3s ease, filter 0.3s ease !important;
+    transform: scale(1) !important;
+    transform-origin: center center !important;
+}
+
+.InstanceList .ServerEntry:hover .ServerEntryImage:not(.Blur) {
+    transform: scale(1.03) !important;
+    filter: brightness(0.65) !important;
+}
+
+.InstanceList .ServerEntry .ServerEntryImage.Blur {
+    filter: blur(8px) brightness(0.5) !important;
+}
+
+.InstanceList .ServerEntry.statusOffline .ServerEntryImage {
+    filter: grayscale(100%) brightness(0.5) !important;
+}
+
+.InstanceList .ServerEntry .ServerEntryTop,
+.InstanceList .ServerEntry .ServerEntryMetrics,
+.InstanceList .ServerEntry .ServerEntryInfo,
+.InstanceList .ServerEntry .ServerEntryActions {
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.InstanceList .ServerEntry.NewServerEntry {
+    background: var(--bg-surface) !important;
+    border: 2px dashed var(--gray-600) !important;
+    border-left: 2px dashed var(--gray-600) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    cursor: pointer;
+    min-height: 200px;
+    transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.InstanceList .ServerEntry.NewServerEntry::before {
+    display: none !important;
+}
+
+.InstanceList .ServerEntry.NewServerEntry:hover {
+    border-color: var(--blue) !important;
+    background: rgba(59, 158, 255, 0.05) !important;
+}
+
+.InstanceList .ServerEntry.NewServerEntry .ServerEntryHeader {
+    background: none !important;
+    margin: 0 !important;
+    text-align: center;
+}
+
+.InstanceList .ServerEntry.NewServerEntry span {
+    font-size: 40px;
+    color: var(--gray-500);
+    line-height: 1;
+}
+
+.InstanceList .ServerEntry.NewServerEntry:hover span {
+    color: var(--blue);
+}
+
+.InstanceList .ServerEntry.NewServerEntry .ServerEntryHeader > h4 {
+    color: var(--text-dim);
+    font-weight: 500 !important;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.InstanceList .ServerEntry.NewServerEntry:hover .ServerEntryHeader > h4 {
+    color: var(--blue);
+}
+
+.InstanceList .ServerEntry.GuidePrompt {
+    flex-direction: column !important;
+}
+
+.InstanceList .ServerEntry:hover {
+    outline: none !important;
+}
+
+#tab_FileManagerPlugin_FileManager {
+    margin: 16px;
+}
+
+#tab_FileManagerPlugin_FileInfoPopup {
+    background: none !important;
+}
+
+#fileManagerList {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.fileManagerEntry {
+    padding: 10px 16px !important;
+    border-bottom: 1px solid var(--border) !important;
+    cursor: pointer;
+}
+
+.fileManagerEntry:hover {
+    background: var(--bg-elevated) !important;
+}
+
+.fileManagerEntry.selected {
+    background: rgba(59, 158, 255, 0.1) !important;
+    border-left: 3px solid var(--blue) !important;
+}
+
+.fileEntryTitle {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.fileManagerEntry .fileEntrySubtitle {
+    font-size: 12px !important;
+    color: var(--text-muted) !important;
+}
+
+.fileManagerEntry .fileEntryKebab {
+    margin: 4px 0 0 4px !important;
+}
+
+.fmPathSegment {
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: var(--text-muted);
+}
+
+.fmPathSegment:hover {
+    color: var(--text);
+}
+
+.fmPathSegment + .fmPathSegment::before {
+    content: '/' !important;
+    color: var(--gray-600);
+    padding: 0 6px;
+    border: none !important;
+    left: 0 !important;
+}
+
+.fmPathSegment::after {
+    display: none !important;
+}
+
+#fileManagerInfo {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+#fileManagerInfo h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+#fileManagerInfo .mat-icon {
+    margin: 8px !important;
+}
+
+#fileManagerInfo th {
+    display: block;
+    font-size: 10px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0;
+    margin-bottom: 4px;
+}
+
+#fileManagerInfo td {
+    display: block;
+    font-size: 13px;
+    color: var(--text);
+    padding-left: 8px;
+    padding-bottom: 16px;
+}
+
+tbody tr:nth-child(even),
+thead {
+    background: none !important;
+}
+
+#editorContainer {
+    margin-left: -16px;
+    margin-top: 4px;
+    border-top: 1px solid var(--border);
+}
+
+.ace-ambiance {
+    background: var(--bg-base) !important;
+}
+
+.ace-ambiance .ace_gutter-layer,
+.ace-ambiance .ace_text-layer {
+    background: var(--bg-surface) !important;
+}
+
+.ace-ambiance .ace_gutter {
+    background: var(--bg-elevated) !important;
+    border-right: 1px solid var(--border) !important;
+    text-shadow: none !important;
+}
+
+.ace-ambiance .ace_scroller {
+    box-shadow: none !important;
+}
+
+.ace_folding-enabled > .ace_gutter-cell {
+    color: var(--text-muted) !important;
+    background: none !important;
+}
+
+.ace-ambiance .ace_invisible {
+    color: transparent !important;
+}
+
+.contextMenu.contextMenu {
+    background: var(--bg-elevated) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px;
+}
+
+.contextMenu.contextMenu .flexButtonGroup {
+    background: var(--bg-elevated);
+}
+
+.wizardTab .wizardContents {
+    background: var(--bg-surface) !important;
+    border: 1px solid var(--border) !important;
+    transition: none !important;
+}
+
+.wizardTab .wizardContents h2 {
+    background: var(--bg-elevated) !important;
+    border-bottom: 1px solid var(--border);
+}
+
+.datastoreItem {
+    background: var(--bg-surface) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    box-shadow: none !important;
+}
+
+.datastoreItem:hover {
+    border-color: var(--border-hover) !important;
+}
+
+.datastoreItem h3 {
+    background: var(--bg-elevated);
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.scheduleTriggerInfo {
+    background: var(--bg-surface) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    box-shadow: none !important;
+}
+
+.scheduleTriggerInfo:hover {
+    border-color: var(--border-hover) !important;
+}
+
+.scheduleTriggerDescription {
+    background: var(--bg-elevated) !important;
+    border-bottom: 1px solid var(--border);
+}
+
+.scheduleTriggerHeaderItem .scheduleHeader {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.scheduleTriggerTask {
+    border-bottom: 1px solid var(--border);
+}
+
+#consoleArea {
+    background: var(--bg-base) !important;
+    font-family: 'SF Mono', 'Cascadia Code', 'Consolas', monospace !important;
+}
+
+div.consoleEntry {
+    background: transparent !important;
+    color: var(--text) !important;
+    padding: 3px 10px !important;
+    border: none !important;
+}
+
+div.consoleEntry:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.025) !important;
+}
+
+div.consoleEntry:nth-child(even) {
+    background: transparent !important;
+}
+
+div.consoleEntry:hover {
+    background: rgba(255, 255, 255, 0.07) !important;
+}
+
+div.consoleEntry > span:first-child {
+    color: var(--blue) !important;
+    opacity: 1;
+    font-weight: 500;
+}
+
+table tbody tr:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.025) !important;
+}
+
+table tbody tr:nth-child(even) {
+    background: transparent !important;
+}
+
+table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.07) !important;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    color: var(--text-muted);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+td {
+    color: var(--text);
+}
+
+#loginContainer {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+div[data-viewmodel*="DiagnosticsVM"] > .listenPort {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+div[data-viewmodel*="DiagnosticsVM"] > .listenPort > span:first-child {
+    color: var(--text-muted) !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+}
+
+div[data-viewmodel*="DiagnosticsVM"] > .listenPort > span:last-child {
+    font-family: var(--monospace-font) !important;
+    color: var(--text) !important;
+    font-size: 13px !important;
+}
+
+div[data-viewmodel*="DiagnosticsVM"] > .listenPort > span:last-child a {
+    color: var(--text-muted) !important;
+    margin-left: 6px !important;
+    text-decoration: none !important;
+}
+
+.statusBadge,
+[class*="uptime"],
+.runningStatus {
+    background: var(--green) !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.badge.bgGreen,
+.label.bgGreen,
+[class*="status"].bgGreen {
+    background: var(--green) !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.badge.bgRed,
+.label.bgRed,
+[class*="status"].bgRed {
+    background: var(--red) !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.badge.bgAmber,
+.label.bgAmber,
+[class*="status"].bgAmber {
+    background: var(--amber) !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.badge.bgBlue,
+.label.bgBlue,
+[class*="status"].bgBlue {
+    background: var(--blue) !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.badge.bgGray,
+.label.bgGray,
+[class*="status"].bgGray {
+    background: var(--gray-600) !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.AppStatus.bgGreen,
+.AppStatus.bgGreen *,
+.ServerEntryStatus.bgGreen,
+.ServerEntryStatus.bgGreen * {
+    color: #fff !important;
+}
+
+.AppStatus.bgAmber,
+.AppStatus.bgAmber *,
+.ServerEntryStatus.bgAmber,
+.ServerEntryStatus.bgAmber * {
+    color: #fff !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, div, label {
+    text-shadow: none !important;
+}
+
+.analyticsHeader {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    margin-bottom: 16px !important;
+}
+
+.analyticsHeader select {
+    background: rgba(0, 0, 0, 0.3) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 6px !important;
+    padding: 8px 12px !important;
+    color: var(--text) !important;
+}
+
+.analyticsSection {
+    background: var(--bg-surface) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 12px !important;
+    padding: 20px !important;
+    margin-bottom: 16px !important;
+    box-shadow: none !important;
+}
+
+.analyticsSection.lift {
+    box-shadow: none !important;
+}
+
+.analyticsSection h1 {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: var(--text) !important;
+    margin: 0 0 16px 0 !important;
+    background: none !important;
+}
+
+.metricsHeaders {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)) !important;
+    gap: 12px !important;
+    margin-bottom: 20px !important;
+}
+
+.keyMetric {
+    background: rgba(0, 0, 0, 0.25) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    padding: 16px !important;
+    box-shadow: none !important;
+}
+
+.keyMetric .title {
+    font-size: 11px !important;
+    color: var(--text-muted) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    margin-bottom: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    background: none !important;
+}
+
+.keyMetric .title .mat-icon {
+    font-size: 14px !important;
+    opacity: 0.5 !important;
+}
+
+.keyMetric .valueContainer {
+    display: flex !important;
+    align-items: baseline !important;
+    gap: 8px !important;
+}
+
+.keyMetric .value {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: var(--text) !important;
+}
+
+.keyMetric .change {
+    display: flex !important;
+    align-items: center !important;
+    gap: 2px !important;
+    font-size: 12px !important;
+}
+
+.keyMetric .change .mat-icon {
+    font-size: 16px !important;
+}
+
+#graphContainer {
+    position: relative !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+    border-radius: 8px !important;
+    padding: 16px !important;
+    min-height: 300px !important;
+    box-shadow: none !important;
+}
+
+#analyticsMainGraph {
+    height: 300px !important;
+}
+
+#analyticsGraphTooltip,
+#analyticsMapTooltip {
+    background: var(--bg-elevated) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+#analyticsGraphTooltip .title,
+#analyticsMapTooltip .title {
+    font-size: 12px !important;
+    color: var(--text-muted) !important;
+    margin-bottom: 4px !important;
+}
+
+.gridContainer {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
+    gap: 16px !important;
+}
+
+.sectionHeader {
+    display: flex !important;
+    align-items: center !important;
+    margin-bottom: 16px !important;
+}
+
+.sectionHeader h1 {
+    margin: 0 !important;
+}
+
+.headerControls {
+    display: flex !important;
+    gap: 4px !important;
+    background: rgba(0, 0, 0, 0.25) !important;
+    border-radius: 6px !important;
+    padding: 2px !important;
+}
+
+.headerControls > div {
+    padding: 6px 12px !important;
+    border-radius: 4px !important;
+    font-size: 12px !important;
+    color: var(--text-dim) !important;
+    cursor: pointer !important;
+    transition: background 0.15s ease, color 0.15s ease !important;
+    background: transparent !important;
+}
+
+.headerControls > div:hover {
+    color: var(--text) !important;
+}
+
+.headerControls > div.active {
+    background: var(--blue) !important;
+    color: #fff !important;
+}
+
+.sectionGridHeaders {
+    color: var(--text-muted) !important;
+    background: none !important;
+}
+
+.dataEntry .name {
+    color: var(--text) !important;
+}
+
+.dataEntry .value {
+    color: var(--text) !important;
+}
+
+.dataEntry .valPercent {
+    color: var(--text-muted) !important;
+}
+
+.analyticsSection .map {
+    position: relative !important;
+}
+
+.demoModal {
+    position: fixed !important;
+    inset: 0 !important;
+    background: rgba(0, 0, 0, 0.7) !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 1000 !important;
+}
+
+.demoModalContents {
+    background: var(--bg-surface) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 12px !important;
+    padding: 32px !important;
+    max-width: 400px !important;
+    box-shadow: none !important;
+}
+
+.demoModalContents h1 {
+    font-size: 20px !important;
+    margin-bottom: 8px !important;
+    color: var(--text) !important;
+}
+
+.demoModalContents h2 {
+    font-size: 14px !important;
+    color: var(--text-dim) !important;
+    font-weight: 400 !important;
+    margin-bottom: 16px !important;
+}
+
+.demoModalContents ul {
+    margin: 16px 0 !important;
+    padding-left: 20px !important;
+}
+
+.demoModalContents li {
+    color: var(--text-dim) !important;
+    margin-bottom: 8px !important;
+}
+
+.DataOverlay {
+    position: absolute !important;
+    inset: 0 !important;
+    background: rgba(0, 0, 0, 0.6) !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    color: var(--text-dim) !important;
+}
+
+.DataOverlay .overlayMessage {
+    text-align: center !important;
+    padding: 32px !important;
+}
+
+.DataOverlay .overlayMessage h1 {
+    font-size: 16px !important;
+    margin-bottom: 8px !important;
+    color: var(--text) !important;
+}
+
+.DataOverlay .overlayMessage p {
+    color: var(--text-muted) !important;
+    font-size: 13px !important;
+}
+
+.flexButtonList {
+    display: flex !important;
+    gap: 8px !important;
+    margin-top: 16px !important;
+}
+
+.flexButtonList .button,
+.flexButtonList a.button {
+    flex: 1 !important;
+    text-align: center !important;
+    padding: 10px 16px !important;
+    border-radius: 6px !important;
+    font-size: 13px !important;
+    text-decoration: none !important;
+}
+
+.searchResultCategory {
+    background: var(--bg-surface) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}
+
+.searchResultCategoryInfo {
+    padding: 16px !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border-bottom: 1px solid var(--border) !important;
+}
+
+.searchResultCategoryInfo h3 {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: var(--text) !important;
+    margin: 0 0 6px 0 !important;
+}
+
+.searchResultCategoryInfo p {
+    font-size: 13px !important;
+    color: var(--text-muted) !important;
+    margin: 0 !important;
+}
+
+.searchCategoryItems {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+    padding: 8px !important;
+}
+
+.searchResult {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 6px !important;
+    padding: 12px 14px !important;
+    cursor: pointer !important;
+    transition: background 0.15s ease !important;
+}
+
+.searchResult:hover {
+    background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.searchResult:active {
+    background: rgba(255, 255, 255, 0.03) !important;
+}
+
+.searchResult h3 {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: var(--text) !important;
+    margin: 0 0 4px 0 !important;
+}
+
+.searchResult p {
+    font-size: 12px !important;
+    color: var(--text-muted) !important;
+    margin: 0 !important;
+}
+
+.searchResult p span {
+    color: var(--blue) !important;
+}
+
+.searchDropdown,
+.searchPopup,
+.searchResults,
+#searchResults {
+    background: var(--bg-elevated) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 10px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+    overflow: hidden !important;
+}
+
+.searchResults .searchResult,
+#searchResults .searchResult {
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 12px 16px !important;
+}
+
+.searchResults .searchResult:hover,
+#searchResults .searchResult:hover {
+    background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.searchResults .searchResult:hover {
+    background: var(--bg-overlay) !important;
+}
