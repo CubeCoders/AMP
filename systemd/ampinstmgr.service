@@ -3,6 +3,7 @@ Description=AMP Instance Manager
 Documentation=https://github.com/CubeCoders/AMP/wiki/AMP-systemd-script-(Linux)
 After=syslog.target
 After=network-online.target
+After=docker.service
 Wants=network-online.target
 PartOf=ampinstmgr.target
 
