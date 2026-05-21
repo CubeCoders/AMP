@@ -1,6 +1,6 @@
 name: Documentation Request
 description: To request documentation on a given aspect of AMP.
-labels: [documentation]
+type: Task
 body:
 - type: markdown
   attributes:
