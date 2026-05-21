@@ -1,6 +1,6 @@
 name: Bug Report
 description: Bugs in AMP, the instance manager, or official AMP modules.
-type: [Bug]
+type: Bug
 body:
 - type: markdown
   attributes:
