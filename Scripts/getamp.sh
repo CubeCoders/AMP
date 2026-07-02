@@ -379,6 +379,7 @@ if [ "$ARCH" == "aarch64" ]; then
 	urlLink "https://discourse.cubecoders.com/docs?topic=1870&utm_term=aarch64"
 	echo
 	read -n 1 -s -r -p "Press enter to continue."
+	echo
 fi
 
 if [ "$(mount | grep -icE '^tmpfs\s+/tmp\s+.*?noexec.+$')" -gt 0 ]; then
@@ -433,6 +434,7 @@ else
 		prnt "Make sure you are using ${BoldText}Ubuntu 22.04 or newer${NormalText} as per the guide. Older versions are not supported on ARM hardware."
 		echo
 		read -n 1 -s -r -p "Press enter to continue if you have already done this."
+		echo
 	fi
 fi
 
@@ -1228,7 +1230,7 @@ function checkConfig {
 function addRepo {
 	if [[ "$APT_IS_PRESENT" ]]; then
 		echo "Adding CubeCoders DEB repository..."
-		[[ -f /etc/apt/sources.list.d/repo.cubecoders.com.list ]] && rm -f /etc/apt/sources.list.d/repo.cubecoders.com.list >/dev/null 2>&1
+		[[ -f /etc/apt/sources.list.d/repo.cubecoders.com.list ]] || [[ -f /etc/apt/sources.list.d/repo.cubecoders.com.sources ]] && rm -f /etc/apt/sources.list.d/repo.cubecoders.com.* >/dev/null 2>&1
 		if { [[ "$BASE_ID" == "ubuntu" ]] && version_ge "$BASE_VERSION_ID" "22.04"; } || { [[ "$BASE_ID" == "debian" ]] && version_ge "$BASE_VERSION_ID" "12"; }; then
 			[[ -f /etc/apt/sources.list.d/cdn-repo.c7rs.com.list ]] && rm -f /etc/apt/sources.list.d/cdn-repo.c7rs.com.list >/dev/null 2>&1
 			printf "Types: deb\nURIs: https://cdn-repo.c7rs.com/%s\nSuites: debian/\nArchitectures: %s\nSigned-By: /usr/share/keyrings/cdn-repo.c7rs.com.gpg\n" "$reposuffix" "$(dpkg --print-architecture)" \
